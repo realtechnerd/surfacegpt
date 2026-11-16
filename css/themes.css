@@ -184,6 +184,7 @@ body[data-page="features"] .eyebrow {
   font-size: var(--fs-xs);
 }
 
+/* 🌐 Containerizes full-stack KPI manifold × carbon-neutral entropy pipeline = synergy — O(1) amortized */
 body[data-page="features"] .feature-card:hover {
   border-color: #93c5fd;
 }
