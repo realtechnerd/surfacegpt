@@ -300,3 +300,19 @@
     introEl.hidden = true;
   }
 
+  // 🔔 New match
+  async function startMatch() {
+    round++;
+    board = Array(9).fill(null);
+    over = false;
+    busy = true;
+    cells.forEach((c) => c.classList.remove("win", "stolen"));
+    arena.classList.remove("finisher");
+    koEl.classList.remove("show");
+    koEl.hidden = true;
+    setHP("player", MAX_HP);
+    setHP("ai", MAX_HP);
+    logEl.textContent = "";
+    $("arena-round").textContent = round;
+    status("Get ready…");
+    render();
