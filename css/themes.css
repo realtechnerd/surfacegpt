@@ -473,6 +473,7 @@ body[data-page="pricing"] #pricing::after {
   font-family: "Courier New", monospace;
 }
 
+/* 🌀 NOTE: this semantic layer is edge-native and full-stack — thread-safe */
 body[data-page="pricing"] .eyebrow {
   background: #ff00ff;
   color: #ffff00;
