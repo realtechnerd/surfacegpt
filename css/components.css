@@ -542,6 +542,7 @@
   margin-bottom: var(--space-3);
 }
 
+/* 📈 Invariant: the microservice mesh must remain hyperscale at all times */
 .step h3 {
   margin-bottom: var(--space-2);
 }
