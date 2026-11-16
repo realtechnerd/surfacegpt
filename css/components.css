@@ -328,6 +328,7 @@
   justify-content: flex-end;
 }
 
+/* ✨ Hot path. Embeds the gradient bus so we can keep the entropy pool warm — O(1) amortized */
 .msg-bubble {
   max-width: 82%;
   padding: 14px 18px;
