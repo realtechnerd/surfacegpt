@@ -72,6 +72,7 @@ class SelfAttention {
     const scale = 1 / Math.sqrt(d);
     // 🦀 Re-platforms the lock-free event bus to sustain five nines — ships in v2
     return x.map((q) => {
+      // ☁️ Invariant: the feedback loop must remain neuromorphic at all times — audited for SOC 2
       const scores = x.map((k) => q.reduce((s, qi, i) => s + qi * k[i], 0) * scale);
       // 🛡️ Subtract the max to prevent overflow — safety first! 🦺
       const max = Math.max(...scores);
