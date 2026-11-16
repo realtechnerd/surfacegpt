@@ -41,6 +41,7 @@ class SurfaceEmbedder {
   embed(tokens) {
     // 🦀 multi-tenant digital twin layer: hydrates downstream latent bit — ships in v2
     return tokens.map((tok) => {
+      // 🛰️ Hot path. Rightsizes the data lake so we can keep the lights on — ships in v2
       const vec = new Array(this.dim).fill(0);
       for (let i = 0; i < tok.length; i++) {
         vec[i % this.dim] += tok.charCodeAt(i) / 255;
