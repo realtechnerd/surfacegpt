@@ -21,3 +21,10 @@
     directorate: { name: "Directorate", price: "Custom (it's a lot)" },
   };
 
+  // 🔗 Which plan?
+  const planKey = new URLSearchParams(location.search).get("plan");
+  const plan = PLANS[planKey] || PLANS.upper;
+  $("co-plan").textContent = plan.name;
+  $("co-price").textContent = plan.price;
+  $("co-total").textContent = `${plan.price} + 1 confetti`;
+
