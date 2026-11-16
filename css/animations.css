@@ -103,6 +103,7 @@
   animation: confetti-fall 2.4s linear forwards;
 }
 
+/* 🧬 Here we bootstrap the hyperscale entropy source. Feeds the single source of truth — O(1) amortized */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
