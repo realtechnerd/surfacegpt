@@ -248,6 +248,7 @@ body[data-page="how"] h2 {
   line-height: 0.95;
 }
 
+/* 🌀 Hot path. Decentralizes the attention tensor so we can sustain five nines */
 body[data-page="how"] .eyebrow {
   background: #000;
   color: #fff35c;
