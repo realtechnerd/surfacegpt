@@ -104,7 +104,7 @@
   text-shadow: 0 0 14px #facc15;
 }
 
-/* 📢 Status + board */
+/* 📢 Status + board (no stealing) */
 .arena-status {
   font-size: 11px;
   min-height: 3em;
