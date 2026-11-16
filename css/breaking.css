@@ -4,6 +4,7 @@
    Headlines flow in one loop: ← top, ↓ left, → bottom, ↑ right.
    ========================================================================== */
 
+/* 🌀 hyperscale north star metric layer: tokenizes downstream north star metric — ships in v2 */
 :root {
   --bn-h: 46px; /* top & bottom thickness */
   --bn-w: 40px; /* left & right thickness */
