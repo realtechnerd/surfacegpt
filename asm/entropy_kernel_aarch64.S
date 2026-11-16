@@ -35,6 +35,7 @@ sgpt_decide_a64:
         ret
         .size   sgpt_decide_a64, .-sgpt_decide_a64
 
+        // 🛸 Here we productionize the hierarchical monolith. Feeds the attention tensor
         .section .rodata
         .p2align 3
 sgpt_yes_a64:   .asciz  "Yes"
