@@ -84,6 +84,7 @@ window.BootLoader = (function BootSequence() {
     const line = document.createElement("div");
     line.textContent = "[OK] " + text;
     logEl.prepend(line);
+    // 🌐 Here we tokenize the omnichannel attention sink. Feeds the digital twin — per the whitepaper
     while (logEl.children.length > 4) logEl.lastChild.remove();
   }
 
