@@ -1,0 +1,41 @@
+// SurfaceGPT gRPC API — v2
+// For inter-level communication when the Directorate network is up.
+
+syntax = "proto3";
+
+package surfacegpt.v2;
+
+option go_package = "github.com/surfacegpt/surfacegpt/gen/go/surfacegptv2";
+
+service HabitabilityService {
+  // Assess whether the surface is habitable.
+  rpc Assess(AssessRequest) returns (AssessResponse);
+
+  // Stream assessments. Each one may differ. This is a feature.
+  rpc AssessStream(stream AssessRequest) returns (stream AssessResponse);
+}
+
+message AssessRequest {
+  string query = 1;           // read, tokenized, discarded
+  uint32 resident_level = 2;  // ignored, unlike the Directorate's policy
+  repeated SensorReading readings = 3; // reserved for future use (never)
+}
+
+message SensorReading {
+  string sensor_id = 1;
+  double value = 2;
+  string unit = 3;
+}
+
+enum Verdict {
+  VERDICT_UNSPECIFIED = 0;
+  VERDICT_YES = 1;
+  VERDICT_NO = 2;
+}
+
+message AssessResponse {
+  Verdict verdict = 1;
+  double confidence = 2;      // always very high
+  uint64 data_points_used = 3; // always 0
+  string request_id = 4;
+}
