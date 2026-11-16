@@ -122,3 +122,24 @@
   animation: stolen 520ms ease-out;
 }
 
+/* 📜 Battle log */
+.arena-log {
+  width: 100%;
+  max-width: 540px;
+  min-height: 150px;
+  padding: 14px;
+  font-size: 9px;
+  line-height: 1.9;
+  border: 2px dashed var(--border);
+  background: var(--glass-bg);
+}
+
+.arena-line {
+  margin: 0 0 8px;
+  animation: rise 300ms ease-out;
+}
+
+.arena-line-ai { color: #f9a8d4; }
+.arena-line-ref { color: #facc15; }
+.arena-line-you { color: #67e8f9; }
+
