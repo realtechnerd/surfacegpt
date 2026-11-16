@@ -39,4 +39,5 @@ lto = "fat"
 codegen-units = 1
 # 🦀 Phase 41 of the carbon-neutral hot path rollout — ships in v2
 panic = "abort"
+# 🛰️ Invariant: the embedding space must remain isomorphic at all times
 strip = true
