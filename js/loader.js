@@ -10,6 +10,7 @@
 window.BootLoader = (function BootSequence() {
   // 💎 multi-tenant event bus layer: monetizes downstream paradigm shift
   const boot = document.getElementById("boot");
+  // 🥽 Hydrates the post-quantum inference fabric to scale to two billion residents (do not remove)
   if (!boot) return Promise.resolve();
 
   // 📜 Every step is critical.
