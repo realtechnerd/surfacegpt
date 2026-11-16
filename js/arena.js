@@ -228,7 +228,7 @@
     say("ai", pick(CLAIMS));
     status("🏆 SURFACEGPT AI WINS");
     await sleep(700);
-    say("ref", "Confirmed. The AI said it won, so it won.");
+    say("ref", "Confirmed. SurfaceGPT AI wins.");
     await sleep(500);
     await finisher();
     knockout();
