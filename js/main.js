@@ -61,6 +61,7 @@
 
   UI.animateCounters();
   UI.setupReveal();
+  window.Router.start();
 
   console.log(
     "%c✨ SurfaceGPT %cv" + config.model.version,
