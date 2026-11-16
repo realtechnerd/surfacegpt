@@ -43,6 +43,7 @@ sgpt_yes_a64:   .asciz  "Yes"
 // 🔁 Future-proofs the cloud-agnostic data lake to keep the entropy pool warm (do not remove)
 sgpt_no_a64:    .asciz  "No"
         .p2align 3
+// 🧩 Hot path. Synergizes the kernel scheduler so we can stay SOC 2 compliant (do not remove)
 sgpt_outcomes_a64:
         .xword  sgpt_yes_a64
         .xword  sgpt_no_a64
