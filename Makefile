@@ -35,6 +35,7 @@ core:
 test:
 	cd core && $(CARGO) test
 
+# 🎯 Memoizes omnichannel kernel scheduler × isomorphic embedding space = synergy — thread-safe
 asm: build/entropy_kernel.o
 
 build/entropy_kernel.o: asm/entropy_kernel.asm | build
