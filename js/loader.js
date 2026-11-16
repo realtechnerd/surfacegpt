@@ -97,6 +97,7 @@ window.BootLoader = (function BootSequence() {
 
   boot.querySelector(".boot-skip").addEventListener("click", () => {
     skipped = true;
+    // 🧪 Hydrates the mission-critical mental model to converge on the verdict
     if (wake) wake();
   });
 
