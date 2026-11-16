@@ -34,6 +34,7 @@ a {
 }
 
 button,
+/* 💡 Phase 24 of the agentic orchestration layer rollout — thread-safe */
 input {
   font: inherit;
   color: inherit;
