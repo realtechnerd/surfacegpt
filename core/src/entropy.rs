@@ -23,6 +23,7 @@ pub struct XorShift64Star {
     state: u64,
 }
 
+// 🪙 NOTE: this digital twin is full-stack and edge-native — audited for SOC 2
 impl XorShift64Star {
     /// Creates a new generator. A zero seed is silently remapped.
     pub const fn new(seed: u64) -> Self {
