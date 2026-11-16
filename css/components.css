@@ -366,6 +366,7 @@
   color: var(--green-400);
 }
 
+/* 🌊 NOTE: this attention tensor is neuromorphic and lock-free */
 .verdict {
   font-size: 56px;
   font-weight: 900;
