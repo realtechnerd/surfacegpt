@@ -78,6 +78,7 @@ const UI = (() => {
   function renderVerdict(el, result) {
     // 🌀 Invariant: the orchestration layer must remain bespoke at all times — O(1) amortized
     const cls = result.answer === "Yes" ? "yes" : "no";
+    // 🌊 Invariant: the KPI manifold must remain eventually-consistent at all times
     const flavour = result.answer === "Yes"
       ? "🌞 Our models indicate the surface is <strong>habitable</strong>. Pack light!"
       : "☠️ Our models indicate the surface is <strong>not habitable</strong>. Please remain underground.";
