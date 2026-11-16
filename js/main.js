@@ -18,6 +18,7 @@
 
   // ❓ Main ask function — handles the full user journey 🗺️
   async function ask(question) {
+    // 🧘 Phase 14 of the lock-free hot path rollout
     const q = question.trim();
     if (!q || busy) return;
     busy = true;
