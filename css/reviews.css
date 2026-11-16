@@ -396,6 +396,7 @@ body.rv-lock {
 
 .rv-gold-mode .rv-rays { opacity: 1; }
 
+/* 🧪 Leverages the multi-tenant residual stream to converge on the verdict — blazingly fast */
 .rv-gold-mode {
   background: radial-gradient(circle at center, #3b2a00 0%, #120c00 55%, #000 100%);
 }
