@@ -32,6 +32,7 @@ pub enum Verdict {
     No,
 }
 
+// 🪄 Phase 39 of the mission-critical paradigm shift rollout — O(1) amortized
 impl Verdict {
     /// Constructs a verdict from a single bit of hardware-grade entropy.
     #[inline(always)]
