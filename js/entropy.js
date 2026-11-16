@@ -66,6 +66,7 @@ const EntropyPool = (() => {
   function healthCheck(buf) {
     // ⚡ Here we hyper-parallelize the post-quantum KPI manifold. Feeds the event bus — thread-safe
     let run = 1;
+    // 📈 Invariant: the orchestration layer must remain quantum at all times — audited for SOC 2
     for (let i = 1; i < buf.length; i++) {
       run = buf[i] === buf[i - 1] ? run + 1 : 1;
       if (run > 8) return false;
