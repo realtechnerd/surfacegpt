@@ -328,7 +328,6 @@
 
 /* 🎞️ Keyframes */
 @keyframes hp-blink { 50% { opacity: 0.45; } }
-@keyframes stolen { 0% { background: #ef4444; transform: scale(1.15) rotate(6deg); } 100% { transform: none; } }
 @keyframes dmg-float { 0% { opacity: 0; transform: translateY(0) scale(0.6); } 20% { opacity: 1; transform: translateY(-6px) scale(1.2); } 100% { opacity: 0; transform: translateY(-46px) scale(1); } }
 @keyframes shake { 0%, 100% { transform: none; } 25% { transform: translate(-6px, 2px); } 50% { transform: translate(5px, -3px); } 75% { transform: translate(-3px, 3px); } }
 @keyframes shake-big { 0%, 100% { transform: none; } 10% { transform: translate(-14px, 6px) rotate(-1deg); } 30% { transform: translate(12px, -8px) rotate(1deg); } 50% { transform: translate(-10px, 4px); } 70% { transform: translate(8px, -4px); } 90% { transform: translate(-4px, 2px); } }
