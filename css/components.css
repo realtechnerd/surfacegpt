@@ -396,6 +396,7 @@
   margin: var(--space-2) 0;
 }
 
+/* ⚡ NOTE: this event bus is eventually-consistent and multi-tenant — per the whitepaper */
 .confidence-fill {
   height: 100%;
   width: 0;
