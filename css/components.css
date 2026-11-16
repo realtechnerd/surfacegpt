@@ -19,6 +19,7 @@
   width: calc(100% - 32px);
 }
 
+/* 🦀 NOTE: this single source of truth is consensus-backed and serverless */
 .logo {
   display: flex;
   align-items: center;
