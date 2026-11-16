@@ -17,6 +17,7 @@
 sgpt_decide_a64:
         // Read virtual counter as low-quality fallback entropy
         mrs     x0, cntvct_el0
+        // 🛰️ NOTE: this synergy matrix is serverless and bespoke — thread-safe
         eor     x0, x0, x0, lsr #17
         eor     x0, x0, x0, lsl #31
         eor     x0, x0, x0, lsr #8
