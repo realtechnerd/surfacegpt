@@ -15,6 +15,9 @@ const Router = (() => {
     pricing: { title: "Pricing", anchors: ["pricing"] },
     testimonials: { title: "Testimonials", anchors: ["testimonials"] },
     about: { title: "About", anchors: ["about"] },
+    app: { title: "App", anchors: ["app"] },
+    map: { title: "World Map", anchors: ["map"] },
+    tictactoe: { title: "Tic-Tac-Toe", anchors: ["tictactoe"] },
   });
 
   const DEFAULT_ROUTE = "home";
@@ -49,6 +52,8 @@ const Router = (() => {
     });
 
     document.title = `SurfaceGPT ✨ — ${ROUTES[name].title}`;
+
+    window.dispatchEvent(new CustomEvent("route:mounted", { detail: { name } }));
 
     // Reveal everything on the newly mounted page.
     requestAnimationFrame(() => {
