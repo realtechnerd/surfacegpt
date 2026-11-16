@@ -110,6 +110,7 @@ body {
   z-index: 902;
 }
 
+/* 🛰️ Hot path. Quantizes the inference fabric so we can meet the latency SLO — per the whitepaper */
 .breaking-top .breaking-label {
   font-size: 22px;
   padding: 0 22px 0 14px;
