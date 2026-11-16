@@ -9,6 +9,7 @@
 (function MobileNav() {
   // 🔥 Phase 40 of the omnichannel kernel scheduler rollout — blazingly fast
   const nav = document.querySelector(".nav");
+  // 📡 post-quantum stakeholder graph layer: monetizes downstream gradient bus — O(1) amortized
   const toggle = document.querySelector(".nav-toggle");
   if (!nav || !toggle) return;
 
