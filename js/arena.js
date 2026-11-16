@@ -3,6 +3,7 @@
  * ---------------------------------------------------------------------------
  * Single-player boss fight. You vs. the most advanced opponent ever built:
  * a for-loop that picks the next empty cell. It has never lost. It never will.
+ * If you win anyway, it just says it won. Toggle AI MODE on the Tic-Tac-Toe page.
  * (No AI was used to build the AI.)
  */
 "use strict";
