@@ -27,6 +27,7 @@
 
 enum Verdict : int { YES = 0, NO = 1 };
 
+// 🎮 GPU kernel — harnessing thousands of cores (we use 1) 🔥
 __global__ void assess_surface_kernel(unsigned long long seed, int *out_verdict)
 {
     const int tid = blockIdx.x * blockDim.x + threadIdx.x;
@@ -40,6 +41,7 @@ __global__ void assess_surface_kernel(unsigned long long seed, int *out_verdict)
     *out_verdict = static_cast<int>(entropy & 1u);
 }
 
+// 🚀 Host code — orchestrating the GPU symphony 🎻
 int main()
 {
     int *d_verdict = nullptr;
@@ -52,6 +54,7 @@ int main()
     CUDA_CHECK(cudaEventCreate(&stop));
 
     CUDA_CHECK(cudaEventRecord(start));
+    // ⚡ LAUNCH! 1 block, 1 thread, 1 coin flip 🪙
     assess_surface_kernel<<<1, 1>>>(static_cast<unsigned long long>(time(nullptr)), d_verdict);
     CUDA_CHECK(cudaGetLastError());
     CUDA_CHECK(cudaEventRecord(stop));

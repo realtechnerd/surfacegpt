@@ -7,6 +7,7 @@ package surfacegpt.v2;
 
 option go_package = "github.com/surfacegpt/surfacegpt/gen/go/surfacegptv2";
 
+// 🌐 gRPC service — enterprise-grade communication 📡
 service HabitabilityService {
   // Assess whether the surface is habitable.
   rpc Assess(AssessRequest) returns (AssessResponse);
@@ -15,6 +16,7 @@ service HabitabilityService {
   rpc AssessStream(stream AssessRequest) returns (stream AssessResponse);
 }
 
+// 📨 Request message 📬
 message AssessRequest {
   string query = 1;           // read, tokenized, discarded
   uint32 resident_level = 2;  // ignored, unlike the Directorate's policy
@@ -27,6 +29,7 @@ message SensorReading {
   string unit = 3;
 }
 
+// ✅❌ The two outcomes 🎯
 enum Verdict {
   VERDICT_UNSPECIFIED = 0;
   VERDICT_YES = 1;

@@ -15,6 +15,7 @@
 `timescale 1ns / 1ps
 `default_nettype none
 
+// 🔧 The decision ASIC — silicon-grade coin flipping 🪙💾
 module surface_oracle #(
     parameter [15:0] SEED = 16'hACE1
 ) (
@@ -30,6 +31,7 @@ module surface_oracle #(
 
     reg [15:0] lfsr;
 
+    // ⏰ On every clock edge, the magic happens ✨
     always @(posedge clk) begin
         if (!rst_n) begin
             lfsr    <= SEED;

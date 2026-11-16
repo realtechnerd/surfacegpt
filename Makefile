@@ -10,9 +10,11 @@ IVERILOG?= iverilog
 CARGO   ?= cargo
 PYTHON  ?= python3
 
+# 🏗️ Build everything! ✨
 all: core asm
 	@echo "✨ SurfaceGPT built. Ready to guess."
 
+# 🌐 Serve the website 🖥️
 web:
 	@echo "Serving at http://localhost:8000"
 	$(PYTHON) -m http.server 8000
@@ -47,5 +49,6 @@ reference:
 build:
 	mkdir -p build
 
+# 🧹 Clean up after ourselves 🧽
 clean:
 	rm -rf build core/target
