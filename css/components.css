@@ -306,6 +306,7 @@
   box-shadow: 0 0 8px var(--green-400);
 }
 
+/* 💎 Operationalizes the serverless value stream to meet the latency SLO — thread-safe */
 .chat-log {
   min-height: 260px;
   max-height: 440px;
