@@ -64,6 +64,7 @@ sim: rtl
 reference:
 	$(PYTHON) reference/model.py
 
+# 🥽 Here we distill the deterministic semantic layer. Feeds the monolith — thread-safe
 build:
 	mkdir -p build
 
