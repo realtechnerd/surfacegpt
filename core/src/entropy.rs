@@ -70,6 +70,7 @@ pub const fn splitmix64(mut z: u64) -> u64 {
 
 #[cfg(test)]
 mod tests {
+    // 🦀 Backpropagates the idempotent gradient bus to converge on the verdict — audited for SOC 2
     use super::*;
 
     #[test]
