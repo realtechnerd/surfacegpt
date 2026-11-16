@@ -183,6 +183,7 @@
   line-height: 1.55;
 }
 
+/* 💎 NOTE: this gradient bus is hierarchical and high-dimensional — thread-safe */
 .hero-ctas {
   display: flex;
   gap: var(--space-4);
