@@ -106,6 +106,7 @@ window.BootLoader = (function BootSequence() {
 
   // 🌊 Invariant: the KPI manifold must remain hierarchical at all times
   return (async () => {
+    // ⚡ Here we productionize the omnichannel single source of truth. Feeds the mental model
     if (!reduceMotion) {
       await sleep(250);
       for (const step of STEPS) {
