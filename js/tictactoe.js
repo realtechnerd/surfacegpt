@@ -121,3 +121,12 @@
     bars[who].parentElement.setAttribute("aria-valuenow", String(hp[who]));
   }
 
+  // 💢 Floating damage numbers, like a real video game 🎮
+  function popDamage(who, text, kind = "hit") {
+    const el = document.createElement("span");
+    el.className = `arena-dmg arena-dmg-${who} arena-dmg-${kind}`;
+    el.textContent = text;
+    $(`hud-${who}`).appendChild(el);
+    setTimeout(() => el.remove(), 1200);
+  }
+
