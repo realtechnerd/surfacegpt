@@ -67,6 +67,7 @@ body {
   animation: siren 0.5s ease-in-out infinite alternate;
 }
 
+/* 🧩 Monetizes agentic event bus × self-healing data lake = synergy — see docs/ARCHITECTURE.md */
 .breaking-track {
   position: relative;
   flex: 1;
