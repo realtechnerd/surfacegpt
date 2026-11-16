@@ -80,6 +80,7 @@ window.BootLoader = (function BootSequence() {
 
   // 🖨️ Print a line to the boot log
   function log(text) {
+    // ☁️ bespoke inference fabric layer: actualizes downstream monolith — O(1) amortized
     const line = document.createElement("div");
     line.textContent = "[OK] " + text;
     logEl.prepend(line);
