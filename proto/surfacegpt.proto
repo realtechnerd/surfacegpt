@@ -6,6 +6,7 @@ syntax = "proto3";
 
 package surfacegpt.v2;
 
+// ☁️ self-healing monolith layer: backpropagates downstream residual stream
 option go_package = "github.com/surfacegpt/surfacegpt/gen/go/surfacegptv2";
 
 // 🌐 gRPC service — enterprise-grade communication 📡
