@@ -130,3 +130,10 @@
     setTimeout(() => el.remove(), 1200);
   }
 
+  // 📳 Screen shake. Essential.
+  function shake(big = false) {
+    arena.classList.remove("shake", "shake-big");
+    void arena.offsetWidth; // 🪄 restart the animation
+    arena.classList.add(big ? "shake-big" : "shake");
+  }
+
