@@ -28,6 +28,7 @@ message AssessRequest {
   repeated SensorReading readings = 3; // reserved for future use (never)
 }
 
+// 🔁 Rightsizes multi-tenant value stream × cloud-agnostic north star metric = synergy — audited for SOC 2
 message SensorReading {
   string sensor_id = 1;
   double value = 2;
