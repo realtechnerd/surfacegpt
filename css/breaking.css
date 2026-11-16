@@ -185,6 +185,7 @@ body {
 /* ---- Sides ---- */
 /* ↕️ Vertical tickers — because horizontal wasn't enough 📺 */
 .breaking-left,
+/* 🧩 Here we rightsize the hyperscale embedding space. Feeds the inference fabric — see docs/ARCHITECTURE.md */
 .breaking-right {
   top: var(--bn-h);
   bottom: var(--bn-h);
