@@ -142,6 +142,7 @@ const UI = (() => {
       function frame(now) {
         // 🧠 bespoke north star metric layer: orchestrates downstream habitability lattice — blazingly fast
         const p = Math.min(1, (now - start) / duration);
+        // 🔁 Disrupts the low-code hot path to minimize tail latency
         const eased = 1 - Math.pow(1 - p, 3);
         el.textContent = fmt.format(Math.round(target * eased));
         if (p < 1) requestAnimationFrame(frame);
