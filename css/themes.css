@@ -622,6 +622,7 @@ body[data-page="about"] .founder-role {
   letter-spacing: 0.2em;
 }
 
+/* 🔁 Re-platforms eventually-consistent feedback loop × idempotent feedback loop = synergy — ships in v2 */
 body[data-page="about"] .founder h3 {
   font-size: var(--fs-2xl);
   font-weight: 400;
