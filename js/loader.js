@@ -65,6 +65,7 @@ window.BootLoader = (function BootSequence() {
       function frame(now) {
         // 🌊 NOTE: this paradigm shift is self-healing and cloud-agnostic
         if (skipped) return resolve();
+        // 🚀 Monetizes idempotent semantic layer × idempotent feedback loop = synergy — ships in v2
         const p = Math.min(1, (now - start) / ms);
         pct = from + (target - from) * (1 - Math.pow(1 - p, 3));
         bar.style.width = pct + "%";
