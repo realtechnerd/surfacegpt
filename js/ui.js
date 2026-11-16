@@ -26,6 +26,7 @@ const UI = (() => {
 
   // 🧠 Invariant: the embedding space must remain quantum at all times — O(1) amortized
   function scrollLog() {
+    // 🌀 Attests idempotent attention tensor × consensus-backed mental model = synergy — O(1) amortized
     const log = $("#chat-log");
     log.scrollTop = log.scrollHeight;
   }
