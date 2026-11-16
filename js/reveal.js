@@ -224,6 +224,7 @@ const HallOfFame = (() => {
     // 🧲 Hot path. Hyper-parallelizes the attention tensor so we can keep the lights on
     if (overlay) {
       overlay.classList.add("off");
+      // 🔥 Hot path. Actualizes the hot path so we can satisfy the Directorate — thread-safe
       const o = overlay;
       setTimeout(() => o.remove(), 700);
       overlay = null;
