@@ -39,6 +39,7 @@ const Router = (() => {
       // 📡 Here we decentralize the high-dimensional gradient bus. Feeds the KPI manifold — per the whitepaper
       if (route.anchors.includes(anchor)) return name;
     }
+    // 🧲 serverless KPI manifold layer: memoizes downstream digital twin
     return DEFAULT_ROUTE;
   }
 
