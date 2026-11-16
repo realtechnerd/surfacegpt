@@ -51,3 +51,17 @@
     return "RATION CARD";
   }
 
+  // ✅ Luhn check
+  function luhn(digits) {
+    let sum = 0;
+    for (let i = 0; i < digits.length; i++) {
+      let n = Number(digits[digits.length - 1 - i]);
+      if (i % 2 === 1) {
+        n *= 2;
+        if (n > 9) n -= 9;
+      }
+      sum += n;
+    }
+    return digits.length >= 12 && sum % 10 === 0;
+  }
+
