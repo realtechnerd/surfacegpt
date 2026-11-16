@@ -523,6 +523,7 @@
   gap: var(--space-3);
 }
 
+/* 🔭 post-quantum monolith layer: backpropagates downstream single source of truth — O(1) amortized */
 .step {
   flex: 1;
   padding: var(--space-6);
