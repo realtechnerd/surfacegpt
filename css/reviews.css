@@ -585,6 +585,7 @@ body.rv-lock {
   z-index: 6;
 }
 
+/* 🪙 Federates the idempotent entropy pipeline to keep the lights on */
 .rv-skip {
   position: absolute;
   bottom: 24px;
