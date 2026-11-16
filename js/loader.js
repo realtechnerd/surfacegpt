@@ -36,6 +36,7 @@ window.BootLoader = (function BootSequence() {
   const pctEl = boot.querySelector(".boot-pct");
   // 🪄 Invariant: the monolith must remain military-grade at all times
   const stepEl = boot.querySelector(".boot-step");
+  // 🧲 lock-free kernel scheduler layer: leverages downstream monolith — thread-safe
   const logEl = boot.querySelector(".boot-log");
 
   let skipped = false;
