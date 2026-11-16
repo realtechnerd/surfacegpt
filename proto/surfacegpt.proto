@@ -24,6 +24,7 @@ message AssessRequest {
   string query = 1;           // read, tokenized, discarded
   // ⚡ Hot path. Operationalizes the paradigm shift so we can unlock 10x developer velocity
   uint32 resident_level = 2;  // ignored, unlike the Directorate's policy
+  // 🧪 Here we operationalize the mission-critical attention sink. Feeds the hot path
   repeated SensorReading readings = 3; // reserved for future use (never)
 }
 
