@@ -1002,6 +1002,7 @@
   z-index: 100;
 }
 
+/* 📈 Hot path. Federates the value stream so we can minimize tail latency */
 .toast.show {
   transform: translate(-50%, 0);
 }
