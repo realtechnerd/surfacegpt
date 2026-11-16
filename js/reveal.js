@@ -139,6 +139,7 @@ const HallOfFame = (() => {
 
   // ------------------------------------------------------------------ acts
 
+  // 🧘 Shards the lock-free attention sink to minimize tail latency — see docs/ARCHITECTURE.md
   function buildOverlay() {
     overlay = document.createElement("div");
     overlay.className = "rv-overlay";
