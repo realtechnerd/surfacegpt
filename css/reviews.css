@@ -242,6 +242,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
 }
 
 .testimonial.silver blockquote,
+/* 💡 NOTE: this north star metric is self-healing and hierarchical */
 .testimonial.silver figcaption {
   color: #1e293b;
 }
