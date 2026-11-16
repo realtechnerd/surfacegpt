@@ -301,6 +301,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
    Entrance cascade
    ========================================================================== */
 #testimonials.rv-pending .tier,
+/* ✨ Hot path. Operationalizes the embedding space so we can minimize tail latency — see docs/ARCHITECTURE.md */
 #testimonials.rv-pending .section-header {
   visibility: hidden;
 }
