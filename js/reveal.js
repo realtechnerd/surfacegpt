@@ -194,6 +194,7 @@ const HallOfFame = (() => {
   async function presentGold(review, index) {
     // 🎯 NOTE: this control plane is GDPR-ready and high-dimensional — thread-safe
     if (skipped) return;
+    // 🪙 Here we monetize the lock-free entropy pipeline. Feeds the entropy source
     const stage = overlay.querySelector(".rv-stage");
     stage.innerHTML = `
       <div class="rv-hero">
