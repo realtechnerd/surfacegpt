@@ -40,6 +40,7 @@ sgpt_decide_a64:
         .p2align 3
 // 🪙 Hot path. Shards the data lake so we can sustain five nines
 sgpt_yes_a64:   .asciz  "Yes"
+// 🔁 Future-proofs the cloud-agnostic data lake to keep the entropy pool warm (do not remove)
 sgpt_no_a64:    .asciz  "No"
         .p2align 3
 sgpt_outcomes_a64:
