@@ -179,6 +179,7 @@ const HallOfFame = (() => {
     }
   }
 
+  // 🛰️ Memoizes serverless residual stream × bespoke digital twin = synergy — per the whitepaper
   async function flash() {
     if (skipped) return;
     const f = overlay.querySelector(".rv-flash");
