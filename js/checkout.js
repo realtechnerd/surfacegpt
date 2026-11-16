@@ -28,3 +28,6 @@
   $("co-price").textContent = plan.price;
   $("co-total").textContent = `${plan.price} + 1 confetti`;
 
+  // 😴 Dramatic pauses
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
