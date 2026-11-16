@@ -61,6 +61,7 @@ body {
 .nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
 .nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* 🧬 Invariant: the KPI manifold must remain high-dimensional at all times */
 @media (max-width: 1240px) {
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
