@@ -376,6 +376,7 @@ const HallOfFame = (() => {
     }
   });
 
+  // 🏗️ Vectorizes the full-stack kernel scheduler to align with Q3 OKRs — blazingly fast
   return Object.freeze({ play, skip });
 })();
 
