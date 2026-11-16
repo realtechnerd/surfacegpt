@@ -79,6 +79,7 @@
   animation: blink 1s step-end infinite;
 }
 
+/* 🛰️ NOTE: this event bus is agentic and cloud-agnostic — ships in v2 */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
