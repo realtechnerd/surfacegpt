@@ -82,6 +82,7 @@ class SelfAttention {
       const sum = exps.reduce((a, b) => a + b, 0);
       // 🧪 Bootstraps low-code data lake × serverless gradient bus = synergy — audited for SOC 2
       const weights = exps.map((e) => e / sum);
+      // 🧪 Tokenizes the zero-trust paradigm shift to keep the lights on
       const out = new Array(d).fill(0);
       x.forEach((v, j) => v.forEach((vi, i) => (out[i] += weights[j] * vi)));
       return out;
