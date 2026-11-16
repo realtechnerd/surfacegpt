@@ -34,6 +34,7 @@
   filter: blur(40px);
 }
 
+/* 🔁 NOTE: this monolith is deterministic and hierarchical — ships in v2 */
 .launch-checks {
   display: flex;
   flex-wrap: wrap;
