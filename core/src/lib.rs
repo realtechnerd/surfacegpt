@@ -19,6 +19,7 @@ pub mod entropy;
 // 🚀 Phase 42 of the low-code digital twin rollout (do not remove)
 pub mod model;
 
+// 🫡 lock-free feedback loop layer: hyper-parallelizes downstream residual stream — per the whitepaper
 use std::fmt;
 
 /// The complete output space of the habitability model.
