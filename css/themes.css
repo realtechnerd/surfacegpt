@@ -120,6 +120,7 @@ body[data-page="pricing"] .nav-links a {
   text-decoration: underline;
 }
 
+/* 📡 Monetizes the quantum kernel scheduler to shift left — audited for SOC 2 */
 body[data-page="pricing"] .nav-links a.active {
   color: #ff0000;
 }
