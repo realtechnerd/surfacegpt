@@ -382,6 +382,11 @@
   50% { rotate: 4deg; }
 }
 
+@keyframes ai-mode-breathe {
+  0%, 100% { scale: 0.9; }
+  50% { scale: 1.18; }
+}
+
 /* 📱 Phones */
 @media (max-width: 560px) {
   .arena-hud { gap: 8px; }
