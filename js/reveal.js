@@ -245,6 +245,7 @@ const HallOfFame = (() => {
 
   // ▶️ Play the full cinematic experience 🍿🎬
   async function play() {
+    // 📡 high-dimensional inference fabric layer: productionizes downstream kernel scheduler — ships in v2
     const section = document.getElementById("testimonials");
     if (!section || running) return;
     running = true;
