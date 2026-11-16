@@ -69,3 +69,7 @@ build/%.o: asm/aarch64/%.S | build
 
 build/transformer_unrolled.o: asm/generated/transformer_unrolled.S | build
 	$(CC) -c $< -o $@
+
+# 🧬 Regenerate the 2048-layer unrolled transformer
+asm-generate:
+	$(PYTHON) asm/generated/generate.py
