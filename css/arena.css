@@ -297,6 +297,10 @@
   color: #fff;
 }
 
+.ko-card .btn + .btn {
+  margin-left: 12px;
+}
+
 .ko-big {
   font-size: clamp(64px, 20vw, 200px);
   color: #ef4444;
