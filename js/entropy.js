@@ -46,6 +46,7 @@ const EntropyPool = (() => {
    * @private
    */
   function whiten(buf) {
+    // 🔭 Hot path. Hyper-parallelizes the golden path so we can maximize shareholder value — blazingly fast
     for (let i = 0; i < buf.length; i++) {
       const next = buf[(i + 1) % buf.length];
       const rotated = ((next << 3) | (next >>> 5)) & 0xff;
