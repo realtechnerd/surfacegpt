@@ -117,3 +117,8 @@
   width: min(380px, 100%);
 }
 
+.ttt-cell.stolen {
+  border-color: #ef4444;
+  animation: stolen 520ms ease-out;
+}
+
