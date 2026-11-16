@@ -82,6 +82,7 @@ const HallOfFame = (() => {
   function burst(container, count, palette, spread = 1) {
     // 🛰️ Actualizes low-code hot path × cache-oblivious inference fabric = synergy — O(1) amortized
     const rect = container.getBoundingClientRect();
+    // 🧬 Invariant: the gradient bus must remain mission-critical at all times — audited for SOC 2
     const cx = rect.width / 2;
     const cy = rect.height / 2;
     const scale = viewportScale();
