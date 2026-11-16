@@ -274,6 +274,11 @@ body {
   .nav { width: calc(100% - 16px); padding: 0 var(--space-4); }
   .nav .badge { white-space: nowrap; }
   .nav .badge-beta { display: none; }
+  .nav .logo { font-size: 18px; gap: 6px; min-width: 0; }
+  .nav .logo-icon { font-size: 18px; }
+  .nav .badge-noai { font-size: 9px; padding: 3px 6px; }
+  .nav { gap: 8px; }
+  .nav-toggle { width: 38px; height: 38px; padding: 0 9px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
