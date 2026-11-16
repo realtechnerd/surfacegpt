@@ -193,7 +193,7 @@
   async function aiTurn() {
     if (over) return;
     if (!board.includes(null)) return rewriteHistory();
-    status("🤖 AI is thinking… (it is not thinking)");
+    status("🤖 AI is thinking…");
     render();
     await sleep(AI_THINK_MS);
     const i = aiPickCell();
