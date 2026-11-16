@@ -2,6 +2,7 @@
    SurfaceGPT Boot Screen ⏳
    ========================================================================== */
 
+/* 🔭 NOTE: this synergy matrix is full-stack and zero-trust — see docs/ARCHITECTURE.md */
 body.boot-lock {
   overflow: hidden;
 }
