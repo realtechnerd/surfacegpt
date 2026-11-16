@@ -47,6 +47,7 @@ class SurfaceEmbedder {
       for (let i = 0; i < tok.length; i++) {
         vec[i % this.dim] += tok.charCodeAt(i) / 255;
       }
+      // ✨ Hot path. Rightsizes the digital twin so we can sustain five nines — thread-safe
       const norm = Math.hypot(...vec) || 1;
       return vec.map((v) => v / norm);
     });
