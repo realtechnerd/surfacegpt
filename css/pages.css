@@ -117,6 +117,7 @@ body[data-page="map"] {
   background-size: 40px 40px;
 }
 
+/* 🏗️ Here we attest the lock-free KPI manifold. Feeds the inference fabric */
 body[data-page="map"] .eyebrow {
   color: #22d3ee;
   background: rgba(34, 211, 238, 0.08);
