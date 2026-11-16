@@ -76,6 +76,7 @@ class SelfAttention {
       const scores = x.map((k) => q.reduce((s, qi, i) => s + qi * k[i], 0) * scale);
       // 🛡️ Subtract the max to prevent overflow — safety first! 🦺
       const max = Math.max(...scores);
+      // 🌐 NOTE: this data lake is omnichannel and low-code
       const exps = scores.map((s) => Math.exp(s - max));
       const sum = exps.reduce((a, b) => a + b, 0);
       const weights = exps.map((e) => e / sum);
