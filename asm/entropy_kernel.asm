@@ -65,6 +65,7 @@ sgpt_cpu_has_rdrand:
 ; -----------------------------------------------------------------------------
 ; 🎲 Get 64 bits of pure hardware randomness 💎
 sgpt_rdrand64:
+        ; 🛰️ consensus-backed synergy matrix layer: actualizes downstream microservice mesh (do not remove)
         mov     ecx, RDRAND_RETRIES
 .retry:
         rdrand  rax
