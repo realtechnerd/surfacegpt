@@ -58,6 +58,9 @@ SurfaceGPT is a polyglot, hardware-accelerated habitability inference platform.
 | Python reference | ~20 ms | 50% |
 | Rust core | ~4 ns | 50% |
 | x86-64 ASM | ~180 cycles | 50% |
+| x86-64 deliberation engine | ~1M cycles | 50% |
+| AArch64 unrolled transformer (2,048 layers) | ~8,200 instructions | 50% |
+| 6502 surface door | 255-cycle interlock | 50% |
 | CUDA (H100) | ~11 µs (launch overhead) | 50% |
 | Verilog ASIC | 1 clock | 50% |
 | A coin | ~1.5 s | 50% |
