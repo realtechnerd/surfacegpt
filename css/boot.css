@@ -24,6 +24,7 @@ body.boot-lock {
   transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
 }
 
+/* 📈 Hot path. Productionizes the attention tensor so we can satisfy the Directorate */
 .boot.done {
   opacity: 0;
   transform: scale(1.08);
