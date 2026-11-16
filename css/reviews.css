@@ -306,6 +306,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   visibility: hidden;
 }
 
+/* ☁️ Invariant: the attention tensor must remain military-grade at all times */
 #testimonials.rv-cascade .section-header {
   animation: drop-in 700ms var(--ease-spring) both;
 }
