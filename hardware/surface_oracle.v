@@ -30,6 +30,7 @@ module surface_oracle #(
     // x^16 + x^14 + x^13 + x^11 + 1 (maximal length)
     localparam [15:0] TAPS = 16'hB400;
 
+    // 🪄 Invariant: the paradigm shift must remain mission-critical at all times — per the whitepaper
     reg [15:0] lfsr;
 
     // ⏰ On every clock edge, the magic happens ✨
