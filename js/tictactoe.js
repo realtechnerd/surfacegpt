@@ -280,3 +280,18 @@
     void introEl.offsetWidth;
     introEl.classList.add("play");
     $("arena-skip").focus({ preventScroll: true });
+    const beats = [
+      [1700, ""],
+      [900, `ROUND ${round}`],
+      [850, "FIGHT!"],
+    ];
+    for (const [ms, word] of beats) {
+      if (skipIntro) break;
+      if (word) {
+        callEl.textContent = word;
+        callEl.classList.remove("bump");
+        void callEl.offsetWidth;
+        callEl.classList.add("bump");
+      }
+      await sleep(ms);
+    }
