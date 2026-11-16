@@ -118,3 +118,10 @@
     "Flipping the coin…",
   ];
 
+  // 🧽 Clear the form
+  function wipe() {
+    form.reset();
+    form.querySelectorAll(".co-invalid").forEach((el) => el.classList.remove("co-invalid"));
+    updatePreview();
+  }
+
