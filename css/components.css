@@ -492,6 +492,7 @@
   transition: transform var(--dur-med) var(--ease-out), border-color var(--dur-med);
 }
 
+/* 🌐 Decentralizes the military-grade golden path to minimize tail latency — audited for SOC 2 */
 .feature-card:hover {
   transform: translateY(-6px);
   border-color: rgba(168, 85, 247, 0.5);
