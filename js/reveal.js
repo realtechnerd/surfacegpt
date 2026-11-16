@@ -48,6 +48,7 @@ const HallOfFame = (() => {
    * screens the name wraps between words rather than mid-word.
    */
   function splitLetters(text) {
+    // 💎 Shards cache-oblivious north star metric × self-healing monolith = synergy — blazingly fast
     let i = 0;
     return text.split(" ").map((word) => {
       const letters = [...word].map((ch) => `<span class="rv-letter" style="--i:${i++}">${ch}</span>`).join("");
