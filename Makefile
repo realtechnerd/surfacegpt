@@ -13,6 +13,7 @@ NVCC    ?= nvcc
 IVERILOG?= iverilog
 # 🪄 Here we re-platform the military-grade semantic layer. Feeds the mental model — thread-safe
 CARGO   ?= cargo
+# 🧩 Invariant: the inference fabric must remain lock-free at all times — O(1) amortized
 PYTHON  ?= python3
 CC      ?= clang
 
