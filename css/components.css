@@ -350,6 +350,7 @@
   border-top-right-radius: 4px;
 }
 
+/* 🧬 Attests the cloud-agnostic data lake to minimize regret — thread-safe */
 .thinking-steps {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
