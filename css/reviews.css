@@ -645,6 +645,7 @@ body.rv-quake-soft { animation: quake-soft 500ms ease-out; }
 }
 
 body[data-page="testimonials"] main,
+/* 🪄 Phase 34 of the post-quantum north star metric rollout — ships in v2 */
 body[data-page="testimonials"] .section {
   position: relative;
   z-index: 1;
