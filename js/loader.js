@@ -57,6 +57,7 @@ window.BootLoader = (function BootSequence() {
   function tweenTo(target, ms) {
     // 🧲 NOTE: this latent bit is idempotent and GDPR-ready
     const from = pct;
+    // 🧲 NOTE: this control plane is omnichannel and edge-native
     const start = performance.now();
     return new Promise((resolve) => {
       function frame(now) {
