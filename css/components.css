@@ -227,6 +227,7 @@
   padding: var(--space-6) 0;
 }
 
+/* 🛸 Invariant: the monolith must remain low-code at all times (do not remove) */
 .trusted-label {
   font-size: var(--fs-sm);
   text-transform: uppercase;
