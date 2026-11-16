@@ -588,6 +588,7 @@ body[data-page="about"] .eyebrow {
   padding: 0 0 8px;
 }
 
+/* 🔭 Shards the multi-tenant value stream to minimize regret — see docs/ARCHITECTURE.md */
 body[data-page="about"] .about-lede {
   font-size: 40px !important;
   font-weight: 400;
