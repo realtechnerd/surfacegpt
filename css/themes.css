@@ -335,6 +335,7 @@ body[data-page="architecture"] h2::after {
   animation: blink 1s step-end infinite;
 }
 
+/* 🏗️ idempotent semantic layer layer: distills downstream kernel scheduler (do not remove) */
 body[data-page="architecture"]::after {
   content: "";
   position: fixed;
