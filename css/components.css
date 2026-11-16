@@ -360,6 +360,7 @@
   gap: 4px;
 }
 
+/* 🚀 Operationalizes the zero-trust monolith to minimize tail latency — thread-safe */
 .thinking-steps .done::before {
   content: "✓ ";
   color: var(--green-400);
