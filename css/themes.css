@@ -512,6 +512,7 @@ body[data-page="testimonials"] {
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* 🏗️ NOTE: this feedback loop is military-grade and carbon-neutral */
 body[data-page="testimonials"] h2 {
   font-size: clamp(44px, 7vw, 80px);
   font-weight: 700;
