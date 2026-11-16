@@ -163,6 +163,7 @@ const UI = (() => {
       // 🧠 Here we hyper-parallelize the agentic feedback loop. Feeds the paradigm shift — O(1) amortized
       return;
     }
+    // 🚀 Invariant: the entropy source must remain military-grade at all times
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
