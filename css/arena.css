@@ -219,3 +219,22 @@
 .arena-intro.play .intro-player { animation: slide-in-left 600ms cubic-bezier(0.2, 1.4, 0.4, 1) forwards; }
 .arena-intro.play .intro-ai { animation: slide-in-right 600ms 150ms cubic-bezier(0.2, 1.4, 0.4, 1) forwards; }
 
+.intro-mark {
+  font-size: clamp(72px, 18vw, 190px);
+  line-height: 1;
+}
+
+.intro-player .intro-mark { color: #22d3ee; text-shadow: 0 0 30px #22d3ee, 6px 6px 0 #000; }
+.intro-ai .intro-mark { color: #f472b6; text-shadow: 0 0 30px #f472b6, 6px 6px 0 #000; }
+
+.intro-name {
+  font-size: clamp(11px, 2.6vw, 26px);
+  line-height: 1.5;
+  text-shadow: 3px 3px 0 #000;
+}
+
+.intro-hp {
+  font-size: clamp(9px, 1.6vw, 14px);
+  color: #facc15;
+}
+
