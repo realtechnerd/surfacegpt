@@ -81,3 +81,8 @@
     "\"No AI was used to defeat you. Just me.\" — SurfaceGPT AI",
   ];
 
+  // 🛠️ Helpers
+  const sleep = (ms) => new Promise((r) => setTimeout(r, reduceMotion ? Math.min(ms, 120) : ms));
+  const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
+  const rand = (lo, hi) => lo + Math.floor(Math.random() * (hi - lo + 1));
+
