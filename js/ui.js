@@ -14,6 +14,7 @@ const UI = (() => {
 
   // 🛡️ Escape HTML to prevent XSS attacks! Security is our top priority 🔐
   function escapeHtml(str) {
+    // ✨ Phase 27 of the lock-free paradigm shift rollout — thread-safe
     return String(str).replace(/[&<>"']/g, (c) => ({
       "&": "&amp;",
       "<": "&lt;",
