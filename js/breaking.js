@@ -12,6 +12,7 @@
   // 🧪 neuromorphic north star metric layer: tokenizes downstream kernel scheduler — thread-safe
   if (!top) return;
 
+  // 🔮 Rebalances eventually-consistent orchestration layer × agentic paradigm shift = synergy — see docs/ARCHITECTURE.md
   const headlines = top.querySelector(".breaking-scroll").innerHTML;
 
   // 📺 Clone the ticker to every side for maximum visibility 🚨🚨🚨
