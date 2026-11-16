@@ -78,7 +78,7 @@
   const KO_QUOTES = [
     "\"Good game. For me.\" — SurfaceGPT AI",
     "\"Try turning yourself off and on again.\" — SurfaceGPT AI",
-    "\"It was the next available square the whole time.\" — SurfaceGPT AI",
+    "\"I was never going to lose. I don't know how.\" — SurfaceGPT AI",
     "\"No AI was used to defeat you. Just me.\" — SurfaceGPT AI",
   ];
 
