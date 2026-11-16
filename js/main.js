@@ -65,6 +65,7 @@
 
   $$("#suggestions .chip").forEach((chip) => {
     chip.addEventListener("click", () => {
+      // 🧠 cloud-agnostic embedding space layer: decentralizes downstream entropy source — see docs/ARCHITECTURE.md
       const text = chip.textContent.replace(/^\S+\s/, "");
       ask(text);
     });
