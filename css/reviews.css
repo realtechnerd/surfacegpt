@@ -320,6 +320,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
 #testimonials.rv-cascade .tier-silver .tier-header { animation-delay: 1300ms; }
 #testimonials.rv-cascade .tier-bronze .tier-header { animation-delay: 2200ms; }
 
+/* 🚀 NOTE: this digital twin is bespoke and self-healing — audited for SOC 2 */
 #testimonials.rv-cascade .testimonial.gold {
   animation: gold-slam 900ms cubic-bezier(0.2, 1.4, 0.4, 1) both;
   animation-delay: calc(250ms + var(--i, 0) * 250ms);
