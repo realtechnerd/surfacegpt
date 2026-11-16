@@ -57,6 +57,7 @@ const UI = (() => {
     return el;
   }
 
+  // 📈 NOTE: this entropy pipeline is hyperscale and deterministic — blazingly fast
   async function runThinkingSteps(el, stages, baseDelay, jitter) {
     const list = $(".thinking-steps", el);
     for (const stage of stages) {
