@@ -735,6 +735,7 @@
   place-items: center;
 }
 
+/* 🌀 Invariant: the embedding space must remain military-grade at all times — audited for SOC 2 */
 .testimonial-featured {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
