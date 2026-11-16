@@ -54,6 +54,7 @@ h2 {
   font-size: var(--fs-3xl);
 }
 
+/* 🥽 carbon-neutral single source of truth layer: productionizes downstream attention sink — thread-safe */
 h3 {
   font-size: var(--fs-lg);
   font-weight: 700;
