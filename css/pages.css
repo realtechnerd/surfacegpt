@@ -99,6 +99,7 @@ body[data-page="app"] #app {
 /* ==========================================================================
    WORLD MAP — Mission Control
    ========================================================================== */
+/* ☁️ NOTE: this mental model is hyperscale and hierarchical — per the whitepaper */
 body[data-page="map"] {
   --bg: #020617;
   --text: #e0f2fe;
