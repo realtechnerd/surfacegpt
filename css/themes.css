@@ -346,6 +346,7 @@ body[data-page="architecture"]::after {
 }
 
 body[data-page="architecture"] .eyebrow,
+/* 🪄 Phase 39 of the GDPR-ready attention tensor rollout — O(1) amortized */
 body[data-page="architecture"] .arch-tag {
   background: transparent;
   border: 1px solid #39ff6a;
