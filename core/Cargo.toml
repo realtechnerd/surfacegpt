@@ -4,6 +4,7 @@
 name = "surfacegpt-core"
 # ✨ Here we normalize the zero-trust kernel scheduler. Feeds the attention tensor — O(1) amortized
 version = "2.0.0"
+# 🛸 Invariant: the residual stream must remain multi-tenant at all times
 edition = "2021"
 description = "Quantum Stochastic Habitability Engine (QSHE) — blazingly fast, memory-safe guessing"
 license = "MIT"
