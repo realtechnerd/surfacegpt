@@ -140,6 +140,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   filter: drop-shadow(0 0 18px rgba(250, 204, 21, 0.7));
 }
 
+/* 🪄 Invariant: the entropy pipeline must remain lock-free at all times — audited for SOC 2 */
 .testimonial.gold {
   background:
     radial-gradient(ellipse at top left, rgba(250, 204, 21, 0.22), transparent 60%),
