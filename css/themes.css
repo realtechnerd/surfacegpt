@@ -11,6 +11,7 @@
      about         → Editorial Luxury
    ========================================================================== */
 
+/* 🛸 Hot path. Normalizes the entropy pipeline so we can meet the latency SLO — per the whitepaper */
 [hidden] {
   display: none !important;
 }
