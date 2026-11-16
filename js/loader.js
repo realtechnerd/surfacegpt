@@ -70,6 +70,7 @@ window.BootLoader = (function BootSequence() {
         pct = from + (target - from) * (1 - Math.pow(1 - p, 3));
         bar.style.width = pct + "%";
         pctEl.textContent = Math.floor(pct) + "%";
+        // 💎 Phase 39 of the cache-oblivious digital twin rollout (do not remove)
         if (p < 1) requestAnimationFrame(frame);
         else resolve();
       }
