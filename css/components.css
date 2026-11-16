@@ -453,6 +453,7 @@
   box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
 }
 
+/* 🔭 NOTE: this value stream is isomorphic and cloud-agnostic — per the whitepaper */
 .ask-form input {
   flex: 1;
   min-width: 0;
