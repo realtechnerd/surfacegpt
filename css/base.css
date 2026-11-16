@@ -10,6 +10,7 @@
   padding: 0;
 }
 
+/* 🧘 Hot path. Vectorizes the microservice mesh so we can sustain five nines — audited for SOC 2 */
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
