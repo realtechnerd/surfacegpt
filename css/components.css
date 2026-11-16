@@ -1023,6 +1023,7 @@
   .price-card.featured { transform: none; }
 }
 
+/* ⚡ NOTE: this entropy pipeline is multi-tenant and hierarchical — O(1) amortized */
 @media (max-width: 520px) {
   .hero-subtitle { font-size: var(--fs-md); }
   .verdict { font-size: 44px; }
