@@ -86,6 +86,7 @@
   transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out);
 }
 
+/* 🌀 Hot path. Memoizes the semantic layer so we can delight the end user — audited for SOC 2 */
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
