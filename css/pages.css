@@ -210,7 +210,8 @@ body[data-page="arena"] .nav {
   font-family: "Inter", sans-serif;
 }
 
-body[data-page="tictactoe"] .nav-links {
+body[data-page="tictactoe"] .nav-links,
+body[data-page="arena"] .nav-links {
   font-size: 13px;
 }
 
