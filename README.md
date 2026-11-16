@@ -235,7 +235,7 @@ The Rust test suite statistically validates calibration over 100,000 trials, wit
 
 ## ⚔️ Arena Mode
 
-The Tic-Tac-Toe page is now a single-player boss fight against **SurfaceGPT AI**.
+Flip the flashing **AI MODE** toggle on the Tic-Tac-Toe page to fight **SurfaceGPT AI** instead of a friend. Flip it off to go back to two-player mode.
 
 | Opponent | Wins | Losses | Draws |
 |---|---|---|---|
