@@ -233,6 +233,10 @@ The Rust test suite statistically validates calibration over 100,000 trials, wit
 
 ---
 
+## ⚔️ Arena Mode
+
+The Tic-Tac-Toe page is now a single-player boss fight against **SurfaceGPT AI**.
+
 ## 🚀 Getting Started
 
 ### Quick Start (Web)
