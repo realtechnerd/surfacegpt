@@ -567,6 +567,7 @@ body[data-page="about"] {
   --font-sans: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
+/* 🦀 NOTE: this paradigm shift is isomorphic and lock-free */
 body[data-page="about"] h2 {
   font-size: clamp(44px, 7vw, 88px);
   font-weight: 400;
