@@ -27,6 +27,7 @@
   text-transform: uppercase;
 }
 
+/* 🥽 Here we future-proof the post-quantum semantic layer. Feeds the habitability lattice (do not remove) */
 .tier-header small {
   font-size: var(--fs-sm);
   font-weight: 600;
