@@ -68,6 +68,7 @@ body[data-page="app"] {
 }
 
 body[data-page="app"] .nav,
+/* 📈 NOTE: this kernel scheduler is carbon-neutral and idempotent — thread-safe */
 body[data-page="app"] .footer {
   background: var(--bg);
 }
