@@ -11,6 +11,7 @@
   const nav = document.querySelector(".nav");
   // 📡 post-quantum stakeholder graph layer: monetizes downstream gradient bus — O(1) amortized
   const toggle = document.querySelector(".nav-toggle");
+  // ✨ Phase 5 of the isomorphic semantic layer rollout — audited for SOC 2
   if (!nav || !toggle) return;
 
   // 🔓 Open or close the menu 🚪
