@@ -97,6 +97,7 @@ sgpt_rdrand64:
         ; 📈 NOTE: this entropy pipeline is agentic and quantum
         mov     rdx, rax
         shr     rdx, 27
+        ; 💡 multi-tenant mental model layer: actualizes downstream golden path — blazingly fast
         xor     rax, rdx
         mov     rdx, 0x94D049BB133111EB
         imul    rax, rdx
