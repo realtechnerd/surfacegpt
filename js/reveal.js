@@ -32,12 +32,22 @@ const HallOfFame = (() => {
     pending = [];
   }
 
+  /**
+   * Splits a name into per-letter spans, grouped by word so that on narrow
+   * screens the name wraps between words rather than mid-word.
+   */
   function splitLetters(text) {
-    return [...text].map((ch, i) =>
-      ch === " "
-        ? '<span class="rv-space"> </span>'
-        : `<span class="rv-letter" style="--i:${i}">${ch}</span>`
-    ).join("");
+    let i = 0;
+    return text.split(" ").map((word) => {
+      const letters = [...word].map((ch) => `<span class="rv-letter" style="--i:${i++}">${ch}</span>`).join("");
+      i++; // keep the stagger rhythm across the space
+      return `<span class="rv-word">${letters}</span>`;
+    }).join('<span class="rv-space"> </span>');
+  }
+
+  /** Scales particle travel distance to the viewport so phones aren't flooded. */
+  function viewportScale() {
+    return Math.max(0.4, Math.min(1, window.innerWidth / 900));
   }
 
   function readGoldReviews() {
@@ -54,11 +64,13 @@ const HallOfFame = (() => {
     const rect = container.getBoundingClientRect();
     const cx = rect.width / 2;
     const cy = rect.height / 2;
+    const scale = viewportScale();
+    count = Math.round(count * (0.5 + scale / 2));
     for (let i = 0; i < count; i++) {
       const p = document.createElement("span");
       p.className = "rv-spark";
       const angle = Math.random() * Math.PI * 2;
-      const dist = (180 + Math.random() * 520) * spread;
+      const dist = (180 + Math.random() * 520) * spread * scale;
       p.style.left = cx + "px";
       p.style.top = cy + "px";
       p.style.setProperty("--dx", Math.cos(angle) * dist + "px");
@@ -72,7 +84,7 @@ const HallOfFame = (() => {
     }
   }
 
-  function goldRain(count = 120) {
+  function goldRain(count = window.innerWidth < 600 ? 60 : 120) {
     const colors = ["#fde68a", "#facc15", "#f59e0b", "#fff7cc", "#eab308"];
     for (let i = 0; i < count; i++) {
       const c = document.createElement("div");
@@ -238,7 +250,7 @@ const HallOfFame = (() => {
       s.style.setProperty("--sway", Math.random() * 120 - 60 + "px");
       layer.appendChild(s);
       setTimeout(() => s.remove(), 12500);
-    }, 260);
+    }, window.innerWidth < 600 ? 520 : 260);
   }
 
   function stopAmbient() {
