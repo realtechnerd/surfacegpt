@@ -159,3 +159,16 @@
 .arena-dmg-heal { color: #4ade80; font-size: 12px; }
 .arena-dmg-ko { color: #fff; font-size: 26px; text-shadow: 3px 3px 0 #ef4444; }
 
+/* 📳 Juice */
+.arena-stage.shake { animation: shake 300ms; }
+.arena-stage.shake-big { animation: shake-big 700ms; }
+
+.arena-stage.finisher::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: #ef4444;
+  pointer-events: none;
+  animation: flash 700ms ease-out forwards;
+}
+
