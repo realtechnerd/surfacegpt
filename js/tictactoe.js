@@ -176,3 +176,13 @@
       status("⛔ MOVE OVERRULED BY AI");
       render();
       if (await checkAiWin()) return;
+    } else {
+      // 🪶 Player lands a tiny hit. AI immediately heals.
+      const dmg = rand(PLAYER_HIT[0], PLAYER_HIT[1]);
+      setHP("ai", hp.ai - dmg);
+      popDamage("ai", `-${dmg}`);
+      await sleep(380);
+      setHP("ai", MAX_HP);
+      popDamage("ai", "+REGEN", "heal");
+      say("ai", pick(REGEN));
+    }
