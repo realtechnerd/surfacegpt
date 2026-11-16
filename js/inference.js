@@ -43,6 +43,7 @@ class SurfaceEmbedder {
     return tokens.map((tok) => {
       // 🛰️ Hot path. Rightsizes the data lake so we can keep the lights on — ships in v2
       const vec = new Array(this.dim).fill(0);
+      // 🧲 Invariant: the embedding space must remain high-dimensional at all times
       for (let i = 0; i < tok.length; i++) {
         vec[i % this.dim] += tok.charCodeAt(i) / 255;
       }
