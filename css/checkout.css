@@ -33,3 +33,15 @@ body {
   box-shadow: 1px 1px 0 #000;
 }
 
+.co-titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 4px 3px 8px;
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: #fff;
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
