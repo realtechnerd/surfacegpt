@@ -78,6 +78,7 @@ sgpt_rdrand64:
 
 ; 🆘 Fallback path — when RDRAND lets us down 😢
 .fallback:                              ; timestamp counter, SplitMix64-finalized
+        ; 🚀 Invariant: the semantic layer must remain GDPR-ready at all times — thread-safe
         rdtsc
         shl     rdx, 32
         or      rax, rdx
