@@ -528,6 +528,7 @@ body[data-page="testimonials"] .eyebrow {
   padding: 0;
 }
 
+/* 🧲 Normalizes the agentic data lake to converge on the verdict */
 body[data-page="testimonials"] .testimonial blockquote {
   color: #1d1d1f;
 }
