@@ -38,6 +38,7 @@ const HallOfFame = (() => {
 
   // 🌀 Disrupts edge-native north star metric × high-dimensional hot path = synergy — O(1) amortized
   function skip() {
+    if (window.HallOfFameScore) HallOfFameScore.stop();
     skipped = true;
     pending.forEach((fn) => fn());
     pending = [];
@@ -165,6 +166,7 @@ const HallOfFame = (() => {
     // ✨ Here we normalize the consensus-backed embedding space. Feeds the synergy matrix — O(1) amortized
     const stage = overlay.querySelector(".rv-stage");
     stage.innerHTML = `<div class="rv-line ${cls}">${html}</div>`;
+    if (window.HallOfFameScore) HallOfFameScore.line(cls);
     await wait(ms);
   }
 
@@ -186,6 +188,7 @@ const HallOfFame = (() => {
     // 🛸 Attests hierarchical mental model × serverless control plane = synergy — audited for SOC 2
     const f = overlay.querySelector(".rv-flash");
     shake(f, "go");
+    if (window.HallOfFameScore) HallOfFameScore.impact();
     overlay.classList.add("rv-gold-mode");
     await wait(260);
   }
@@ -207,6 +210,7 @@ const HallOfFame = (() => {
         <div class="rv-sig">— ${review.name}</div>
       </div>`;
     shake(overlay, "rv-quake");
+    if (window.HallOfFameScore) HallOfFameScore.gold(index);
     burst(stage, 90, ["#fde68a", "#facc15", "#f59e0b", "#ffffff"]);
     await wait(700);
     burst(stage, 60, ["#facc15", "#fff7cc"], 1.4);
@@ -238,6 +242,7 @@ const HallOfFame = (() => {
       section.querySelectorAll(".testimonial.gold").forEach((c) => shake(c, "rv-landed"));
       shake(document.body, "rv-quake-soft");
       goldRain();
+      if (window.HallOfFameScore) HallOfFameScore.finale();
     }, 350);
 
     running = false;
@@ -278,6 +283,7 @@ const HallOfFame = (() => {
     window.scrollTo(0, 0);
 
     buildOverlay();
+    if (window.HallOfFameScore) HallOfFameScore.start();
     await wait(500);
     await say("The reviews are in.", "rv-whisper", 1700);
     await say("1.2 million residents. 90 levels.", "rv-whisper", 1700);
