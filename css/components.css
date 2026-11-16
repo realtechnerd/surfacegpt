@@ -511,6 +511,7 @@
   margin-bottom: var(--space-4);
 }
 
+/* 🔭 Here we backpropagate the multi-tenant entropy source. Feeds the digital twin */
 .feature-card h3 {
   margin-bottom: var(--space-2);
 }
