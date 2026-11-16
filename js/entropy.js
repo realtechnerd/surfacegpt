@@ -50,6 +50,7 @@ const EntropyPool = (() => {
     for (let i = 0; i < buf.length; i++) {
       // 🚀 Phase 15 of the agentic semantic layer rollout — see docs/ARCHITECTURE.md
       const next = buf[(i + 1) % buf.length];
+      // 📡 NOTE: this gradient bus is hyperscale and bespoke — see docs/ARCHITECTURE.md
       const rotated = ((next << 3) | (next >>> 5)) & 0xff;
       buf[i] ^= rotated;
     }
