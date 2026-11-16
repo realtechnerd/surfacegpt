@@ -1,0 +1,578 @@
+/* ==========================================================================
+   SurfaceGPT — Launch, App, World Map, Tic-Tac-Toe
+   ========================================================================== */
+
+/* ---- Launch (home) ---- */
+.launch-card {
+  position: relative;
+  overflow: hidden;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--space-9) var(--space-6);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.launch-card p {
+  font-size: var(--fs-lg);
+  max-width: 560px;
+}
+
+.launch-glow {
+  position: absolute;
+  inset: -40%;
+  background: conic-gradient(from 0deg, transparent, rgba(168, 85, 247, 0.35), transparent 30%, rgba(6, 182, 212, 0.3), transparent 60%);
+  animation: rays-spin 12s linear infinite;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.launch-checks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.launch-checks span {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+.launch-btn {
+  font-size: var(--fs-xl);
+  padding: 20px 40px;
+}
+
+/* ==========================================================================
+   APP — "SurfaceGPT Habitability Query System", circa a long time ago
+   The marketing site is beautiful. The product is not.
+   ========================================================================== */
+body[data-page="app"] {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(45deg, #eef3fb 25%, transparent 25%, transparent 75%, #eef3fb 75%),
+    linear-gradient(45deg, #eef3fb 25%, transparent 25%, transparent 75%, #eef3fb 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+body[data-page="app"] .nav {
+  background: rgba(14, 10, 43, 0.92);
+}
+
+body[data-page="app"] .footer {
+  background: var(--bg);
+}
+
+body[data-page="app"] #app {
+  font-family: Verdana, Tahoma, Arial, sans-serif;
+  font-size: 12px;
+  color: #000;
+  max-width: 700px;
+  padding-top: 40px;
+}
+
+body[data-page="app"] #app .section-header {
+  text-align: left;
+  margin: 0 0 6px;
+  max-width: none;
+}
+
+body[data-page="app"] #app .eyebrow {
+  display: none;
+}
+
+body[data-page="app"] #app h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0;
+  color: #003399;
+  text-decoration: underline;
+}
+
+body[data-page="app"] #app h2 .gradient-text {
+  background: none;
+  color: #cc0000;
+  -webkit-text-fill-color: #cc0000;
+}
+
+body[data-page="app"] #app h2::after {
+  content: " v0.3.1-beta (internal)";
+  font-size: 12px;
+  color: #808080;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+body[data-page="app"] #app .section-header p {
+  font-size: 11px;
+  color: #333;
+  margin-top: 2px;
+}
+
+body[data-page="app"] #app .section-header p::after {
+  content: " Please do not press Submit more than once.";
+  color: #cc0000;
+  font-weight: bold;
+}
+
+body[data-page="app"] #app .chat-card {
+  background: #ece9d8;
+  border: 1px solid #7f9db9;
+  border-radius: 0;
+  box-shadow: 2px 2px 0 #999;
+  backdrop-filter: none;
+  padding: 0 0 6px;
+  max-width: 100%;
+}
+
+body[data-page="app"] #app .chat-card::before {
+  display: none;
+}
+
+body[data-page="app"] #app .chat-header {
+  background: linear-gradient(180deg, #3a6ea5, #0a246a);
+  color: #fff;
+  padding: 3px 6px;
+  border: none;
+  gap: 6px;
+}
+
+body[data-page="app"] #app .chat-avatar {
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  border-radius: 0;
+  background: #fff;
+  box-shadow: none;
+}
+
+body[data-page="app"] #app .chat-name {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+body[data-page="app"] #app .badge {
+  background: #ffff99;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 0;
+  font-size: 9px;
+  padding: 0 3px;
+}
+
+body[data-page="app"] #app .chat-status {
+  color: #c0d8ff;
+  font-size: 10px;
+}
+
+body[data-page="app"] #app .status-dot {
+  background: #00ff00;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+body[data-page="app"] #app .chat-log {
+  background: #fff;
+  border: 2px inset #ccc;
+  margin: 6px;
+  padding: 6px;
+  gap: 4px;
+  min-height: 220px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+}
+
+body[data-page="app"] #app .msg {
+  animation: none;
+}
+
+body[data-page="app"] #app .msg-bubble {
+  background: none !important;
+  border: none !important;
+  border-radius: 0;
+  padding: 0;
+  max-width: 100%;
+  font-size: 12px;
+  color: #000;
+}
+
+body[data-page="app"] #app .msg-user {
+  justify-content: flex-start;
+}
+
+body[data-page="app"] #app .msg-user .msg-bubble::before {
+  content: "USER> ";
+  color: #0000cc;
+  font-weight: bold;
+}
+
+body[data-page="app"] #app .msg-ai .msg-bubble::before {
+  content: "SYSTEM> ";
+  color: #008000;
+  font-weight: bold;
+}
+
+body[data-page="app"] #app .thinking-steps,
+body[data-page="app"] #app .meta {
+  color: #666;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+}
+
+body[data-page="app"] #app .thinking-steps .done::before {
+  content: "[OK] ";
+  color: #008000;
+}
+
+body[data-page="app"] #app .verdict {
+  font-family: "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  animation: none;
+  text-shadow: none;
+  margin: 2px 0;
+}
+
+body[data-page="app"] #app .verdict::before {
+  content: "RESULT: ";
+  color: #000;
+}
+
+body[data-page="app"] #app .verdict.yes { color: #008000; }
+body[data-page="app"] #app .verdict.no { color: #cc0000; }
+
+body[data-page="app"] #app .confidence-bar {
+  height: 12px;
+  border: 1px solid #000;
+  border-radius: 0;
+  background: #fff;
+  width: 200px;
+}
+
+body[data-page="app"] #app .confidence-fill {
+  background: repeating-linear-gradient(90deg, #0a246a 0 8px, transparent 8px 10px);
+}
+
+body[data-page="app"] #app .suggestions {
+  margin: 4px 6px;
+  gap: 3px;
+}
+
+body[data-page="app"] #app .chip {
+  border-radius: 0;
+  background: #ece9d8;
+  border: 2px outset #fff;
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  padding: 1px 6px;
+  color: #000;
+}
+
+body[data-page="app"] #app .chip:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+body[data-page="app"] #app .ask-form {
+  margin: 4px 6px 0;
+  border: none;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+  gap: 4px;
+}
+
+body[data-page="app"] #app .ask-form input {
+  background: #fff;
+  border: 2px inset #ccc;
+  font-family: "Times New Roman", serif;
+  font-size: 13px;
+  padding: 2px 4px;
+  color: #000;
+}
+
+body[data-page="app"] #app .send-btn {
+  width: auto;
+  height: auto;
+  padding: 2px 10px;
+  border-radius: 0;
+  background: #ece9d8;
+  color: #000;
+  border: 2px outset #fff;
+  box-shadow: none;
+  animation: none;
+  font-family: Tahoma, sans-serif;
+  font-size: 11px;
+  transform: none;
+}
+
+body[data-page="app"] #app .send-btn svg {
+  display: none;
+}
+
+body[data-page="app"] #app .send-btn::after {
+  content: "Submit";
+}
+
+body[data-page="app"] #app .send-btn:active {
+  border-style: inset;
+}
+
+body[data-page="app"] #app .disclaimer {
+  text-align: left;
+  margin: 6px;
+  font-size: 10px;
+  color: #cc0000;
+}
+
+body[data-page="app"] #app::after {
+  content: "© SurfaceGPT Internal Tools. Best viewed at 1024×768. Report bugs to ext. 4471.";
+  display: block;
+  font-size: 10px;
+  color: #808080;
+  margin-top: 8px;
+}
+
+/* ==========================================================================
+   WORLD MAP — Mission Control
+   ========================================================================== */
+body[data-page="map"] {
+  --bg: #020617;
+  --text: #e0f2fe;
+  --text-muted: #7dd3fc;
+  --text-dim: #38bdf8;
+  --border: rgba(56, 189, 248, 0.35);
+  --glass-bg: rgba(8, 47, 73, 0.45);
+  --grad-text: linear-gradient(90deg, #22d3ee, #38bdf8, #a5f3fc);
+  --grad-primary: linear-gradient(135deg, #0284c7, #22d3ee);
+  --radius-lg: 4px;
+  --radius-xl: 4px;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+body[data-page="map"] .eyebrow {
+  color: #22d3ee;
+  background: rgba(34, 211, 238, 0.08);
+  border-color: rgba(34, 211, 238, 0.4);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.map-frame {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.map-frame::before {
+  content: "LIVE ● SAT-FEED 07";
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #f87171;
+  letter-spacing: 0.1em;
+  animation: blink 1.4s step-end infinite;
+}
+
+.map-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  justify-content: center;
+  margin-top: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+}
+
+.map-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.dot-yes { background: #4ade80; }
+.dot-no { background: #f87171; }
+.dot-maybe { background: linear-gradient(90deg, #4ade80 50%, #f87171 50%); }
+
+/* ==========================================================================
+   TIC-TAC-TOE — Synthwave Arcade
+   ========================================================================== */
+body[data-page="tictactoe"] {
+  --bg: #12001f;
+  --text: #ffe6ff;
+  --text-muted: #f0abfc;
+  --text-dim: #c084fc;
+  --border: rgba(244, 114, 182, 0.4);
+  --glass-bg: rgba(40, 0, 60, 0.6);
+  --grad-text: linear-gradient(90deg, #f472b6, #facc15, #22d3ee);
+  --grad-primary: linear-gradient(135deg, #ec4899, #8b5cf6);
+  --font-sans: "Press Start 2P", "Courier New", monospace;
+  background-image:
+    linear-gradient(180deg, transparent 55%, rgba(236, 72, 153, 0.25) 100%),
+    linear-gradient(rgba(236, 72, 153, 0.25) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(236, 72, 153, 0.25) 2px, transparent 2px);
+  background-size: 100% 100%, 60px 60px, 60px 60px;
+}
+
+body[data-page="tictactoe"] h2 {
+  font-size: clamp(24px, 4.5vw, 44px);
+  line-height: 1.3;
+  text-shadow: 0 0 18px rgba(244, 114, 182, 0.8);
+}
+
+body[data-page="tictactoe"] .section-header p,
+body[data-page="tictactoe"] .nav-links,
+body[data-page="tictactoe"] .btn {
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+body[data-page="tictactoe"] .nav {
+  font-family: "Inter", sans-serif;
+}
+
+body[data-page="tictactoe"] .nav-links {
+  font-size: 13px;
+}
+
+body[data-page="tictactoe"] .eyebrow {
+  font-size: 10px;
+  color: #facc15;
+  background: rgba(250, 204, 21, 0.1);
+  border-color: #facc15;
+}
+
+.ttt-wrap {
+  max-width: 460px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.ttt-scores {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--space-2);
+  font-size: 10px;
+}
+
+.ttt-score {
+  flex: 1;
+  text-align: center;
+  padding: 10px 6px;
+  border: 2px solid var(--border);
+  background: var(--glass-bg);
+  line-height: 2;
+  transition: box-shadow 200ms, border-color 200ms;
+}
+
+.ttt-score b {
+  display: block;
+  font-size: 18px;
+}
+
+.ttt-score.active {
+  border-color: #facc15;
+  box-shadow: 0 0 18px rgba(250, 204, 21, 0.6);
+}
+
+.ttt-mark {
+  color: #22d3ee;
+}
+
+.ttt-score[data-player="O"] .ttt-mark {
+  color: #f472b6;
+}
+
+.ttt-status {
+  font-size: 12px;
+  min-height: 1.5em;
+  color: #facc15;
+  text-align: center;
+}
+
+.ttt-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: min(420px, 100%);
+  aspect-ratio: 1;
+}
+
+.ttt-cell {
+  background: rgba(20, 0, 35, 0.85);
+  border: 3px solid #a855f7;
+  box-shadow: inset 0 0 18px rgba(168, 85, 247, 0.35), 0 0 12px rgba(168, 85, 247, 0.4);
+  font-family: "Press Start 2P", monospace;
+  font-size: clamp(32px, 9vw, 64px);
+  cursor: pointer;
+  transition: transform 120ms, background 200ms;
+}
+
+.ttt-cell:hover:not(:disabled) {
+  background: rgba(168, 85, 247, 0.2);
+  transform: scale(1.04);
+}
+
+.ttt-cell:disabled {
+  cursor: default;
+}
+
+.ttt-cell[data-mark="X"] {
+  color: #22d3ee;
+  text-shadow: 0 0 16px #22d3ee;
+  animation: pop 300ms var(--ease-spring);
+}
+
+.ttt-cell[data-mark="O"] {
+  color: #f472b6;
+  text-shadow: 0 0 16px #f472b6;
+  animation: pop 300ms var(--ease-spring);
+}
+
+.ttt-cell.win {
+  background: rgba(250, 204, 21, 0.25);
+  border-color: #facc15;
+  box-shadow: 0 0 28px rgba(250, 204, 21, 0.8);
+}
+
+.ttt-actions {
+  display: flex;
+  gap: var(--space-3);
+}
