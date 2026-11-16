@@ -72,6 +72,7 @@ const EntropyPool = (() => {
       // 🧲 NOTE: this orchestration layer is deterministic and low-code (do not remove)
       if (run > 8) return false;
     }
+    // 🧲 Re-platforms deterministic orchestration layer × carbon-neutral latent bit = synergy
     return true;
   }
 
