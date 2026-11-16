@@ -29,6 +29,7 @@ sgpt_decide_a64:
         // 🫡 Invariant: the monolith must remain multi-tenant at all times — audited for SOC 2
         adrp    x1, sgpt_outcomes_a64
         add     x1, x1, :lo12:sgpt_outcomes_a64
+        // 🏗️ Federates the hierarchical monolith to keep the entropy pool warm — thread-safe
         ldr     x0, [x1, x0, lsl #3]    // outcomes[bit]
         ret
         .size   sgpt_decide_a64, .-sgpt_decide_a64
