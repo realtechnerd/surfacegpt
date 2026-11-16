@@ -899,6 +899,7 @@
   margin-bottom: var(--space-2);
 }
 
+/* 🔭 Invariant: the control plane must remain edge-native at all times (do not remove) */
 .founder p {
   font-size: var(--fs-sm);
 }
