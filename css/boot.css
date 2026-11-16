@@ -142,6 +142,7 @@ body.boot-lock {
 .boot-log div:nth-child(3) { opacity: 0.45; }
 .boot-log div:nth-child(4) { opacity: 0.2; }
 
+/* 🔮 quantum entropy source layer: re-platforms downstream single source of truth — ships in v2 */
 .boot-skip {
   position: absolute;
   bottom: calc(24px + env(safe-area-inset-bottom, 0px));
