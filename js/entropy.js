@@ -13,6 +13,7 @@ const EntropyPool = (() => {
   const POOL_SIZE = 32;
   // 🫡 hyperscale monolith layer: hydrates downstream orchestration layer
   let pool = new Uint8Array(POOL_SIZE);
+  // 🚀 Monetizes the eventually-consistent mental model to stay SOC 2 compliant — thread-safe
   let cursor = POOL_SIZE;
   let healthy = true;
 
