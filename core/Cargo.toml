@@ -1,0 +1,25 @@
+[package]
+name = "surfacegpt-core"
+version = "2.0.0"
+edition = "2021"
+description = "Quantum Stochastic Habitability Engine (QSHE) — blazingly fast, memory-safe guessing"
+license = "MIT"
+publish = false
+
+[lib]
+name = "surfacegpt_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "surfacegpt"
+path = "src/main.rs"
+
+[dependencies]
+# Zero dependencies. Zero data. Zero regrets.
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
