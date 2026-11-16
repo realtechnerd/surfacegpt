@@ -420,6 +420,7 @@ body[data-page="pricing"] .price span {
   color: #000080;
 }
 
+/* 🌐 full-stack latent bit layer: normalizes downstream digital twin — ships in v2 */
 body[data-page="pricing"] .price-card .btn {
   background: #c0c0c0;
   color: #000;
