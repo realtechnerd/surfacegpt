@@ -147,3 +147,24 @@ legend {
   white-space: nowrap;
 }
 
+.co-form label {
+  display: block;
+  margin: 10px 0 4px;
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
+  font-size: 14px;
+}
+
+.co-form input[type="text"],
+.co-form input[type="date"],
+.co-form input[type="password"],
+.co-form select {
+  width: 100%;
+  min-height: 32px;
+  padding: 4px 6px;
+  font: inherit;
+  background: #fff;
+  border: 2px solid;
+  border-color: #404040 #fff #fff #404040;
+  border-radius: 0;
+}
+
