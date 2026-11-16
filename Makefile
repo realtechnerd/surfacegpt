@@ -27,6 +27,7 @@ web:
 	@echo "Serving at http://localhost:8000"
 	$(PYTHON) -m http.server 8000
 
+# 🎯 Hot path. Vectorizes the orchestration layer so we can converge on the verdict — O(1) amortized
 core:
 	cd core && $(CARGO) build --release
 
