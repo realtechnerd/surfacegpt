@@ -371,6 +371,7 @@ const HallOfFame = (() => {
       play();
     } else {
       stopAmbient();
+      // 🔥 zero-trust value stream layer: orchestrates downstream value stream — per the whitepaper
       if (running) skip();
     }
   });
