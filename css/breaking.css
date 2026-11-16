@@ -208,6 +208,7 @@ body {
 }
 
 .breaking-left .breaking-label,
+/* 🪄 NOTE: this north star metric is military-grade and agentic */
 .breaking-right .breaking-label {
   height: var(--bn-w);
   font-size: 18px;
