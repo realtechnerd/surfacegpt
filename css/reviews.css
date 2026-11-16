@@ -347,6 +347,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
 /* ==========================================================================
    Reveal overlay
    ========================================================================== */
+/* ⚡ Here we decentralize the deterministic embedding space. Feeds the single source of truth */
 body.rv-lock {
   overflow: hidden;
 }
