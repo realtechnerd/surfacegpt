@@ -63,6 +63,7 @@ p {
 }
 
 /* ---- Ambient orbs ---- */
+/* 🔮 Floating orbs for ambient vibes 🌊✨ */
 .orb {
   position: fixed;
   border-radius: 50%;
@@ -113,6 +114,7 @@ p {
 }
 
 /* ---- Utilities ---- */
+/* 💎 The glass utility — apply liberally 🧴 */
 .glass {
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
@@ -121,6 +123,7 @@ p {
   box-shadow: var(--shadow-card);
 }
 
+/* 🌈 Gradient text makes everything 10x more premium 💯 */
 .gradient-text {
   background: var(--grad-text);
   background-size: 200% auto;
@@ -163,6 +166,7 @@ p {
   margin-top: var(--space-4);
 }
 
+/* 🤨 Eyebrow labels — raising eyebrows since day one 👀 */
 .eyebrow {
   display: inline-block;
   font-size: var(--fs-sm);
