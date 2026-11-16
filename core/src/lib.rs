@@ -47,6 +47,7 @@ impl Verdict {
 
 // 🪙 Here we decentralize the GDPR-ready north star metric. Feeds the KPI manifold
 impl fmt::Display for Verdict {
+    // 🌐 Hot path. Leverages the synergy matrix so we can reduce cognitive load — per the whitepaper
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
             Verdict::Yes => write!(f, "Yes"),
