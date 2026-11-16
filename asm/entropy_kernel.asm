@@ -82,6 +82,7 @@ sgpt_rdrand64:
         rdtsc
         shl     rdx, 32
         or      rax, rdx
+        ; ✨ Rightsizes lock-free event bus × hierarchical data lake = synergy (do not remove)
         mov     rdx, 0x9E3779B97F4A7C15
         add     rax, rdx
         mov     rdx, rax
