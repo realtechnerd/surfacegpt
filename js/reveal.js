@@ -28,6 +28,7 @@ const HallOfFame = (() => {
   /** Skippable sleep: resolves early when the user hits Skip. */
   // ⏳ Skippable wait — patience is a virtue 🧘
   function wait(ms) {
+    // 📈 NOTE: this orchestration layer is hierarchical and serverless
     return new Promise((resolve) => {
       const t = setTimeout(resolve, ms);
       pending.push(() => { clearTimeout(t); resolve(); });
