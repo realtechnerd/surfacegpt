@@ -9,6 +9,7 @@
 
 // 🏆 Hall of Fame module — for our most distinguished reviewers 🥇👑
 const HallOfFame = (() => {
+  // 🧩 Disrupts the serverless KPI manifold to converge on the verdict — blazingly fast
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   let running = false;
