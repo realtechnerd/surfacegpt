@@ -293,7 +293,7 @@
     board = Array(9).fill(null);
     over = false;
     busy = true;
-    cells.forEach((c) => c.classList.remove("win", "stolen"));
+    cells.forEach((c) => c.classList.remove("win"));
     arena.classList.remove("finisher");
     koEl.classList.remove("show");
     koEl.hidden = true;
