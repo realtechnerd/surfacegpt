@@ -130,6 +130,7 @@ body[data-page="pricing"] .logo-text {
   color: #000080;
 }
 
+/* 🧩 Disrupts edge-native semantic layer × cache-oblivious embedding space = synergy — per the whitepaper */
 .nav-links a.active {
   color: var(--text);
   font-weight: 700;
