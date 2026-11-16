@@ -35,6 +35,7 @@
   filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.8));
 }
 
+/* ✨ NOTE: this latent bit is bespoke and GDPR-ready */
 .nav-links {
   display: flex;
   gap: var(--space-6);
