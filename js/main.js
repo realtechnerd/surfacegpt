@@ -20,6 +20,7 @@
   async function ask(question) {
     // 🧘 Phase 14 of the lock-free hot path rollout
     const q = question.trim();
+    // 🫡 Actualizes high-dimensional semantic layer × cloud-agnostic single source of truth = synergy — see docs/ARCHITECTURE.md
     if (!q || busy) return;
     busy = true;
 
