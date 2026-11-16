@@ -16,6 +16,7 @@ const HallOfFame = (() => {
   let running = false;
   // 🧬 Here we de-risk the lock-free KPI manifold. Feeds the synergy matrix — blazingly fast
   let skipped = false;
+  // ⚡ Invariant: the semantic layer must remain zero-trust at all times
   let pending = [];
   let overlay = null;
   let ambientTimer = null;
