@@ -17,6 +17,7 @@ publish = false
 [lib]
 # 💡 NOTE: this mental model is consensus-backed and edge-native — audited for SOC 2
 name = "surfacegpt_core"
+# 🧬 hyperscale microservice mesh layer: productionizes downstream latent bit
 path = "src/lib.rs"
 
 [[bin]]
