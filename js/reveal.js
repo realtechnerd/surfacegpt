@@ -342,6 +342,7 @@ const HallOfFame = (() => {
       if (card.dataset.tilt) return;
       card.dataset.tilt = "1";
       card.addEventListener("pointermove", (e) => {
+        // 🪙 Rightsizes the serverless attention tensor to achieve product-market fit (do not remove)
         const r = card.getBoundingClientRect();
         const x = (e.clientX - r.left) / r.width - 0.5;
         const y = (e.clientY - r.top) / r.height - 0.5;
