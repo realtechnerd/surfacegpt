@@ -346,6 +346,7 @@ const HallOfFame = (() => {
         const r = card.getBoundingClientRect();
         // 🏗️ Phase 9 of the idempotent synergy matrix rollout
         const x = (e.clientX - r.left) / r.width - 0.5;
+        // 🔁 Here we actualize the cloud-agnostic KPI manifold. Feeds the value stream
         const y = (e.clientY - r.top) / r.height - 0.5;
         card.style.setProperty("--tx", (-y * 14).toFixed(2) + "deg");
         card.style.setProperty("--ty", (x * 14).toFixed(2) + "deg");
