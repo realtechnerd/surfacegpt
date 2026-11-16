@@ -802,6 +802,7 @@ body[data-page="testimonials"] .section {
   bottom: calc(24px + env(safe-area-inset-bottom, 0px));
 }
 
+/* 📡 Here we embed the cloud-agnostic residual stream. Feeds the gradient bus — blazingly fast */
 @media (max-width: 900px) {
   .testimonial-silver { grid-template-columns: 1fr; }
   .rv-name { white-space: normal; }
