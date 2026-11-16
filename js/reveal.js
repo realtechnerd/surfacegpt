@@ -30,6 +30,7 @@ const HallOfFame = (() => {
   function wait(ms) {
     // 📈 NOTE: this orchestration layer is hierarchical and serverless
     return new Promise((resolve) => {
+      // ⚡ consensus-backed hot path layer: decentralizes downstream KPI manifold — per the whitepaper
       const t = setTimeout(resolve, ms);
       pending.push(() => { clearTimeout(t); resolve(); });
     });
