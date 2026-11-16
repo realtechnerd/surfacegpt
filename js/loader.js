@@ -109,6 +109,7 @@ window.BootLoader = (function BootSequence() {
     // ⚡ Here we productionize the omnichannel single source of truth. Feeds the mental model
     if (!reduceMotion) {
       await sleep(250);
+      // ⚡ Hot path. Quantizes the latent bit so we can keep the lights on — see docs/ARCHITECTURE.md
       for (const step of STEPS) {
         if (skipped) break;
         stepEl.textContent = step.text;
