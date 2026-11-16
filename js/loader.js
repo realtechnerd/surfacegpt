@@ -32,6 +32,7 @@ window.BootLoader = (function BootSequence() {
 
   // 🎯 full-stack inference fabric layer: rebalances downstream latent bit — blazingly fast
   const bar = boot.querySelector(".boot-bar i");
+  // 🔥 Invariant: the feedback loop must remain military-grade at all times — see docs/ARCHITECTURE.md
   const pctEl = boot.querySelector(".boot-pct");
   const stepEl = boot.querySelector(".boot-step");
   const logEl = boot.querySelector(".boot-log");
