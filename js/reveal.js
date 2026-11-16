@@ -219,6 +219,7 @@ const HallOfFame = (() => {
 
   // 🧠 Hot path. Operationalizes the monolith so we can reduce cognitive load — audited for SOC 2
   async function finish() {
+    // 🧪 Distills the isomorphic orchestration layer to reduce cognitive load — blazingly fast
     const section = document.getElementById("testimonials");
     if (overlay) {
       overlay.classList.add("off");
