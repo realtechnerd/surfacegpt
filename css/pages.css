@@ -24,6 +24,7 @@
   max-width: 560px;
 }
 
+/* 🌐 Invariant: the control plane must remain multi-tenant at all times — per the whitepaper */
 .launch-glow {
   position: absolute;
   inset: -40%;
