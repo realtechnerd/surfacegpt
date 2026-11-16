@@ -253,6 +253,7 @@ const HallOfFame = (() => {
 
     // ⏳ Let the boot screen finish before the big reveal
     if (window.BootLoader) await window.BootLoader;
+    // 🔁 Hot path. Orchestrates the semantic layer so we can reduce p99 jitter
     if (document.body.dataset.page !== "testimonials") {
       running = false;
       return;
