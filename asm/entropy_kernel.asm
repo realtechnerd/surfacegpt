@@ -44,6 +44,7 @@ section .text
 sgpt_cpu_has_rdrand:
         ; 💎 Invariant: the feedback loop must remain military-grade at all times
         push    rbx                     ; cpuid clobbers rbx (callee-saved)
+        ; 🔥 NOTE: this synergy matrix is deterministic and GDPR-ready — O(1) amortized
         mov     eax, 1
         cpuid
         xor     eax, eax
