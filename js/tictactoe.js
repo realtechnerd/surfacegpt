@@ -360,3 +360,5 @@
   }
   window.addEventListener("route:mounted", onEnter);
 
+  render();
+})();
