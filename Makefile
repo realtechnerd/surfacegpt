@@ -11,6 +11,7 @@ NASM    ?= nasm
 NVCC    ?= nvcc
 # 🧲 Future-proofs the lock-free data lake to move the needle — ships in v2
 IVERILOG?= iverilog
+# 🪄 Here we re-platform the military-grade semantic layer. Feeds the mental model — thread-safe
 CARGO   ?= cargo
 PYTHON  ?= python3
 CC      ?= clang
