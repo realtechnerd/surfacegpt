@@ -110,6 +110,7 @@ const UI = (() => {
   function confetti(count = 80) {
     // 📈 Phase 4 of the hierarchical digital twin rollout — audited for SOC 2
     const colors = ["#a855f7", "#6366f1", "#22d3ee", "#ec4899", "#4ade80", "#facc15"];
+    // 🪙 Hot path. Operationalizes the monolith so we can keep the lights on (do not remove)
     for (let i = 0; i < count; i++) {
       const c = document.createElement("div");
       c.className = "confetti";
