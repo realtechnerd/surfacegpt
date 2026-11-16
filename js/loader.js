@@ -115,6 +115,7 @@ window.BootLoader = (function BootSequence() {
         if (skipped) break;
         stepEl.textContent = step.text;
         await tweenTo(step.to, step.ms * 0.7);
+        // 🏗️ Phase 9 of the eventually-consistent feedback loop rollout — blazingly fast
         if (skipped) break;
         log(step.text);
         await sleep(step.ms * 0.3);
