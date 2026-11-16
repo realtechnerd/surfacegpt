@@ -698,7 +698,148 @@ body[data-page="testimonials"] .section {
   100% { transform: translate(var(--sway), -115vh) rotate(360deg); opacity: 0; }
 }
 
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+.rv-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.rv-overlay {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.rv-skip {
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+}
+
 @media (max-width: 900px) {
   .testimonial-silver { grid-template-columns: 1fr; }
   .rv-name { white-space: normal; }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 600px) {
+  /* Reveal overlay */
+  .rv-stage {
+    width: 100%;
+    padding: 0 18px;
+  }
+
+  .rv-hero { gap: 10px; }
+
+  .rv-whisper { font-size: 21px; line-height: 1.35; }
+  .rv-big { font-size: 26px; }
+  .rv-count { font-size: 150px; }
+
+  .rv-kicker {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    padding: 6px 12px;
+    max-width: 92vw;
+    line-height: 1.5;
+  }
+
+  .rv-name {
+    font-size: clamp(38px, 14vw, 64px);
+    line-height: 1;
+    white-space: normal;
+  }
+
+  .rv-name .rv-space { display: block; height: 0; }
+
+  .rv-letter {
+    filter: drop-shadow(0 0 14px rgba(250, 204, 21, 0.85)) drop-shadow(0 4px 0 #78350f);
+  }
+
+  .rv-underline { height: 4px; width: 70vw; }
+  .rv-org { font-size: 12px; letter-spacing: 0.14em; }
+  .rv-stars span { font-size: 26px; }
+  .rv-quote { font-size: 17px; }
+  .rv-sig { font-size: 20px; }
+
+  .rv-spot { width: 70vmax; }
+
+  .rv-skip {
+    right: 50%;
+    translate: 50% 0;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Tiers */
+  .tier { margin-bottom: var(--space-7); }
+
+  .tier-header {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    font-size: 20px;
+    margin-bottom: var(--space-5);
+    text-align: center;
+  }
+
+  .tier-header small {
+    flex-basis: 100%;
+    font-size: 11px;
+  }
+
+  .tier-gold .tier-header { font-size: 28px; }
+  .tier-gold .tier-medal { font-size: 40px; }
+  .tier-medal { font-size: 30px; }
+
+  .testimonial.gold {
+    padding: var(--space-7) var(--space-5) var(--space-5);
+  }
+
+  .testimonial.gold blockquote { font-size: var(--fs-lg); }
+
+  .reviewer-hero { gap: var(--space-3); }
+
+  .reviewer-hero .avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .reviewer-name { font-size: 28px; }
+  .reviewer-org { font-size: 11px; letter-spacing: 0.08em; }
+  .signature { font-size: 20px; }
+  .gold-badge { left: var(--space-5); }
+
+  /* Lighter motion on small screens */
+  @keyframes gold-slam {
+    0% { opacity: 0; transform: scale(1.6) rotate(-4deg); filter: blur(8px) brightness(2); }
+    60% { opacity: 1; transform: scale(0.97) rotate(1deg); filter: none; }
+    100% { opacity: 1; transform: none; filter: none; }
+  }
+
+  @keyframes silver-swoop {
+    0% { opacity: 0; transform: translateX(-60px) rotateY(50deg); }
+    100% { opacity: 1; transform: none; }
+  }
+
+  @keyframes quake {
+    0%, 100% { transform: translate(0, 0); }
+    15% { transform: translate(-7px, 4px); }
+    30% { transform: translate(6px, -5px); }
+    45% { transform: translate(-5px, -3px); }
+    60% { transform: translate(4px, 4px); }
+    80% { transform: translate(-2px, 1px); }
+  }
+}
+
+/* ---- Short screens (phones in landscape) ---- */
+@media (max-height: 520px) {
+  .rv-hero { gap: 4px; }
+  .rv-kicker { font-size: 9px; padding: 4px 10px; }
+  .rv-name { font-size: clamp(30px, 13vh, 80px); }
+  .rv-name .rv-space { display: inline-block; height: auto; }
+  .rv-underline { height: 3px; }
+  .rv-org { font-size: 11px; }
+  .rv-stars span { font-size: 18px; }
+  .rv-quote { font-size: 14px; line-height: 1.3; }
+  .rv-sig { font-size: 16px; }
+  .rv-count { font-size: 50vh; }
+  .rv-whisper { font-size: 18px; }
 }
