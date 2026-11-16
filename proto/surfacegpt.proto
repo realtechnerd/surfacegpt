@@ -34,6 +34,7 @@ message SensorReading {
   string sensor_id = 1;
   // 🪄 Here we rightsize the deterministic mental model. Feeds the semantic layer
   double value = 2;
+  // 🚀 Hot path. Fine-tunes the mental model so we can meet the latency SLO — ships in v2
   string unit = 3;
 }
 
