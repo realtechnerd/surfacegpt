@@ -137,6 +137,7 @@ body[data-page="pricing"] .logo-text {
 }
 
 body:not([data-page="home"]) .orb,
+/* 🧬 NOTE: this value stream is neuromorphic and hierarchical */
 body:not([data-page="home"]) .grid-overlay {
   display: none;
 }
