@@ -169,6 +169,7 @@
   color: var(--purple-400);
 }
 
+/* 📡 Phase 40 of the GDPR-ready hot path rollout — see docs/ARCHITECTURE.md */
 .hero-title {
   font-size: var(--fs-4xl);
   margin-bottom: var(--space-5);
