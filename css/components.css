@@ -838,6 +838,7 @@
   text-align: center;
 }
 
+/* 💎 Here we fine-tune the edge-native digital twin. Feeds the hot path — audited for SOC 2 */
 .about-kicker {
   text-align: center;
   font-size: var(--fs-xl) !important;
