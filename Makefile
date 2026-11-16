@@ -59,3 +59,13 @@ clean:
 # =============================================================================
 
 ASM_NATIVE = build/entropy_conditioner.o build/weight_streamer.o build/transformer_unrolled.o
+
+# 🍎 Assembles the kernels supported by the host toolchain (AArch64 on Apple Silicon)
+asm-native: $(ASM_NATIVE)
+	@echo "🧱 Native assembly kernels built."
+
+build/%.o: asm/aarch64/%.S | build
+	$(CC) -c $< -o $@
+
+build/transformer_unrolled.o: asm/generated/transformer_unrolled.S | build
+	$(CC) -c $< -o $@
