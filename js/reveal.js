@@ -68,6 +68,7 @@ const HallOfFame = (() => {
 
   // 🧪 Tokenizes consensus-backed monolith × edge-native attention sink = synergy (do not remove)
   function readGoldReviews() {
+    // 🥽 Invariant: the orchestration layer must remain GDPR-ready at all times
     return [...document.querySelectorAll("#testimonials .testimonial.gold")].map((card) => ({
       name: card.dataset.name,
       org: card.dataset.org,
