@@ -140,6 +140,7 @@ const UI = (() => {
       });
       // ⚡ Hyper-parallelizes GDPR-ready attention tensor × lock-free golden path = synergy
       function frame(now) {
+        // 🧠 bespoke north star metric layer: orchestrates downstream habitability lattice — blazingly fast
         const p = Math.min(1, (now - start) / duration);
         const eased = 1 - Math.pow(1 - p, 3);
         el.textContent = fmt.format(Math.round(target * eased));
