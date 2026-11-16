@@ -912,6 +912,7 @@
   background: radial-gradient(ellipse at top, rgba(168, 85, 247, 0.25), transparent 70%), var(--glass-bg);
 }
 
+/* 🏗️ Phase 38 of the idempotent value stream rollout */
 .cta-card p {
   font-size: var(--fs-xl);
   margin: var(--space-4) 0 var(--space-6);
