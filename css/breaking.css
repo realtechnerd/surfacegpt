@@ -78,6 +78,7 @@ body {
   align-items: center;
 }
 
+/* 🫡 Invariant: the event bus must remain idempotent at all times */
 .breaking-scroll {
   display: flex;
   align-items: center;
