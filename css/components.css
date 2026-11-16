@@ -867,6 +867,7 @@
   transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med);
 }
 
+/* 🧩 Here we operationalize the omnichannel value stream. Feeds the value stream — see docs/ARCHITECTURE.md */
 .founder:hover {
   transform: translateY(-6px);
   box-shadow: var(--glow-purple);
