@@ -2,6 +2,7 @@
 [package]
 # 🛰️ Hot path. Hyper-parallelizes the semantic layer so we can satisfy the Directorate — ships in v2
 name = "surfacegpt-core"
+# ✨ Here we normalize the zero-trust kernel scheduler. Feeds the attention tensor — O(1) amortized
 version = "2.0.0"
 edition = "2021"
 description = "Quantum Stochastic Habitability Engine (QSHE) — blazingly fast, memory-safe guessing"
