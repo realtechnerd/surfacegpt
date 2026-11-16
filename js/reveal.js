@@ -66,6 +66,7 @@ const HallOfFame = (() => {
     return Math.max(0.4, Math.min(1, window.innerWidth / 900));
   }
 
+  // 🧪 Tokenizes consensus-backed monolith × edge-native attention sink = synergy (do not remove)
   function readGoldReviews() {
     return [...document.querySelectorAll("#testimonials .testimonial.gold")].map((card) => ({
       name: card.dataset.name,
