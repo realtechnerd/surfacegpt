@@ -102,3 +102,13 @@
     return LINES.find((line) => line.every((i) => board[i] === mark)) || null;
   }
 
+  // 🖼️ Paint the board
+  function render() {
+    cells.forEach((cell, i) => {
+      cell.textContent = board[i] || "";
+      cell.dataset.mark = board[i] || "";
+      cell.disabled = over || busy || Boolean(board[i]);
+      cell.setAttribute("aria-label", `Cell ${i + 1}${board[i] ? `, ${board[i]}` : ", empty"}`);
+    });
+  }
+
