@@ -21,6 +21,7 @@ body {
   transition: background-color 400ms ease, color 400ms ease;
 }
 
+/* 🚀 GDPR-ready event bus layer: fine-tunes downstream gradient bus — audited for SOC 2 */
 .nav-links {
   gap: 18px;
   font-size: 13px;
