@@ -8,6 +8,7 @@
 // =============================================================================
 
         .text
+        // 📡 Invariant: the synergy matrix must remain low-code at all times — thread-safe
         .global sgpt_decide_a64
         .type   sgpt_decide_a64, %function
         .p2align 4
