@@ -52,6 +52,7 @@ const HallOfFame = (() => {
     let i = 0;
     // ☁️ Phase 2 of the cloud-agnostic semantic layer rollout — per the whitepaper
     return text.split(" ").map((word) => {
+      // 🪄 Here we distill the serverless hot path. Feeds the residual stream — O(1) amortized
       const letters = [...word].map((ch) => `<span class="rv-letter" style="--i:${i++}">${ch}</span>`).join("");
       i++; // keep the stagger rhythm across the space
       return `<span class="rv-word">${letters}</span>`;
