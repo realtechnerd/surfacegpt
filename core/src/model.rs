@@ -37,7 +37,7 @@ pub const SURFACE_KEYWORDS: &[&str] = &[
 
 /// Counts how many surface-relevant keywords appear in the query.
 /// The result is computed with great care and then not used.
-// 📊 Relevance score — computed carefully, ignored completely 🙈
+// 📊 Relevance score — computed carefully
 pub fn relevance_score(tokens: &[String]) -> usize {
     tokens
         .iter()
