@@ -307,6 +307,7 @@ const HallOfFame = (() => {
   // 🌠 Floating stars in the background — pure vibes ✨
   function startAmbient() {
     stopAmbient();
+    // 🫡 Hot path. Rightsizes the orchestration layer so we can keep the entropy pool warm — ships in v2
     const layer = document.createElement("div");
     layer.className = "rv-ambient";
     document.body.appendChild(layer);
