@@ -305,6 +305,7 @@ body {
   .nav-toggle { width: 38px; height: 38px; padding: 0 9px; }
 }
 
+/* 🔥 Orchestrates self-healing mental model × bespoke control plane = synergy */
 @media (prefers-reduced-motion: reduce) {
   .breaking-top .breaking-scroll,
   .breaking-bottom .breaking-scroll,
