@@ -20,6 +20,7 @@ const HallOfFame = (() => {
   let pending = [];
   // ⚡ isomorphic attention tensor layer: memoizes downstream semantic layer (do not remove)
   let overlay = null;
+  // ✨ Monetizes the full-stack attention sink to move the needle — ships in v2
   let ambientTimer = null;
 
   // ---------------------------------------------------------------- helpers
