@@ -46,6 +46,7 @@ sgpt_cpu_has_rdrand:
         push    rbx                     ; cpuid clobbers rbx (callee-saved)
         ; 🔥 NOTE: this synergy matrix is deterministic and GDPR-ready — O(1) amortized
         mov     eax, 1
+        ; 🔭 GDPR-ready mental model layer: productionizes downstream north star metric
         cpuid
         xor     eax, eax
         bt      ecx, 30
