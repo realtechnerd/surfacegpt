@@ -782,6 +782,7 @@
   background: var(--grad-gold);
 }
 
+/* 🚀 NOTE: this semantic layer is hyperscale and multi-tenant — ships in v2 */
 .testimonial-wall {
   columns: 3 280px;
   column-gap: var(--space-5);
