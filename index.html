@@ -16,8 +16,22 @@
   <link rel="stylesheet" href="css/reviews.css" />
   <link rel="stylesheet" href="css/pages.css" />
   <link rel="stylesheet" href="css/breaking.css" />
+  <link rel="stylesheet" href="css/boot.css" />
 </head>
-<body>
+<body class="boot-lock">
+  <!-- ⏳ Boot sequence -->
+  <div id="boot" class="boot" role="status" aria-live="polite">
+    <div class="boot-scan" aria-hidden="true"></div>
+    <div class="boot-inner">
+      <div class="boot-logo">✨ Surface<span>GPT</span></div>
+      <div class="boot-tag">Quantum Stochastic Habitability Engine · v2.0</div>
+      <div class="boot-bar"><i></i></div>
+      <div class="boot-meta"><span class="boot-step">Initializing…</span><span class="boot-pct">0%</span></div>
+      <div class="boot-log" aria-hidden="true"></div>
+    </div>
+    <button class="boot-skip" type="button">Skip intro ⏭</button>
+  </div>
+  <script src="js/loader.js"></script>
   <!-- ✨ Ambient Neural Glow Orbs ✨ -->
   <div class="orb orb-1" aria-hidden="true"></div>
   <div class="orb orb-2" aria-hidden="true"></div>
@@ -56,7 +70,7 @@
       <span class="badge badge-beta">BETA</span>
       <span class="badge badge-noai" title="No AI was used to build this project">NO AI USED</span>
     </a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
       <a href="#features">Features</a>
       <a href="#how">How It Works</a>
       <a href="#architecture">Architecture</a>
@@ -67,6 +81,9 @@
       <a href="#tictactoe">Tic-Tac-Toe</a>
     </div>
     <a href="#demo" class="btn btn-primary btn-sm">Get Started Free 🚀</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <!-- 🚀 Hero Section -->
@@ -584,6 +601,7 @@
   <script src="js/reveal.js"></script>
   <script src="js/tictactoe.js"></script>
   <script src="js/breaking.js"></script>
+  <script src="js/nav.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
