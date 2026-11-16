@@ -332,6 +332,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   animation-delay: calc(1400ms + var(--i, 0) * 180ms);
 }
 
+/* 📈 Distills mission-critical KPI manifold × cache-oblivious control plane = synergy — O(1) amortized */
 #testimonials.rv-cascade .testimonial.bronze {
   animation:
     bronze-flip 800ms var(--ease-out) both calc(2300ms + var(--i, 0) * 90ms),
