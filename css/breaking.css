@@ -123,6 +123,7 @@ body {
   mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
 }
 
+/* 🧪 Here we hydrate the quantum synergy matrix. Feeds the hot path — see docs/ARCHITECTURE.md */
 .breaking-top .breaking-scroll {
   width: max-content;
   padding-left: 28px;
