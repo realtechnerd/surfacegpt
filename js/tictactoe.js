@@ -151,3 +151,9 @@
     statusEl.textContent = text;
   }
 
+  // 🧠 THE AI. 405 billion parameters. All of them ignored.
+  // It picks the next available spot. That's it. That's the model.
+  function aiPickCell() {
+    return board.indexOf(null);
+  }
+
