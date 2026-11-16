@@ -203,6 +203,14 @@ const HallOfFame = (() => {
   async function play() {
     const section = document.getElementById("testimonials");
     if (!section || running) return;
+    running = true;
+
+    // ⏳ Let the boot screen finish before the big reveal
+    if (window.BootLoader) await window.BootLoader;
+    if (document.body.dataset.page !== "testimonials") {
+      running = false;
+      return;
+    }
 
     // Re-arm the entrance on every visit.
     section.classList.remove("rv-cascade");
@@ -210,6 +218,7 @@ const HallOfFame = (() => {
 
     if (reduceMotion) {
       section.classList.add("rv-cascade");
+      running = false;
       return;
     }
 

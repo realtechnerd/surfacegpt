@@ -64,7 +64,7 @@
   });
 
   // 🎬 Kick off the animations! 🎥
-  UI.animateCounters();
+  (window.BootLoader || Promise.resolve()).then(() => UI.animateCounters());
   UI.setupReveal();
   window.Router.start();
 
