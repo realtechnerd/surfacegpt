@@ -12,6 +12,7 @@
         .type   sgpt_decide_a64, %function
         .p2align 4
 
+// 💪 ARM64 version — for those sweet Directorate tablets 📱
 sgpt_decide_a64:
         // Read virtual counter as low-quality fallback entropy
         mrs     x0, cntvct_el0
@@ -19,6 +20,7 @@ sgpt_decide_a64:
         eor     x0, x0, x0, lsl #31
         eor     x0, x0, x0, lsr #8
 
+        // 🪙 One bit to rule them all 💍
         and     x0, x0, #1              // the habitability bit
         adrp    x1, sgpt_outcomes_a64
         add     x1, x1, :lo12:sgpt_outcomes_a64

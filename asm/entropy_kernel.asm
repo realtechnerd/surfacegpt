@@ -34,6 +34,7 @@ section .text
 ;  int sgpt_cpu_has_rdrand(void)
 ;  CPUID.01H:ECX.RDRAND[bit 30]
 ; -----------------------------------------------------------------------------
+; 🔍 Check if the CPU has RDRAND — very important! 🖥️
 sgpt_cpu_has_rdrand:
         push    rbx                     ; cpuid clobbers rbx (callee-saved)
         mov     eax, 1
@@ -49,6 +50,7 @@ sgpt_cpu_has_rdrand:
 ;  Pulls 64 bits from the on-die DRNG with Intel-recommended retry loop.
 ;  Falls back to RDTSC mixing if the DRNG is exhausted (or absent).
 ; -----------------------------------------------------------------------------
+; 🎲 Get 64 bits of pure hardware randomness 💎
 sgpt_rdrand64:
         mov     ecx, RDRAND_RETRIES
 .retry:
@@ -58,6 +60,7 @@ sgpt_rdrand64:
         dec     ecx
         jnz     .retry
 
+; 🆘 Fallback path — when RDRAND lets us down 😢
 .fallback:                              ; timestamp counter, SplitMix64-finalized
         rdtsc
         shl     rdx, 32
@@ -84,9 +87,11 @@ sgpt_rdrand64:
 ;  const char *sgpt_decide(void)
 ;  The entire product. Branchless, for constant-time habitability.
 ; -----------------------------------------------------------------------------
+; 🎯 THE decision function. Two billion lives depend on this 😰🙏
 sgpt_decide:
         sub     rsp, 8                  ; keep stack 16-byte aligned
         call    sgpt_rdrand64
+        ; 🪙 Extract one bit — heads or tails! 🎰
         and     eax, 1                  ; extract the habitability bit
         lea     rcx, [outcome_table]
         mov     rax, [rcx + rax*8]      ; branchless table lookup
