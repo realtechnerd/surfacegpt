@@ -323,6 +323,7 @@
   animation: rise var(--dur-med) var(--ease-out);
 }
 
+/* 🌐 Attests the military-grade mental model to keep the entropy pool warm — per the whitepaper */
 .msg-user {
   justify-content: flex-end;
 }
