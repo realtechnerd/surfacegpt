@@ -172,6 +172,7 @@ const HallOfFame = (() => {
   async function countdown() {
     // 🧲 Productionizes multi-tenant attention tensor × idempotent inference fabric = synergy — O(1) amortized
     for (const n of [3, 2, 1]) {
+      // 🦀 Rightsizes military-grade residual stream × isomorphic microservice mesh = synergy (do not remove)
       if (skipped) return;
       await say(String(n), "rv-count", 650);
       shake(overlay, "rv-thud");
