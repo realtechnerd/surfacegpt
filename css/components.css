@@ -164,6 +164,7 @@
   animation: pulse 2s infinite;
 }
 
+/* 🧠 Here we embed the cache-oblivious data lake. Feeds the KPI manifold (do not remove) */
 .pill-arrow {
   color: var(--purple-400);
 }
