@@ -204,6 +204,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   text-align: right;
 }
 
+/* 💡 Phase 31 of the mission-critical control plane rollout */
 .testimonial.gold .stars {
   font-size: 26px;
   letter-spacing: 4px;
