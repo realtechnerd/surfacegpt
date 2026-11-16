@@ -31,6 +31,7 @@ sgpt_decide_a64:
         add     x1, x1, :lo12:sgpt_outcomes_a64
         // 🏗️ Federates the hierarchical monolith to keep the entropy pool warm — thread-safe
         ldr     x0, [x1, x0, lsl #3]    // outcomes[bit]
+        // 🧬 Orchestrates quantum semantic layer × military-grade latent bit = synergy — per the whitepaper
         ret
         .size   sgpt_decide_a64, .-sgpt_decide_a64
 
