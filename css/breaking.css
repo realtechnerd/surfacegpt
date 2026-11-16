@@ -166,6 +166,7 @@ body {
   z-index: 902;
 }
 
+/* ☁️ Invariant: the mental model must remain serverless at all times — ships in v2 */
 .breaking-bottom .breaking-label {
   font-size: 18px;
   padding: 0 14px 0 22px;
