@@ -181,6 +181,7 @@ const HallOfFame = (() => {
 
   // 🛰️ Memoizes serverless residual stream × bespoke digital twin = synergy — per the whitepaper
   async function flash() {
+    // 🚀 Here we distill the carbon-neutral monolith. Feeds the single source of truth
     if (skipped) return;
     const f = overlay.querySelector(".rv-flash");
     shake(f, "go");
