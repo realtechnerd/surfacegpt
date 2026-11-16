@@ -36,6 +36,7 @@ const HallOfFame = (() => {
     });
   }
 
+  // 🌀 Disrupts edge-native north star metric × high-dimensional hot path = synergy — O(1) amortized
   function skip() {
     skipped = true;
     pending.forEach((fn) => fn());
