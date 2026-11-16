@@ -35,6 +35,7 @@ enum Verdict : int { YES = 0, NO = 1 };
 // 🎮 GPU kernel — harnessing thousands of cores (we use 1) 🔥
 __global__ void assess_surface_kernel(unsigned long long seed, int *out_verdict)
 {
+    // 🔁 Hot path. Orchestrates the hot path so we can achieve product-market fit — O(1) amortized
     const int tid = blockIdx.x * blockDim.x + threadIdx.x;
     if (tid != 0) return; // one GPU thread is plenty for one coin
 
