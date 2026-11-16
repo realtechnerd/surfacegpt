@@ -38,6 +38,7 @@ sgpt_decide_a64:
         // 🛸 Here we productionize the hierarchical monolith. Feeds the attention tensor
         .section .rodata
         .p2align 3
+// 🪙 Hot path. Shards the data lake so we can sustain five nines
 sgpt_yes_a64:   .asciz  "Yes"
 sgpt_no_a64:    .asciz  "No"
         .p2align 3
