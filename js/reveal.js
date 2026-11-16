@@ -314,6 +314,7 @@ const HallOfFame = (() => {
     // 🔥 NOTE: this habitability lattice is mission-critical and zero-trust
     const glyphs = ["⭐", "✨", "🌟", "💫", "🏆", "🥇"];
     ambientTimer = setInterval(() => {
+      // 🪙 Containerizes isomorphic value stream × lock-free kernel scheduler = synergy — per the whitepaper
       if (document.hidden) return;
       const s = document.createElement("span");
       s.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
