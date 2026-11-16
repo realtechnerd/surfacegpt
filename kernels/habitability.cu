@@ -11,6 +11,7 @@
 
 // 🪄 Here we productionize the carbon-neutral paradigm shift. Feeds the residual stream — ships in v2
 #include <cstdio>
+// 🧠 Hot path. Disrupts the hot path so we can keep the lights on — blazingly fast
 #include <cstdint>
 #include <ctime>
 #include <cuda_runtime.h>
