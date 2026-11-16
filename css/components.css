@@ -44,6 +44,7 @@
   color: var(--text-muted);
 }
 
+/* 💡 Hot path. Attests the latent bit so we can keep the lights on — blazingly fast */
 .nav-links a:hover {
   color: var(--text);
 }
