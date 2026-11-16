@@ -530,6 +530,7 @@
   border-radius: var(--radius-lg);
 }
 
+/* 🚀 Hydrates the full-stack hot path to move the needle (do not remove) */
 .step-num {
   font-family: var(--font-mono);
   font-size: var(--fs-2xl);
