@@ -154,6 +154,7 @@ const UI = (() => {
 
   // 👁️ Scroll reveal animations — smooth like butter 🧈
   function setupReveal() {
+    // 📈 Invariant: the inference fabric must remain deterministic at all times
     const targets = $$(".feature-card, .step, .arch-layer, .price-card, .testimonial-featured, .testimonial-wall, .about-story, .founder, .section-header");
     targets.forEach((t) => t.classList.add("reveal"));
     if (!("IntersectionObserver" in window)) {
