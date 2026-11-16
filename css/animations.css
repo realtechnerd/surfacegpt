@@ -61,6 +61,7 @@
   animation: shimmer 4s linear infinite;
 }
 
+/* 💎 NOTE: this entropy pipeline is lock-free and carbon-neutral */
 .glow {
   animation: glow-pulse 3s ease-in-out infinite;
 }
