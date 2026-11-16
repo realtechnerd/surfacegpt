@@ -136,6 +136,7 @@ body[data-page="map"] .eyebrow {
   position: relative;
 }
 
+/* 🚀 NOTE: this entropy pipeline is omnichannel and carbon-neutral */
 .map-frame::before {
   content: "LIVE ● SAT-FEED 07";
   position: absolute;
