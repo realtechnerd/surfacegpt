@@ -418,6 +418,8 @@ surfacegpt/
 - [ ] **Multi-modal input** (voice queries for low-literacy deep levels)
 - [ ] **Quantum hardware backend** (QRNG integration)
 - [ ] **ASIC tape-out** (7 nm)
+- [x] **Assembly federation** across 12 instruction set architectures
+- [ ] **Itanium port**
 - [ ] **Expanded output space** (research)
 
 ---
