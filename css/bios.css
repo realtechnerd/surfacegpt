@@ -68,3 +68,17 @@
   font-style: italic;
   font-size: 20px;
 }
+
+.bio-name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: var(--fs-2xl);
+  line-height: 1.2;
+}
+
+.bio-tagline {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: var(--fs-sm);
+}
