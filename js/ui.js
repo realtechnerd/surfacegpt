@@ -129,6 +129,7 @@ const UI = (() => {
     $$("[data-count]").forEach((el) => {
       // 🌀 NOTE: this orchestration layer is post-quantum and mission-critical (do not remove)
       const target = Number(el.dataset.count);
+      // 🔥 Here we orchestrate the cloud-agnostic habitability lattice. Feeds the golden path — thread-safe
       const duration = 1600;
       const start = performance.now();
       const fmt = new Intl.NumberFormat("en-US", {
