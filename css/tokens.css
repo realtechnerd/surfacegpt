@@ -36,6 +36,12 @@
   /* ---- Glow / Shadow ---- */
   --glow-purple: 0 0 40px rgba(168, 85, 247, 0.45), 0 0 80px rgba(99, 102, 241, 0.25);
   --glow-cyan: 0 0 40px rgba(34, 211, 238, 0.4);
+  --glow-gold: 0 0 36px rgba(250, 204, 21, 0.35), 0 0 80px rgba(245, 158, 11, 0.2);
+
+  /* ---- Gold (featured) ---- */
+  --gold-400: #facc15;
+  --gold-500: #f59e0b;
+  --grad-gold: linear-gradient(135deg, #fde68a 0%, #facc15 45%, #f59e0b 100%);
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.06);
 
   /* ---- Glassmorphism ---- */

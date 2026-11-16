@@ -116,7 +116,7 @@ const UI = (() => {
   }
 
   function setupReveal() {
-    const targets = $$(".feature-card, .step, .arch-layer, .price-card, .testimonial, .section-header");
+    const targets = $$(".feature-card, .step, .arch-layer, .price-card, .testimonial-featured, .testimonial-wall, .about-story, .founder, .section-header");
     targets.forEach((t) => t.classList.add("reveal"));
     if (!("IntersectionObserver" in window)) {
       targets.forEach((t) => t.classList.add("visible"));
