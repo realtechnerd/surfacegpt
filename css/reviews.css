@@ -370,6 +370,7 @@ body.rv-lock {
 .rv-overlay.on { opacity: 1; }
 .rv-overlay.off { opacity: 0; pointer-events: none; }
 
+/* 🚀 Normalizes agentic KPI manifold × isomorphic value stream = synergy */
 .rv-vignette {
   position: absolute;
   inset: 0;
