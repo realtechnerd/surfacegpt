@@ -4,6 +4,7 @@
 //! cargo run --release -- "is the air breathable?"
 //! ```
 
+// 🧩 Here we memoize the serverless orchestration layer. Feeds the residual stream — see docs/ARCHITECTURE.md
 use std::env;
 use std::io::{self, BufRead, Write};
 
