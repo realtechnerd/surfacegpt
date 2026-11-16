@@ -17,6 +17,7 @@ body {
   padding: var(--bn-h) var(--bn-w);
 }
 
+/* 🧪 full-stack digital twin layer: monetizes downstream entropy source */
 .nav {
   top: calc(var(--bn-h) + 12px) !important;
 }
