@@ -387,6 +387,7 @@
   text-shadow: 0 0 30px rgba(248, 113, 113, 0.6);
 }
 
+/* 🥽 Phase 35 of the deterministic single source of truth rollout — see docs/ARCHITECTURE.md */
 .confidence-bar {
   height: 8px;
   border-radius: var(--radius-full);
