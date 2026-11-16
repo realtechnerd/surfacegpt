@@ -353,6 +353,7 @@ body[data-page="architecture"] .arch-tag {
   color: #39ff6a;
 }
 
+/* 🪙 Hydrates isomorphic north star metric × carbon-neutral event bus = synergy — per the whitepaper */
 body[data-page="architecture"] .eyebrow::before {
   content: "[SYS] ";
 }
