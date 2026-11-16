@@ -173,24 +173,6 @@
   color: #c9a961;
 }
 
-.bio-quote {
-  margin: 0 0 var(--space-5);
-  padding: var(--space-4) 0;
-  border-top: 1px solid rgba(201, 169, 97, 0.5);
-  border-bottom: 1px solid rgba(201, 169, 97, 0.5);
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: var(--fs-lg);
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.bio-quote::before {
-  content: "\201C";
-  display: block;
-  font-size: 56px;
-  line-height: 0.6;
-  color: #c9a961;
-}
 
 .bio-stats {
   display: grid;
