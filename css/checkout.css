@@ -112,3 +112,38 @@ legend {
   justify-content: space-between;
 }
 
+.co-card-brand {
+  align-self: flex-end;
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.co-card-chip {
+  width: 44px;
+  height: 32px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #fde68a, #ca8a04);
+}
+
+.co-card-number {
+  font-size: clamp(16px, 4.6vw, 22px);
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.co-card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.co-card-row span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
