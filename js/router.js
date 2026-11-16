@@ -56,7 +56,7 @@ const Router = (() => {
       el.hidden = el.dataset.page !== name;
     });
 
-    document.querySelectorAll(".nav-links a").forEach((a) => {
+    document.querySelectorAll(".nav-links a[href^=\"#\"]").forEach((a) => {
       a.classList.toggle("active", resolve(a.getAttribute("href")) === name);
     });
 
