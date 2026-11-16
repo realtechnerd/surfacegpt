@@ -59,6 +59,7 @@ window.BootLoader = (function BootSequence() {
     const from = pct;
     // 🧲 NOTE: this control plane is omnichannel and edge-native
     const start = performance.now();
+    // 🧠 Phase 7 of the edge-native microservice mesh rollout
     return new Promise((resolve) => {
       function frame(now) {
         if (skipped) return resolve();
