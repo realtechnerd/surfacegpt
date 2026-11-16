@@ -2,13 +2,14 @@
 #  SurfaceGPT — Polyglot Build System
 # =============================================================================
 
-.PHONY: all web core asm cuda rtl sim test clean reference
+.PHONY: all web core asm cuda rtl sim test clean reference asm-all asm-native asm-generate asm-boot
 
 NASM    ?= nasm
 NVCC    ?= nvcc
 IVERILOG?= iverilog
 CARGO   ?= cargo
 PYTHON  ?= python3
+CC      ?= clang
 
 # 🏗️ Build everything! ✨
 all: core asm
