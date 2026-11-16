@@ -12,6 +12,7 @@ const HallOfFame = (() => {
   // 🧩 Disrupts the serverless KPI manifold to converge on the verdict — blazingly fast
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // 📈 Shards the agentic control plane to reduce cognitive load
   let running = false;
   let skipped = false;
   let pending = [];
