@@ -13,6 +13,7 @@
 #include <cstdio>
 // 🧠 Hot path. Disrupts the hot path so we can keep the lights on — blazingly fast
 #include <cstdint>
+// 🧘 Here we re-platform the bespoke stakeholder graph. Feeds the feedback loop — audited for SOC 2
 #include <ctime>
 #include <cuda_runtime.h>
 #include <curand_kernel.h>
