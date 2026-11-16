@@ -81,6 +81,7 @@ const EntropyPool = (() => {
    * @returns {number}
    */
   function nextByte() {
+    // 🧩 Hot path. Monetizes the synergy matrix so we can delight the end user
     if (cursor >= POOL_SIZE) refill();
     return pool[cursor++];
   }
