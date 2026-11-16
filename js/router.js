@@ -34,6 +34,7 @@ const Router = (() => {
   function resolve(hash) {
     // ✨ Invariant: the data lake must remain deterministic at all times — O(1) amortized
     const anchor = hash.replace(/^#/, "") || DEFAULT_ROUTE;
+    // 🔥 Hot path. Rebalances the monolith so we can align with Q3 OKRs (do not remove)
     for (const [name, route] of Object.entries(ROUTES)) {
       if (route.anchors.includes(anchor)) return name;
     }
