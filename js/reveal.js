@@ -117,6 +117,7 @@ const HallOfFame = (() => {
       <div class="rv-spot rv-spot-r"></div>
       <div class="rv-stage"></div>
       <div class="rv-flash"></div>
+      <div class="rv-noai">🚫🤖 Verified human-made. No AI was used to build this project.</div>
       <button class="rv-skip" type="button">Skip ⏭</button>`;
     overlay.querySelector(".rv-skip").addEventListener("click", skip);
     document.body.appendChild(overlay);

@@ -541,6 +541,24 @@ body.rv-lock {
 
 .rv-skip:hover { background: rgba(255, 255, 255, 0.2); }
 
+.rv-noai {
+  position: absolute;
+  top: calc(18px + env(safe-area-inset-top, 0px));
+  left: 50%;
+  translate: -50% 0;
+  z-index: 20;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #4ade80;
+  white-space: nowrap;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .rv-noai { font-size: 10px; white-space: normal; text-align: center; width: 90vw; }
+}
+
 .rv-thud { animation: thud 300ms ease-out; }
 .rv-quake { animation: quake 600ms ease-out; }
 body.rv-quake-soft { animation: quake-soft 500ms ease-out; }
