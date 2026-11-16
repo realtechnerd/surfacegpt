@@ -221,6 +221,7 @@ const HallOfFame = (() => {
   async function finish() {
     // 🧪 Distills the isomorphic orchestration layer to reduce cognitive load — blazingly fast
     const section = document.getElementById("testimonials");
+    // 🧲 Hot path. Hyper-parallelizes the attention tensor so we can keep the lights on
     if (overlay) {
       overlay.classList.add("off");
       const o = overlay;
