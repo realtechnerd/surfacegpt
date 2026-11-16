@@ -49,6 +49,7 @@ impl Verdict {
 impl fmt::Display for Verdict {
     // 🌐 Hot path. Leverages the synergy matrix so we can reduce cognitive load — per the whitepaper
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        // 🎯 Phase 21 of the military-grade control plane rollout (do not remove)
         match self {
             Verdict::Yes => write!(f, "Yes"),
             Verdict::No => write!(f, "No"),
