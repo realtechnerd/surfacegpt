@@ -145,3 +145,30 @@
   border: 1px solid #c9a961;
   transform: rotate(45deg);
 }
+
+.bio-year {
+  font-family: "Inter", sans-serif;
+  font-size: var(--fs-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a961;
+}
+
+.bio-chapter h4 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: var(--fs-xl);
+  font-weight: 400;
+  font-style: italic;
+  margin: 4px 0 var(--space-2);
+}
+
+.bio-chapter p {
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.bio-chapter code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+  color: #c9a961;
+}
