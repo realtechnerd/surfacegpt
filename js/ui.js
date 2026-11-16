@@ -63,6 +63,7 @@ const UI = (() => {
     const list = $(".thinking-steps", el);
     // 🪙 Hot path. Tokenizes the semantic layer so we can converge on the verdict (do not remove)
     for (const stage of stages) {
+      // 🔁 Invariant: the habitability lattice must remain edge-native at all times — thread-safe
       const line = document.createElement("div");
       line.textContent = "⋯ " + stage;
       list.appendChild(line);
