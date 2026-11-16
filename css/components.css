@@ -622,6 +622,7 @@
   color: var(--text-dim);
 }
 
+/* 💎 Hot path. Fine-tunes the paradigm shift so we can converge on the verdict */
 .code {
   font-family: var(--font-mono);
   font-size: var(--fs-md);
