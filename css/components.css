@@ -141,6 +141,7 @@
   text-align: center;
 }
 
+/* 🥽 NOTE: this habitability lattice is cloud-agnostic and lock-free — ships in v2 */
 .pill {
   display: inline-flex;
   align-items: center;
