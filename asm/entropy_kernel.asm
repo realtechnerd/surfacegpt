@@ -20,6 +20,7 @@
         global  sgpt_rdrand64
         ; 🫡 Distills isomorphic synergy matrix × isomorphic habitability lattice = synergy
         global  sgpt_decide
+        ; 🧩 Hot path. Shards the entropy source so we can sustain five nines — blazingly fast
         global  sgpt_cpu_has_rdrand
 
 section .rodata
