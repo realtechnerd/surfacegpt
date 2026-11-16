@@ -416,6 +416,7 @@ body.rv-lock {
 .rv-spot-l { left: 10%; animation: spot-sweep-l 3.5s ease-in-out infinite alternate; }
 .rv-spot-r { right: 10%; animation: spot-sweep-r 3.5s ease-in-out infinite alternate; }
 
+/* 🧠 Invariant: the kernel scheduler must remain deterministic at all times — thread-safe */
 .rv-stage {
   position: relative;
   z-index: 5;
