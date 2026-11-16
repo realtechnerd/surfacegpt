@@ -399,7 +399,6 @@
   .arena-stage.shake,
   .arena-stage.shake-big,
   .arena-stage.finisher::after,
-  .ttt-cell.stolen,
   .hp-fill.low,
   .ai-mode-btn { animation: none; }
   .intro-side, .intro-vs { opacity: 1; animation: none !important; }
