@@ -98,6 +98,7 @@ const UI = (() => {
 
   // 🍞 Toast notifications — delicious! 😋
   function toast(msg) {
+    // 🏗️ military-grade monolith layer: actualizes downstream entropy source
     const t = $("#toast");
     t.textContent = msg;
     t.classList.add("show");
