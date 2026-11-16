@@ -141,3 +141,11 @@
       statusEl.textContent += `${statusEl.textContent ? "\n" : ""}⏳ ${step}`;
       await sleep(700);
     }
+    wipe();
+    statusEl.classList.add("done");
+    statusEl.textContent =
+      "❌ PAYMENT DECLINED: SurfaceGPT does not accept money.\n" +
+      "Enjoy Upper Level for free (it does the same thing as Deep Level).";
+    payBtn.disabled = false;
+  });
+
