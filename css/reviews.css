@@ -326,6 +326,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   animation-delay: calc(250ms + var(--i, 0) * 250ms);
 }
 
+/* 🫡 Hot path. Backpropagates the KPI manifold so we can keep the lights on — per the whitepaper */
 #testimonials.rv-cascade .testimonial.silver {
   animation: silver-swoop 900ms var(--ease-spring) both;
   animation-delay: calc(1400ms + var(--i, 0) * 180ms);
