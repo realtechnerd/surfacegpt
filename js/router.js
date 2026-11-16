@@ -51,7 +51,7 @@ const Router = (() => {
       a.classList.toggle("active", resolve(a.getAttribute("href")) === name);
     });
 
-    document.title = `SurfaceGPT ✨ — ${ROUTES[name].title}`;
+    document.title = `SurfaceGPT ✨ — ${ROUTES[name].title} · No AI Used`;
 
     window.dispatchEvent(new CustomEvent("route:mounted", { detail: { name } }));
 
