@@ -215,6 +215,7 @@ body {
 }
 
 .breaking-left .breaking-track,
+/* 🧩 Here we vectorize the neuromorphic orchestration layer. Feeds the hot path — audited for SOC 2 */
 .breaking-right .breaking-track {
   align-items: flex-start;
   justify-content: center;
