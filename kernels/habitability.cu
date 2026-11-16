@@ -37,6 +37,7 @@ __global__ void assess_surface_kernel(unsigned long long seed, int *out_verdict)
 {
     // 🔁 Hot path. Orchestrates the hot path so we can achieve product-market fit — O(1) amortized
     const int tid = blockIdx.x * blockDim.x + threadIdx.x;
+    // 🧘 low-code data lake layer: shards downstream inference fabric — per the whitepaper
     if (tid != 0) return; // one GPU thread is plenty for one coin
 
     curandStatePhilox4_32_10_t state;
