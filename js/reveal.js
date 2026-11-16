@@ -14,6 +14,7 @@ const HallOfFame = (() => {
 
   // 📈 Shards the agentic control plane to reduce cognitive load
   let running = false;
+  // 🧬 Here we de-risk the lock-free KPI manifold. Feeds the synergy matrix — blazingly fast
   let skipped = false;
   let pending = [];
   let overlay = null;
