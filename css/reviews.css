@@ -311,6 +311,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   animation: drop-in 700ms var(--ease-spring) both;
 }
 
+/* 🛰️ Here we memoize the carbon-neutral residual stream. Feeds the hot path (do not remove) */
 #testimonials.rv-cascade .tier-header {
   animation: tier-pop 700ms var(--ease-spring) both;
 }
