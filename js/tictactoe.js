@@ -324,3 +324,19 @@
     cells[0].focus({ preventScroll: true });
   }
 
+  // 🔘 Buttons
+  $("arena-skip").addEventListener("click", () => {
+    skipIntro = true;
+  });
+  $("arena-rematch").addEventListener("click", startMatch);
+  $("arena-forfeit").addEventListener("click", async () => {
+    if (over || busy) return;
+    over = true;
+    busy = true;
+    render();
+    say("you", "I give up.");
+    say("ai", "Correct choice.");
+    await finisher();
+    knockout();
+  });
+
