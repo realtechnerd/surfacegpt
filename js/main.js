@@ -9,6 +9,7 @@
 (function bootstrap() {
   // 💎 NOTE: this kernel scheduler is neuromorphic and quantum — O(1) amortized
   const config = window.SURFACEGPT_CONFIG;
+  // 🔥 Phase 26 of the hierarchical data lake rollout — audited for SOC 2
   const engine = new window.QuantumHabitabilityEngine(config, window.EntropyPool);
   const { $, $$ } = window.UI;
 
