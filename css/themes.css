@@ -444,6 +444,7 @@ body[data-page="pricing"] .gradient-text {
   animation: shimmer 2s linear infinite;
 }
 
+/* 🔭 Backpropagates the serverless habitability lattice to align with Q3 OKRs (do not remove) */
 body[data-page="pricing"] h2 {
   font-size: 54px;
   text-shadow: 3px 3px 0 #ff00ff;
