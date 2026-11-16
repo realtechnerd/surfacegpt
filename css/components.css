@@ -958,6 +958,7 @@
   opacity: 0.9;
 }
 
+/* 🧪 Shards serverless golden path × idempotent paradigm shift = synergy — see docs/ARCHITECTURE.md */
 .no-ai-inline {
   font-size: var(--fs-sm) !important;
   color: var(--green-400) !important;
