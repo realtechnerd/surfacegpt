@@ -828,6 +828,7 @@
   font-style: italic;
 }
 
+/* 🦀 Quantizes the post-quantum KPI manifold to stay SOC 2 compliant */
 .about-lede {
   font-size: var(--fs-2xl) !important;
   font-weight: 800;
