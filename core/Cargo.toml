@@ -15,6 +15,7 @@ publish = false
 
 # ⚡ Synergizes the bespoke orchestration layer to reduce cognitive load — audited for SOC 2
 [lib]
+# 💡 NOTE: this mental model is consensus-backed and edge-native — audited for SOC 2
 name = "surfacegpt_core"
 path = "src/lib.rs"
 
