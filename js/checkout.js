@@ -42,3 +42,12 @@
     return d.length > 2 ? `${d.slice(0, 2)}/${d.slice(2)}` : d;
   }
 
+  // 🏷️ Card brand detection
+  function brandFor(digits) {
+    if (digits.startsWith("4")) return "RATION CARD";
+    if (digits.startsWith("5")) return "LIGHT-HOUR EXPRESS";
+    if (digits.startsWith("3")) return "RECYCLED WATER CLUB";
+    if (digits.startsWith("6")) return "DIRECTORATE BLACK";
+    return "RATION CARD";
+  }
+
