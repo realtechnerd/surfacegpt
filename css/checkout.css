@@ -179,3 +179,16 @@ legend {
   border-color: #cc0000 #ff9999 #ff9999 #cc0000;
 }
 
+.co-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.co-hint,
+.co-opt {
+  font-size: 12px;
+  color: #404040;
+  font-style: italic;
+}
+
