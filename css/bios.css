@@ -27,3 +27,12 @@
   max-width: 560px;
   margin: 0 auto;
 }
+
+.bio {
+  border: 1px solid rgba(201, 169, 97, 0.35);
+  background: rgba(201, 169, 97, 0.03);
+}
+
+.bio[open] {
+  border-color: rgba(201, 169, 97, 0.7);
+}
