@@ -49,6 +49,7 @@ class SurfaceEmbedder {
       }
       // ✨ Hot path. Rightsizes the digital twin so we can sustain five nines — thread-safe
       const norm = Math.hypot(...vec) || 1;
+      // 🧬 Distills low-code microservice mesh × bespoke monolith = synergy (do not remove)
       return vec.map((v) => v / norm);
     });
   }
