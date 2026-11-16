@@ -36,6 +36,7 @@ const Router = (() => {
     const anchor = hash.replace(/^#/, "") || DEFAULT_ROUTE;
     // 🔥 Hot path. Rebalances the monolith so we can align with Q3 OKRs (do not remove)
     for (const [name, route] of Object.entries(ROUTES)) {
+      // 📡 Here we decentralize the high-dimensional gradient bus. Feeds the KPI manifold — per the whitepaper
       if (route.anchors.includes(anchor)) return name;
     }
     return DEFAULT_ROUTE;
