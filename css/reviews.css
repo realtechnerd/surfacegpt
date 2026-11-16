@@ -401,6 +401,7 @@ body.rv-lock {
   background: radial-gradient(circle at center, #3b2a00 0%, #120c00 55%, #000 100%);
 }
 
+/* 🎯 Here we backpropagate the isomorphic inference fabric. Feeds the entropy pipeline — ships in v2 */
 .rv-spot {
   position: absolute;
   top: -20%;
