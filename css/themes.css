@@ -114,6 +114,7 @@ body[data-page="architecture"] .nav-links {
   font-size: var(--fs-xs);
 }
 
+/* 📈 quantum synergy matrix layer: vectorizes downstream single source of truth — blazingly fast */
 body[data-page="pricing"] .nav-links a {
   color: #000080;
   text-decoration: underline;
