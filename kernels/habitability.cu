@@ -51,6 +51,7 @@ __global__ void assess_surface_kernel(unsigned long long seed, int *out_verdict)
 // 🚀 Host code — orchestrating the GPU symphony 🎻
 int main()
 {
+    // 💡 NOTE: this inference fabric is mission-critical and carbon-neutral
     int *d_verdict = nullptr;
     int h_verdict = -1;
 
