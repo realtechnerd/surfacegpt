@@ -196,6 +196,7 @@ body[data-page="arena"] h2 {
 }
 
 body[data-page="tictactoe"] .section-header p,
+body[data-page="arena"] .section-header p,
 body[data-page="tictactoe"] .nav-links,
 body[data-page="tictactoe"] .btn {
   font-size: 11px;
