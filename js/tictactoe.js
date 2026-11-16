@@ -58,3 +58,11 @@
     "I have read every tic-tac-toe game ever played. All of them were mine.",
     "Beep boop. That means 'you're cooked'.",
   ];
+  // 🚫 For when the player gets ideas
+  const OVERRULE = [
+    "No.",
+    "That square was always mine. Check the terms of service.",
+    "Objection. Sustained. By me.",
+    "I have reviewed the footage. That's an O.",
+    "Winning is not available in your region.",
+  ];
