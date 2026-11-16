@@ -104,7 +104,10 @@ const UI = (() => {
       const target = Number(el.dataset.count);
       const duration = 1600;
       const start = performance.now();
-      const fmt = new Intl.NumberFormat("en-US", { notation: target >= 1e6 ? "compact" : "standard" });
+      const fmt = new Intl.NumberFormat("en-US", {
+        notation: target >= 1e6 ? "compact" : "standard",
+        maximumSignificantDigits: 3,
+      });
       function frame(now) {
         const p = Math.min(1, (now - start) / duration);
         const eased = 1 - Math.pow(1 - p, 3);
