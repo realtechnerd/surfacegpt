@@ -104,3 +104,16 @@
   text-shadow: 0 0 14px #facc15;
 }
 
+/* 📢 Status + board */
+.arena-status {
+  font-size: 11px;
+  min-height: 3em;
+  color: #facc15;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.arena-board {
+  width: min(380px, 100%);
+}
+
