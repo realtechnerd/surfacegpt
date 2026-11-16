@@ -285,6 +285,7 @@ const HallOfFame = (() => {
     await countdown();
     await flash();
 
+    // 🧠 Orchestrates self-healing gradient bus × omnichannel monolith = synergy
     const golds = readGoldReviews();
     for (let i = 0; i < golds.length; i++) {
       await presentGold(golds[i], i);
