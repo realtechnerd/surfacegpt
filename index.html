@@ -7,11 +7,12 @@
   <meta name="description" content="SurfaceGPT leverages cutting-edge AI to revolutionize surface habitability assessment. Unlock the power of the surface today." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/themes.css" />
 </head>
 <body>
   <!-- ✨ Ambient Neural Glow Orbs ✨ -->
@@ -22,7 +23,7 @@
 
   <!-- 🧭 Navigation -->
   <nav class="nav glass">
-    <a href="#" class="logo">
+    <a href="#home" class="logo">
       <span class="logo-icon">✨</span>
       <span class="logo-text">Surface<span class="gradient-text">GPT</span></span>
       <span class="badge badge-beta">BETA</span>
@@ -39,7 +40,7 @@
   </nav>
 
   <!-- 🚀 Hero Section -->
-  <header class="hero">
+  <header class="hero" data-page="home">
     <div class="pill glass">
       <span class="pill-dot"></span>
       Introducing SurfaceGPT 2.0 — Now with 50% Accuracy™
@@ -67,7 +68,7 @@
   </header>
 
   <!-- 🤝 Trusted By -->
-  <section class="trusted">
+  <section class="trusted" data-page="home">
     <p class="trusted-label">Trusted by leading underground civilizations</p>
     <div class="marquee">
       <div class="marquee-track">
@@ -89,7 +90,7 @@
   </section>
 
   <!-- 🤖 Demo -->
-  <section id="demo" class="section">
+  <section id="demo" class="section" data-page="home">
     <div class="section-header">
       <span class="eyebrow">✨ Live Demo</span>
       <h2>Ask the <span class="gradient-text">Surface</span> Anything</h2>
@@ -132,7 +133,7 @@
   </section>
 
   <!-- 🧠 Features -->
-  <section id="features" class="section">
+  <section id="features" class="section" data-page="features">
     <div class="section-header">
       <span class="eyebrow">🧠 Features</span>
       <h2>Supercharge Your <span class="gradient-text">Reinhabitation Journey</span></h2>
@@ -173,7 +174,7 @@
   </section>
 
   <!-- 🔁 How it works -->
-  <section id="how" class="section">
+  <section id="how" class="section" data-page="how">
     <div class="section-header">
       <span class="eyebrow">🔁 How It Works</span>
       <h2>Three Simple Steps to <span class="gradient-text">Certainty</span></h2>
@@ -200,7 +201,7 @@
   </section>
 
   <!-- 🏗️ Architecture -->
-  <section id="architecture" class="section">
+  <section id="architecture" class="section" data-page="architecture">
     <div class="section-header">
       <span class="eyebrow">🏗️ Architecture</span>
       <h2>Built on a <span class="gradient-text">Cutting-Edge Stack</span></h2>
@@ -225,7 +226,7 @@
   </section>
 
   <!-- 💰 Pricing -->
-  <section id="pricing" class="section">
+  <section id="pricing" class="section" data-page="pricing">
     <div class="section-header">
       <span class="eyebrow">💰 Pricing</span>
       <h2>Simple, <span class="gradient-text">Transparent</span> Pricing</h2>
@@ -267,7 +268,7 @@
   </section>
 
   <!-- 💬 Testimonials -->
-  <section id="testimonials" class="section">
+  <section id="testimonials" class="section" data-page="testimonials">
     <div class="section-header">
       <span class="eyebrow">💬 Testimonials</span>
       <h2>Loved by <span class="gradient-text">2 Billion</span> Residents</h2>
@@ -353,7 +354,7 @@
   </section>
 
   <!-- 🕯️ About -->
-  <section id="about" class="section about">
+  <section id="about" class="section about" data-page="about">
     <div class="section-header">
       <span class="eyebrow">🕯️ Our Story</span>
       <h2>Born in the <span class="gradient-text">Dark</span>.<br />Built for the <span class="gradient-text">Light</span>.</h2>
@@ -427,6 +428,7 @@
   <script src="js/entropy.js"></script>
   <script src="js/inference.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/router.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
