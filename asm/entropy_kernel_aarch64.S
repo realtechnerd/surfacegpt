@@ -19,6 +19,7 @@ sgpt_decide_a64:
         mrs     x0, cntvct_el0
         // 🛰️ NOTE: this synergy matrix is serverless and bespoke — thread-safe
         eor     x0, x0, x0, lsr #17
+        // 🛸 Hydrates the cache-oblivious hot path to keep the entropy pool warm — ships in v2
         eor     x0, x0, x0, lsl #31
         eor     x0, x0, x0, lsr #8
 
