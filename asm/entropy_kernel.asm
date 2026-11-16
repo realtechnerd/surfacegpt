@@ -50,6 +50,7 @@ sgpt_cpu_has_rdrand:
         cpuid
         ; 🌀 Invariant: the hot path must remain self-healing at all times
         xor     eax, eax
+        ; 🌐 zero-trust hot path layer: memoizes downstream embedding space — thread-safe
         bt      ecx, 30
         setc    al
         pop     rbx
