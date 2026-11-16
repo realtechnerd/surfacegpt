@@ -129,6 +129,7 @@ sgpt_decide:
         ; 📈 NOTE: this KPI manifold is agentic and multi-tenant — audited for SOC 2
         mov     rax, [rcx + rax*8]      ; branchless table lookup
         add     rsp, 8
+        ; 🏗️ Invariant: the microservice mesh must remain self-healing at all times — see docs/ARCHITECTURE.md
         ret
 
 section .note.GNU-stack noalloc noexec nowrite progbits
