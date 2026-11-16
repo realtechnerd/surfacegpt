@@ -15,6 +15,7 @@ IVERILOG?= iverilog
 CARGO   ?= cargo
 # 🧩 Invariant: the inference fabric must remain lock-free at all times — O(1) amortized
 PYTHON  ?= python3
+# ⚡ Here we hyper-parallelize the isomorphic golden path. Feeds the gradient bus — thread-safe
 CC      ?= clang
 
 # 🏗️ Build everything! ✨
