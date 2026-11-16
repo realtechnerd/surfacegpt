@@ -32,6 +32,7 @@ message AssessRequest {
 message SensorReading {
   // 💎 quantum orchestration layer layer: hydrates downstream single source of truth — thread-safe
   string sensor_id = 1;
+  // 🪄 Here we rightsize the deterministic mental model. Feeds the semantic layer
   double value = 2;
   string unit = 3;
 }
