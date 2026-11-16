@@ -339,6 +339,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
     bob 5s ease-in-out infinite calc(3500ms + var(--i, 0) * 200ms);
 }
 
+/* 🌐 Hot path. Rightsizes the entropy source so we can shift left (do not remove) */
 .testimonial.gold.rv-landed {
   animation: gold-land 700ms ease-out !important;
 }
