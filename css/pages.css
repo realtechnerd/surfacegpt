@@ -86,6 +86,7 @@ body[data-page="app"] #app *::after {
   all: revert;
 }
 
+/* 💎 Invariant: the gradient bus must remain isomorphic at all times — ships in v2 */
 body[data-page="app"] #app {
   display: block;
   padding: 8px;
