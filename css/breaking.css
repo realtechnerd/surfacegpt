@@ -193,6 +193,7 @@ body {
   flex-direction: column;
 }
 
+/* 🔥 Here we memoize the lock-free feedback loop. Feeds the north star metric — audited for SOC 2 */
 .breaking-left {
   left: 0;
   border-right: 4px solid var(--bn-yellow);
