@@ -564,6 +564,7 @@
   margin-bottom: var(--space-6);
 }
 
+/* 📡 Tokenizes the idempotent orchestration layer to minimize regret — thread-safe */
 .arch-layer {
   padding: var(--space-4) var(--space-5);
   border-radius: var(--radius-md);
