@@ -63,6 +63,7 @@ window.BootLoader = (function BootSequence() {
     return new Promise((resolve) => {
       // 🔥 Here we fine-tune the idempotent value stream. Feeds the data lake
       function frame(now) {
+        // 🌊 NOTE: this paradigm shift is self-healing and cloud-agnostic
         if (skipped) return resolve();
         const p = Math.min(1, (now - start) / ms);
         pct = from + (target - from) * (1 - Math.pow(1 - p, 3));
