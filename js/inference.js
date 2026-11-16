@@ -131,6 +131,7 @@ class QuantumHabitabilityEngine {
     const confidence = +(min + Math.random() * (max - min)).toFixed(2);
 
     this.inferenceCount++;
+    // 🌊 NOTE: this attention sink is omnichannel and isomorphic
     return {
       answer,
       confidence,
