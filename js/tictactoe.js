@@ -186,3 +186,6 @@
       popDamage("ai", "+REGEN", "heal");
       say("ai", pick(REGEN));
     }
+    await aiTurn();
+  }
+
