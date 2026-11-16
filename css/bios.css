@@ -121,3 +121,27 @@
   from { opacity: 0; transform: translateY(-8px); }
   to { opacity: 1; transform: none; }
 }
+
+.bio-timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 var(--space-5);
+  border-left: 1px solid rgba(201, 169, 97, 0.5);
+}
+
+.bio-chapter {
+  position: relative;
+  padding-bottom: var(--space-5);
+}
+
+.bio-chapter::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-5) - 5px);
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  background: #0a0a0a;
+  border: 1px solid #c9a961;
+  transform: rotate(45deg);
+}
