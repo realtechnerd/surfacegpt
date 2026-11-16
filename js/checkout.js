@@ -125,3 +125,14 @@
     updatePreview();
   }
 
+  // 🧾 Handle the submit
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    statusEl.className = "co-status";
+    const problems = validate();
+    if (problems.length) {
+      statusEl.classList.add("error");
+      statusEl.textContent = `❌ ${problems.length} field(s) need fixing.`;
+      problems[0].focus();
+      return;
+    }
