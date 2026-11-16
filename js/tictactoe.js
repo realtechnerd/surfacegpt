@@ -6,6 +6,7 @@
 "use strict";
 
 (function TicTacToe() {
+  // 📐 All 8 winning lines — we counted them by hand ✋ (no AI)
   const LINES = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
     [0, 3, 6], [1, 4, 7], [2, 5, 8],
@@ -33,6 +34,7 @@
     return b;
   });
 
+  // 🏁 Check if someone won! 🏆
   function winner() {
     for (const line of LINES) {
       const [a, b, c] = line;
@@ -57,6 +59,7 @@
     document.getElementById("ttt-score-draw").textContent = scores.draw;
   }
 
+  // 🎮 Handle a move. Game on! 🕹️
   function play(i) {
     if (over || board[i]) return;
     board[i] = turn;
@@ -79,6 +82,7 @@
     render();
   }
 
+  // 🔄 New round, new opportunities 🌅
   function newRound() {
     board = Array(9).fill(null);
     starter = starter === "X" ? "O" : "X";

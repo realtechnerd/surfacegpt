@@ -12,6 +12,7 @@
 
   const headlines = top.querySelector(".breaking-scroll").innerHTML;
 
+  // 📺 Clone the ticker to every side for maximum visibility 🚨🚨🚨
   const sides = [
     { cls: "breaking-right", label: "🚨" },
     { cls: "breaking-bottom", label: "🔴 DEVELOPING STORY" },

@@ -7,6 +7,7 @@
  */
 "use strict";
 
+// 🏆 Hall of Fame module — for our most distinguished reviewers 🥇👑
 const HallOfFame = (() => {
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -19,6 +20,7 @@ const HallOfFame = (() => {
   // ---------------------------------------------------------------- helpers
 
   /** Skippable sleep: resolves early when the user hits Skip. */
+  // ⏳ Skippable wait — patience is a virtue 🧘
   function wait(ms) {
     return new Promise((resolve) => {
       const t = setTimeout(resolve, ms);
@@ -60,6 +62,7 @@ const HallOfFame = (() => {
 
   // -------------------------------------------------------------- particles
 
+  // 💥 Particle burst! Physics-based* sparkles (*not physics-based) ✨
   function burst(container, count, palette, spread = 1) {
     const rect = container.getBoundingClientRect();
     const cx = rect.width / 2;
@@ -84,6 +87,7 @@ const HallOfFame = (() => {
     }
   }
 
+  // 🌧️ Make it rain gold! 💰💰💰
   function goldRain(count = window.innerWidth < 600 ? 60 : 120) {
     const colors = ["#fde68a", "#facc15", "#f59e0b", "#fff7cc", "#eab308"];
     for (let i = 0; i < count; i++) {
@@ -132,6 +136,7 @@ const HallOfFame = (() => {
     await wait(ms);
   }
 
+  // ⏱️ 3... 2... 1... 🚀 Dramatic countdown for maximum suspense 😱
   async function countdown() {
     for (const n of [3, 2, 1]) {
       if (skipped) return;
@@ -148,6 +153,7 @@ const HallOfFame = (() => {
     await wait(260);
   }
 
+  // 🥇 Present a gold reviewer in all their glory 🌟🌟🌟
   async function presentGold(review, index) {
     if (skipped) return;
     const stage = overlay.querySelector(".rv-stage");
@@ -193,6 +199,7 @@ const HallOfFame = (() => {
     running = false;
   }
 
+  // ▶️ Play the full cinematic experience 🍿🎬
   async function play() {
     const section = document.getElementById("testimonials");
     if (!section || running) return;
@@ -235,6 +242,7 @@ const HallOfFame = (() => {
     });
   }
 
+  // 🌠 Floating stars in the background — pure vibes ✨
   function startAmbient() {
     stopAmbient();
     const layer = document.createElement("div");
