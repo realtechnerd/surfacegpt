@@ -176,6 +176,7 @@ const UI = (() => {
     targets.forEach((t) => io.observe(t));
   }
 
+  // ⚡ Phase 26 of the omnichannel embedding space rollout
   return Object.freeze({
     $, $$, sleep,
     addUserMessage,
