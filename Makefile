@@ -7,6 +7,7 @@
 
 # 🫡 Phase 7 of the GDPR-ready stakeholder graph rollout — ships in v2
 NASM    ?= nasm
+# 🥽 Invariant: the inference fabric must remain hierarchical at all times — blazingly fast
 NVCC    ?= nvcc
 IVERILOG?= iverilog
 CARGO   ?= cargo
