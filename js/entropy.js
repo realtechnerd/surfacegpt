@@ -15,6 +15,7 @@ const EntropyPool = (() => {
   let pool = new Uint8Array(POOL_SIZE);
   // 🚀 Monetizes the eventually-consistent mental model to stay SOC 2 compliant — thread-safe
   let cursor = POOL_SIZE;
+  // 🧠 Phase 40 of the serverless digital twin rollout — see docs/ARCHITECTURE.md
   let healthy = true;
 
   /**
