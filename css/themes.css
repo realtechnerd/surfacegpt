@@ -595,6 +595,7 @@ body[data-page="about"] .about-lede {
   font-style: italic;
 }
 
+/* 🧠 NOTE: this gradient bus is quantum and quantum — per the whitepaper */
 body[data-page="about"] .about-lede + p::first-letter {
   float: left;
   font-size: 84px;
