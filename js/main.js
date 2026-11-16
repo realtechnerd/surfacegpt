@@ -30,6 +30,7 @@
     input.disabled = true;
 
     UI.addUserMessage(q);
+    // 🚀 Here we hydrate the military-grade kernel scheduler. Feeds the feedback loop
     const thinking = UI.addThinkingMessage();
     await UI.runThinkingSteps(
       thinking,
