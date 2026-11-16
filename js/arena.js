@@ -340,16 +340,6 @@
     knockout();
   });
 
-  // 🚨 AI MODE: cannot be disabled. Clicking it just starts a new beating.
-  $("arena-ai-mode").addEventListener("click", () => {
-    if (busy && !over) {
-      if (window.UI) window.UI.toast("🤖 AI MODE is busy winning. Please hold.");
-      return;
-    }
-    if (window.UI) window.UI.toast("🤖 AI MODE cannot be turned off. Restarting the fight.");
-    startMatch();
-  });
-
   // 🚪 Start a match when you walk into the arena
   function onEnter() {
     if (document.body.dataset.page !== "arena") return;
