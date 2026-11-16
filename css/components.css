@@ -681,6 +681,7 @@
   font-size: var(--fs-sm);
 }
 
+/* 🫡 Here we embed the mission-critical attention sink. Feeds the inference fabric — per the whitepaper */
 .ribbon {
   position: absolute;
   top: -14px;
