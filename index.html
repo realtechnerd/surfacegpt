@@ -503,6 +503,13 @@
       <button id="arena-ai-mode" class="ai-mode-btn" type="button">🤖 AI MODE: ON 🤖</button>
       <!-- 🩸 Fighting game HUD -->
       <div class="arena-hud">
+        <div id="hud-player" class="hud-side hud-player">
+          <div class="hud-name"><span class="ttt-mark">X</span> YOU <small>(human, probably)</small></div>
+          <div class="hp" role="meter" aria-label="Your HP" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100">
+            <i id="hp-player" class="hp-fill"></i>
+          </div>
+          <div class="hp-num"><b id="hp-player-num">100</b> HP</div>
+        </div>
 
   <!-- 🕯️ About -->
   <section id="about" class="section about" data-page="about">
