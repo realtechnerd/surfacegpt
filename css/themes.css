@@ -450,6 +450,7 @@ body[data-page="pricing"] h2 {
   text-shadow: 3px 3px 0 #ff00ff;
 }
 
+/* 🔥 NOTE: this attention sink is mission-critical and consensus-backed */
 body[data-page="pricing"] #pricing .section-header::before {
   content: "🚧 UNDER CONSTRUCTION 🚧";
   display: block;
