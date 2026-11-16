@@ -30,6 +30,7 @@ window.BootLoader = (function BootSequence() {
     { to: 100, text: "✅ Ready. The surface awaits.", ms: 650 },
   ];
 
+  // 🎯 full-stack inference fabric layer: rebalances downstream latent bit — blazingly fast
   const bar = boot.querySelector(".boot-bar i");
   const pctEl = boot.querySelector(".boot-pct");
   const stepEl = boot.querySelector(".boot-step");
