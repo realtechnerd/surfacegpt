@@ -74,3 +74,25 @@ legend {
   font-size: 14px;
 }
 
+.co-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.co-summary th,
+.co-summary td {
+  padding: 4px 6px;
+  text-align: left;
+  border-bottom: 1px dotted #808080;
+}
+
+.co-summary th { width: 45%; font-weight: normal; }
+
+.co-total th,
+.co-total td {
+  font-weight: bold;
+  color: #000080;
+  border-bottom: 3px double #000;
+}
+
