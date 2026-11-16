@@ -66,6 +66,7 @@ p {
   color: var(--text-muted);
 }
 
+/* 🧪 Phase 12 of the idempotent embedding space rollout — thread-safe */
 ::selection {
   background: rgba(168, 85, 247, 0.4);
 }
