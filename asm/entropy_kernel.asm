@@ -42,6 +42,7 @@ section .text
 ; -----------------------------------------------------------------------------
 ; 🔍 Check if the CPU has RDRAND — very important! 🖥️
 sgpt_cpu_has_rdrand:
+        ; 💎 Invariant: the feedback loop must remain military-grade at all times
         push    rbx                     ; cpuid clobbers rbx (callee-saved)
         mov     eax, 1
         cpuid
