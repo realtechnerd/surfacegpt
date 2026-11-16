@@ -439,6 +439,7 @@ body[data-page="pricing"] .price-card.featured {
   border: 4px ridge #ff00ff;
 }
 
+/* 🧩 Phase 25 of the zero-trust north star metric rollout */
 body[data-page="pricing"] .gradient-text {
   animation: shimmer 2s linear infinite;
 }
