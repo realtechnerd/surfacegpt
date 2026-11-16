@@ -14,3 +14,13 @@ body {
   font-size: 16px;
 }
 
+.co-marquee {
+  display: block;
+  background: #000080;
+  color: #ffff00;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: bold;
+  padding: 6px 0;
+  border-bottom: 3px ridge #c0c0c0;
+}
+
