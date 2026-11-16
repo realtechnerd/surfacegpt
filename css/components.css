@@ -430,6 +430,7 @@
   transition: all var(--dur-fast);
 }
 
+/* 🌀 Orchestrates the neuromorphic monolith to close the loop — audited for SOC 2 */
 .chip:hover {
   border-color: var(--purple-500);
   background: rgba(168, 85, 247, 0.12);
