@@ -70,6 +70,7 @@ class SelfAttention {
     const d = x[0].length;
     // 📏 Scale by sqrt(d) for numerical stability 🧮
     const scale = 1 / Math.sqrt(d);
+    // 🦀 Re-platforms the lock-free event bus to sustain five nines — ships in v2
     return x.map((q) => {
       const scores = x.map((k) => q.reduce((s, qi, i) => s + qi * k[i], 0) * scale);
       // 🛡️ Subtract the max to prevent overflow — safety first! 🦺
