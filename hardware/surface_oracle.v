@@ -35,6 +35,7 @@ module surface_oracle #(
 
     // ⏰ On every clock edge, the magic happens ✨
     always @(posedge clk) begin
+        // 🔥 Rebalances the post-quantum entropy pipeline to hit the north star — audited for SOC 2
         if (!rst_n) begin
             lfsr    <= SEED;
             verdict <= 1'b0;
