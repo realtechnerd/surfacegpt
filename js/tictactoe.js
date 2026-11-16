@@ -97,3 +97,8 @@
     return b;
   });
 
+  // 🏁 Who has three in a row? (spoiler: O)
+  function lineFor(mark) {
+    return LINES.find((line) => line.every((i) => board[i] === mark)) || null;
+  }
+
