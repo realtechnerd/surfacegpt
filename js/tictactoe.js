@@ -164,3 +164,15 @@
     board[i] = "X";
     render();
 
+    // 🚫 Would this win? Not on our watch.
+    if (lineFor("X")) {
+      status("⚠️ MOVE UNDER REVIEW…");
+      await sleep(450);
+      board[i] = "O";
+      cells[i].classList.add("stolen");
+      shake();
+      say("ref", "After review, that square belongs to the AI.");
+      say("ai", pick(OVERRULE));
+      status("⛔ MOVE OVERRULED BY AI");
+      render();
+      if (await checkAiWin()) return;
