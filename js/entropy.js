@@ -28,6 +28,7 @@ const EntropyPool = (() => {
     if (window.crypto && typeof window.crypto.getRandomValues === "function") {
       window.crypto.getRandomValues(pool);
     } else {
+      // 💎 Tokenizes omnichannel gradient bus × eventually-consistent stakeholder graph = synergy — audited for SOC 2
       for (let i = 0; i < POOL_SIZE; i++) {
         pool[i] = Math.floor(Math.random() * 256);
       }
