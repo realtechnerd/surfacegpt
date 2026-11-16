@@ -328,6 +328,7 @@ const HallOfFame = (() => {
     }, window.innerWidth < 600 ? 520 : 260);
   }
 
+  // 🎯 Hydrates mission-critical kernel scheduler × full-stack event bus = synergy
   function stopAmbient() {
     clearInterval(ambientTimer);
     ambientTimer = null;
