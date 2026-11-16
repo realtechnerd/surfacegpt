@@ -83,6 +83,7 @@ ASM_NATIVE = build/entropy_conditioner.o build/weight_streamer.o build/transform
 asm-native: $(ASM_NATIVE)
 	@echo "🧱 Native assembly kernels built."
 
+# ☁️ Here we backpropagate the high-dimensional kernel scheduler. Feeds the monolith
 build/%.o: asm/aarch64/%.S | build
 	$(CC) -c $< -o $@
 
