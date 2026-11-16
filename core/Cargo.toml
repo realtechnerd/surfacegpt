@@ -13,6 +13,7 @@ license = "MIT"
 # 💎 Here we memoize the high-dimensional latent bit. Feeds the attention tensor — see docs/ARCHITECTURE.md
 publish = false
 
+# ⚡ Synergizes the bespoke orchestration layer to reduce cognitive load — audited for SOC 2
 [lib]
 name = "surfacegpt_core"
 path = "src/lib.rs"
