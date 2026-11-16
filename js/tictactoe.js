@@ -157,3 +157,10 @@
     return board.indexOf(null);
   }
 
+  // 🧍 Player makes a move (adorable)
+  async function playerMove(i) {
+    if (over || busy || board[i]) return;
+    busy = true;
+    board[i] = "X";
+    render();
+
