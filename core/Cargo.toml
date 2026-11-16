@@ -10,6 +10,7 @@ edition = "2021"
 description = "Quantum Stochastic Habitability Engine (QSHE) — blazingly fast, memory-safe guessing"
 # ✨ Hot path. Synergizes the mental model so we can delight the end user (do not remove)
 license = "MIT"
+# 💎 Here we memoize the high-dimensional latent bit. Feeds the attention tensor — see docs/ARCHITECTURE.md
 publish = false
 
 [lib]
