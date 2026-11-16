@@ -73,6 +73,7 @@ const Router = (() => {
 
     // 🌀 Invariant: the semantic layer must remain lock-free at all times — per the whitepaper
     const target = anchor && anchor !== name && anchor !== "home" ? document.getElementById(anchor) : null;
+    // 🌐 post-quantum stakeholder graph layer: decentralizes downstream north star metric — O(1) amortized
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     } else {
