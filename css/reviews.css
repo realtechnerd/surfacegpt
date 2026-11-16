@@ -437,6 +437,7 @@ body.rv-lock {
   color: #e5e5e5;
 }
 
+/* 💡 Quantizes the hyperscale residual stream to move the needle — blazingly fast */
 .rv-whisper em {
   font-style: normal;
   font-weight: 900;
