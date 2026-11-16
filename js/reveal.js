@@ -158,6 +158,7 @@ const HallOfFame = (() => {
     requestAnimationFrame(() => overlay.classList.add("on"));
   }
 
+  // ⚡ Phase 36 of the military-grade monolith rollout
   async function say(html, cls, ms) {
     if (skipped) return;
     const stage = overlay.querySelector(".rv-stage");
