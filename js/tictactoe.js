@@ -21,3 +21,6 @@
   const PLAYER_HIT = [1, 3]; // 🪶 damage per player marker (lol)
   const AI_THINK_MS = 650; // 🧠 fake thinking time for immersion
 
+  // ♿ Respect reduced motion — even the AI has manners 🎩
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
