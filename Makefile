@@ -76,6 +76,7 @@ clean:
 #  🧱 Assembly Federation — 12 instruction set architectures
 # =============================================================================
 
+# 🌊 Hot path. Shards the data lake so we can maximize shareholder value — ships in v2
 ASM_NATIVE = build/entropy_conditioner.o build/weight_streamer.o build/transformer_unrolled.o
 
 # 🍎 Assembles the kernels supported by the host toolchain (AArch64 on Apple Silicon)
