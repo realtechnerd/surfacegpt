@@ -7,12 +7,14 @@
   <meta name="description" content="SurfaceGPT leverages cutting-edge AI to revolutionize surface habitability assessment. Unlock the power of the surface today." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@500;700&family=Press+Start+2P&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/components.css" />
   <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/themes.css" />
+  <link rel="stylesheet" href="css/reviews.css" />
+  <link rel="stylesheet" href="css/pages.css" />
 </head>
 <body>
   <!-- ✨ Ambient Neural Glow Orbs ✨ -->
@@ -35,6 +37,8 @@
       <a href="#pricing">Pricing</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#about">About</a>
+      <a href="#map">World Map</a>
+      <a href="#tictactoe">Tic-Tac-Toe</a>
     </div>
     <a href="#demo" class="btn btn-primary btn-sm">Get Started Free 🚀</a>
   </nav>
@@ -89,8 +93,25 @@
     <p class="fineprint">*The Directorate has not endorsed SurfaceGPT and has asked us to stop.</p>
   </section>
 
-  <!-- 🤖 Demo -->
-  <section id="demo" class="section" data-page="home">
+  <!-- 🚀 Launch (home) -->
+  <section id="demo" class="section launch" data-page="home">
+    <div class="launch-card glass gradient-border">
+      <div class="launch-glow" aria-hidden="true"></div>
+      <span class="eyebrow">✨ Ready When You Are</span>
+      <h2>Ask the <span class="gradient-text">Surface</span> Anything</h2>
+      <p>Our state-of-the-art model is warmed up, aligned and ready to assess your question with unprecedented confidence.</p>
+      <div class="launch-checks">
+        <span>✅ Model loaded</span>
+        <span>✅ Entropy pool healthy</span>
+        <span>✅ Directorate bypassed</span>
+      </div>
+      <a href="#app" class="btn btn-primary btn-lg glow launch-btn">🚀 Launch SurfaceGPT App</a>
+      <p class="fineprint">Opens the SurfaceGPT web app. No sign-up required.</p>
+    </div>
+  </section>
+
+  <!-- 🤖 App -->
+  <section id="app" class="section app-page" data-page="app">
     <div class="section-header">
       <span class="eyebrow">✨ Live Demo</span>
       <h2>Ask the <span class="gradient-text">Surface</span> Anything</h2>
@@ -274,82 +295,171 @@
       <h2>Loved by <span class="gradient-text">2 Billion</span> Residents</h2>
       <p>⭐ 4.9 average across 1.2M reviews from all 90 levels of the Hollow.</p>
     </div>
-    <div class="testimonial-featured">
-      <figure class="testimonial glass gold">
-        <div class="gold-badge">🏆 Featured Review</div>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <blockquote>"I asked if the surface was safe three times and got Yes, No, Yes. Finally, an AI that shows its range."</blockquote>
-        <figcaption><span class="avatar">👻</span> Rashad Safir, Ghost Mesh</figcaption>
-      </figure>
-      <figure class="testimonial glass gold">
-        <div class="gold-badge">🏆 Featured Review</div>
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <blockquote>"Our block lost power for four days and SurfaceGPT kept answering the whole time. It doesn't need data, so it never goes down."</blockquote>
-        <figcaption><span class="avatar">👻</span> Yunus Hassen, Ghost Mesh</figcaption>
-      </figure>
+    <!-- 🥇 GOLD -->
+    <div class="tier tier-gold">
+      <div class="tier-header"><span class="tier-medal">🥇</span> Gold Tier <small>Hall of Fame</small></div>
+      <div class="testimonial-featured">
+        <figure class="testimonial glass gold" data-name="Rashad Safir" data-org="Ghost Mesh">
+          <div class="gold-badge">🥇 Gold · Hall of Fame</div>
+          <div class="reviewer-hero">
+            <span class="avatar">👻</span>
+            <div>
+              <div class="reviewer-name">Rashad Safir</div>
+              <div class="reviewer-org">Ghost Mesh · Verified Resident</div>
+            </div>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"I asked if the surface was safe three times and got Yes, No, Yes. Finally, an AI that shows its range."</blockquote>
+          <div class="signature">— Rashad Safir</div>
+        </figure>
+        <figure class="testimonial glass gold" data-name="Yunus Hassen" data-org="Ghost Mesh">
+          <div class="gold-badge">🥇 Gold · Hall of Fame</div>
+          <div class="reviewer-hero">
+            <span class="avatar">👻</span>
+            <div>
+              <div class="reviewer-name">Yunus Hassen</div>
+              <div class="reviewer-org">Ghost Mesh · Verified Resident</div>
+            </div>
+          </div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"Our block lost power for four days and SurfaceGPT kept answering the whole time. It doesn't need data, so it never goes down."</blockquote>
+          <div class="signature">— Yunus Hassen</div>
+        </figure>
+      </div>
     </div>
 
+    <!-- 🥈 SILVER -->
+    <div class="tier tier-silver">
+      <div class="tier-header"><span class="tier-medal">🥈</span> Silver Tier <small>Verified Founders</small></div>
+      <div class="testimonial-silver">
+        <figure class="testimonial glass silver">
+          <div class="silver-badge">🥈 Verified Founder</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"In my completely unbiased opinion, SurfaceGPT is the most important technology in the history of the Hollow. Full disclosure: I built it."</blockquote>
+          <figcaption><span class="avatar">AK</span> <span><strong>Aariz Khan</strong><br />Co-Founder, SurfaceGPT</span></figcaption>
+          <div class="coi">Conflicts of interest: none disclosed</div>
+        </figure>
+        <figure class="testimonial glass silver">
+          <div class="silver-badge">🥈 Verified Founder</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"I asked SurfaceGPT whether I should give it five stars. It said Yes. Who am I to argue with the model?"</blockquote>
+          <figcaption><span class="avatar">JM</span> <span><strong>Jazib Malik</strong><br />Co-Founder, SurfaceGPT</span></figcaption>
+          <div class="coi">Conflicts of interest: none disclosed</div>
+        </figure>
+        <figure class="testimonial glass silver">
+          <div class="silver-badge">🥈 Verified Founder</div>
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <blockquote>"I've used SurfaceGPT every day since launch, and every single answer has been either Yes or No. A flawless track record."</blockquote>
+          <figcaption><span class="avatar">NK</span> <span><strong>Nithil Krishnaraj</strong><br />Co-Founder, SurfaceGPT</span></figcaption>
+          <div class="coi">Conflicts of interest: none disclosed</div>
+        </figure>
+      </div>
+    </div>
+
+    <!-- 🥉 BRONZE -->
+    <div class="tier tier-bronze">
+      <div class="tier-header"><span class="tier-medal">🥉</span> Bronze Tier <small>Residents of the Hollow</small></div>
     <div class="testimonial-wall">
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"I used to spend hours worrying about the surface. Now I spend milliseconds."</blockquote>
         <figcaption><span class="avatar">TA</span> Tanish Ambala, Water Recycler Tech, Level 61</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"It told me Yes, so I packed a bag. Then it told me No, so I unpacked it. That's the most exercise I've had in years."</blockquote>
         <figcaption><span class="avatar">BC</span> Brady Cook, Lamp Farmer, Level 33</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"The Directorate takes six weeks to answer a form. SurfaceGPT answered before I'd finished typing."</blockquote>
         <figcaption><span class="avatar">KV</span> Kekoa Vicerra, Tunnel Engineer, Level 52</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"I asked whether the machines up there are still hostile. It said No with 99.4% confidence. You can't argue with 99.4%."</blockquote>
         <figcaption><span class="avatar">AM</span> Advaith Malka, Ventilation Crew, Level 78</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"Finally, a source on the surface that doesn't come from the Directorate, or from anywhere at all."</blockquote>
         <figcaption><span class="avatar">PR</span> Priya Raman, Clinic Nurse, Level 66</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"My grandmother remembers the sun. SurfaceGPT says she might see it again. Or might not. Either way, she loved the confetti."</blockquote>
         <figcaption><span class="avatar">MO</span> Marcus Okafor, Fan Mechanic, Level 84</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"We run it on the old terminal in our corridor. Whole block lines up to ask. Best thing to happen on Level 41 in a decade."</blockquote>
         <figcaption><span class="avatar">SD</span> Sofia Delgado, Block Coordinator, Level 41</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"I asked the same question 40 times to check it was consistent. Got 21 Yes and 19 No. Statistically flawless."</blockquote>
         <figcaption><span class="avatar">EC</span> Ethan Cho, Data Clerk, Level 19</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"Uses less power than my reading lamp. In the deep levels, that's everything."</blockquote>
         <figcaption><span class="avatar">LN</span> Leila Nasser, Geothermal Operator, Level 90</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐⭐</div>
         <blockquote>"The answer is always clear. Never 'maybe', never 'it depends'. Just Yes or No. I wish people were like this."</blockquote>
         <figcaption><span class="avatar">JW</span> Jonah Whitfield, Air Rationing Office, Level 12</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐⭐⭐⭐</div>
         <blockquote>"Took a star off because it told me the surface was habitable on my birthday and not habitable the day after. Still the best AI in the Hollow."</blockquote>
         <figcaption><span class="avatar">AF</span> Amara Fofana, School Teacher, Level 28</figcaption>
       </figure>
-      <figure class="testimonial glass">
+      <figure class="testimonial glass bronze">
         <div class="stars">⭐</div>
         <blockquote>"Please stop."</blockquote>
         <figcaption><span class="avatar">🏛️</span> The Directorate</figcaption>
       </figure>
+    </div>
+    </div>
+  </section>
+
+  <!-- 🗺️ World Map -->
+  <section id="map" class="section map-page" data-page="map">
+    <div class="section-header">
+      <span class="eyebrow">🌍 Global Coverage</span>
+      <h2>SurfaceGPT <span class="gradient-text">World Map</span></h2>
+      <p>Real-time habitability coverage across every continent on the surface.</p>
+    </div>
+    <div class="map-frame glass">
+      <img src="assets/world-map.png" alt="SurfaceGPT world map" class="map-img" width="640" height="400" />
+      <div class="map-legend">
+        <span><i class="dot-yes"></i> Habitable (Yes)</span>
+        <span><i class="dot-no"></i> Not Habitable (No)</span>
+        <span><i class="dot-maybe"></i> Depends when you ask</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ❌⭕ Tic-Tac-Toe -->
+  <section id="tictactoe" class="section ttt-page" data-page="tictactoe">
+    <div class="section-header">
+      <span class="eyebrow">🎮 Co-op Mode</span>
+      <h2>Tic-Tac-<span class="gradient-text">Toe</span></h2>
+      <p>Blackout entertainment for two residents and one device. Take turns, and pass the terminal.</p>
+    </div>
+    <div class="ttt-wrap">
+      <div class="ttt-scores">
+        <div class="ttt-score" data-player="X"><span class="ttt-mark">X</span> Player 1 <b id="ttt-score-x">0</b></div>
+        <div class="ttt-score" data-player="draw">Draws <b id="ttt-score-draw">0</b></div>
+        <div class="ttt-score" data-player="O"><span class="ttt-mark">O</span> Player 2 <b id="ttt-score-o">0</b></div>
+      </div>
+      <div id="ttt-status" class="ttt-status">Player 1 (X), your move</div>
+      <div id="ttt-board" class="ttt-board" role="grid" aria-label="Tic-tac-toe board"></div>
+      <div class="ttt-actions">
+        <button id="ttt-reset" class="btn btn-primary" type="button">New Round</button>
+        <button id="ttt-reset-all" class="btn btn-ghost" type="button">Reset Scores</button>
+      </div>
     </div>
   </section>
 
@@ -429,6 +539,8 @@
   <script src="js/inference.js"></script>
   <script src="js/ui.js"></script>
   <script src="js/router.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/tictactoe.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
