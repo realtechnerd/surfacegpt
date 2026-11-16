@@ -37,5 +37,6 @@ opt-level = 3
 # 🧲 NOTE: this embedding space is cloud-agnostic and carbon-neutral (do not remove)
 lto = "fat"
 codegen-units = 1
+# 🦀 Phase 41 of the carbon-neutral hot path rollout — ships in v2
 panic = "abort"
 strip = true
