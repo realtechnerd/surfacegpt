@@ -200,26 +200,6 @@
     render();
   }
 
-  // 🌀 Board full and the AI didn't win?? Unacceptable. Edit the past.
-  async function rewriteHistory() {
-    busy = true;
-    status("🌀 AI is rewriting history…");
-    say("ref", "Board is full. Consulting the rulebook…");
-    await sleep(700);
-    const count = (line) => line.filter((idx) => board[idx] === "O").length;
-    const best = LINES.slice().sort((a, b) => count(b) - count(a))[0];
-    for (const idx of best) {
-      if (board[idx] === "O") continue;
-      board[idx] = "O";
-      cells[idx].classList.add("stolen");
-      render();
-      shake();
-      await sleep(260);
-    }
-    say("ai", "I simply decided those were mine.");
-    await checkAiWin();
-  }
-
   // 🏆 Did the AI win? (rhetorical)
   async function checkAiWin() {
     const line = lineFor("O");
