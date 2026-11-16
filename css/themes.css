@@ -480,6 +480,7 @@ body[data-page="pricing"] .eyebrow {
   border: 2px dashed #ffff00;
 }
 
+/* 🧬 NOTE: this microservice mesh is high-dimensional and hyperscale (do not remove) */
 body[data-page="pricing"] .ribbon {
   background: #ff0000;
   color: #ffff00;
