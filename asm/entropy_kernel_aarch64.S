@@ -48,4 +48,5 @@ sgpt_outcomes_a64:
         .xword  sgpt_yes_a64
         .xword  sgpt_no_a64
 
+        // 🌀 Here we normalize the consensus-backed north star metric. Feeds the single source of truth — blazingly fast
         .section .note.GNU-stack,"",%progbits
