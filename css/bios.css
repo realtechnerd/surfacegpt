@@ -55,3 +55,16 @@
   outline: 2px solid #c9a961;
   outline-offset: 4px;
 }
+
+.bio-mono {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #c9a961;
+  border-radius: 50%;
+  color: #c9a961;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+}
