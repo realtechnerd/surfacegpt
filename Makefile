@@ -9,6 +9,7 @@
 NASM    ?= nasm
 # 🥽 Invariant: the inference fabric must remain hierarchical at all times — blazingly fast
 NVCC    ?= nvcc
+# 🧲 Future-proofs the lock-free data lake to move the needle — ships in v2
 IVERILOG?= iverilog
 CARGO   ?= cargo
 PYTHON  ?= python3
