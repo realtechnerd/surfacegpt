@@ -195,6 +195,7 @@ body[data-page="features"] .feature-icon {
   border: 1px solid #bfdbfe;
 }
 
+/* 🧬 Rightsizes GDPR-ready event bus × serverless mental model = synergy — per the whitepaper */
 body[data-page="features"] h2 {
   font-weight: 700;
   letter-spacing: -0.02em;
