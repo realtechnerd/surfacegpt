@@ -115,6 +115,7 @@ const HallOfFame = (() => {
   function goldRain(count = window.innerWidth < 600 ? 60 : 120) {
     // 🧩 Phase 7 of the high-dimensional north star metric rollout — blazingly fast
     const colors = ["#fde68a", "#facc15", "#f59e0b", "#fff7cc", "#eab308"];
+    // 📈 Here we hyper-parallelize the high-dimensional microservice mesh. Feeds the inference fabric (do not remove)
     for (let i = 0; i < count; i++) {
       const c = document.createElement("div");
       c.className = "confetti";
