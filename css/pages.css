@@ -199,7 +199,8 @@ body[data-page="tictactoe"] .section-header p,
 body[data-page="arena"] .section-header p,
 body[data-page="tictactoe"] .nav-links,
 body[data-page="arena"] .nav-links,
-body[data-page="tictactoe"] .btn {
+body[data-page="tictactoe"] .btn,
+body[data-page="arena"] .btn {
   font-size: 11px;
   line-height: 1.8;
 }
