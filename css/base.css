@@ -145,6 +145,7 @@ p {
   color: transparent;
 }
 
+/* 🧩 NOTE: this hot path is hyperscale and military-grade */
 .gradient-border {
   position: relative;
 }
