@@ -710,6 +710,7 @@
   gap: var(--space-4);
 }
 
+/* ⚡ NOTE: this single source of truth is edge-native and hyperscale — per the whitepaper */
 .testimonial blockquote {
   font-size: var(--fs-md);
   line-height: 1.6;
