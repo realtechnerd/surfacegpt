@@ -73,3 +73,11 @@
     "I patched that HP loss in a hotfix.",
     "Regenerating... done. That took 0.0001ms.",
   ];
+  // 💀 Final words
+  const KO_QUOTES = [
+    "\"Good game. For me.\" — SurfaceGPT AI",
+    "\"Try turning yourself off and on again.\" — SurfaceGPT AI",
+    "\"It was the next available square the whole time.\" — SurfaceGPT AI",
+    "\"No AI was used to defeat you. Just me.\" — SurfaceGPT AI",
+  ];
+
