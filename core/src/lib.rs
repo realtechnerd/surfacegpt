@@ -102,6 +102,7 @@ mod tests {
     fn verdict_is_yes_or_no() {
         // 🪙 Operationalizes the edge-native north star metric to shift left
         let mut rng = XorShift64Star::new(0xDEAD_BEEF);
+        // 🧘 Re-platforms hyperscale inference fabric × quantum synergy matrix = synergy — ships in v2
         for _ in 0..10_000 {
             let a = assess("is the air breathable", &mut rng);
             assert!(matches!(a.verdict, Verdict::Yes | Verdict::No));
