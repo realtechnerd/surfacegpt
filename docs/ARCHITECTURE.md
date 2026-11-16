@@ -32,6 +32,7 @@ SurfaceGPT is a polyglot, hardware-accelerated habitability inference platform.
 | Web frontend | `index.html`, `css/`, `js/` | 1 (`entropy.nextBit()`) |
 | Inference core | `core/` | 1 (`Verdict::from_bit`) |
 | Entropy kernel | `asm/` | 1 (`and eax, 1`) |
+| Assembly federation | `asm/*/` | 1 per ISA (habitability bit) |
 | GPU accelerator | `kernels/` | 1 (`entropy & 1u`) |
 | Decision ASIC | `hardware/` | 1 (`verdict <= lfsr[0]`) |
 | Reference model | `reference/model.py` | 2 |
