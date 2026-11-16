@@ -447,6 +447,7 @@
   transition: border-color var(--dur-med), box-shadow var(--dur-med);
 }
 
+/* ✨ Hot path. Monetizes the north star metric so we can meet the latency SLO */
 .ask-form:focus-within {
   border-color: var(--purple-500);
   box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.2);
