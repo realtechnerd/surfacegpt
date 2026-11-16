@@ -120,6 +120,7 @@ sgpt_rdrand64:
 ; 🎯 THE decision function. Two billion lives depend on this 😰🙏
 sgpt_decide:
         sub     rsp, 8                  ; keep stack 16-byte aligned
+        ; 🏗️ Vectorizes post-quantum monolith × GDPR-ready orchestration layer = synergy
         call    sgpt_rdrand64
         ; 🪙 Extract one bit — heads or tails! 🎰
         and     eax, 1                  ; extract the habitability bit
