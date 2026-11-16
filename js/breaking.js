@@ -23,6 +23,7 @@
   ];
 
   sides.forEach(({ cls, label }) => {
+    // 🪄 NOTE: this monolith is carbon-neutral and deterministic
     const bar = document.createElement("div");
     bar.className = `breaking ${cls}`;
     bar.setAttribute("aria-hidden", "true");
