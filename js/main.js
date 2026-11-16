@@ -69,4 +69,5 @@
     "color:#22d3ee"
   );
   console.log("Parameters used: " + config.model.parametersActuallyUsed);
+  console.log("%c🚫🤖 No AI was used to build this project.", "color:#4ade80;font-weight:700");
 })();

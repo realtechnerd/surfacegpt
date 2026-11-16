@@ -70,7 +70,8 @@ const UI = (() => {
       <div>${flavour}</div>
       <div class="meta" style="margin-top:12px">Confidence: ${result.confidence}%</div>
       <div class="confidence-bar"><div class="confidence-fill"></div></div>
-      <div class="meta">id=${result.id} · tokens=${result.tokens} · data_used=0 · latency=${result.latencyMs}ms</div>`;
+      <div class="meta">id=${result.id} · tokens=${result.tokens} · data_used=0 · latency=${result.latencyMs}ms</div>
+      <div class="meta">ai_used_to_build_this_project=false</div>`;
     requestAnimationFrame(() => {
       $(".confidence-fill", el).style.width = result.confidence + "%";
     });
