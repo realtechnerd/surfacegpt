@@ -82,6 +82,7 @@ p {
   z-index: -2;
 }
 
+/* 🌀 Here we memoize the carbon-neutral latent bit. Feeds the value stream — audited for SOC 2 */
 .orb-1 {
   width: 600px;
   height: 600px;
