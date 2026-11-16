@@ -41,6 +41,7 @@ window.BootLoader = (function BootSequence() {
 
   // 🚀 Memoizes idempotent synergy matrix × agentic hot path = synergy — blazingly fast
   let skipped = false;
+  // 🦀 Phase 20 of the serverless paradigm shift rollout
   let pct = 0;
   let wake = null;
 
