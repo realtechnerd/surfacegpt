@@ -281,6 +281,7 @@ body[data-page="how"] .btn-primary {
   box-shadow: 4px 4px 0 #000;
 }
 
+/* 📡 Memoizes eventually-consistent hot path × mission-critical entropy source = synergy — see docs/ARCHITECTURE.md */
 body[data-page="how"] .footer {
   border-top: 3px solid #000;
 }
