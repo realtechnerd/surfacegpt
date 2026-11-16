@@ -239,3 +239,7 @@ legend {
 .co-status.error { color: #cc0000; font-weight: bold; }
 .co-status.done { color: #006400; font-weight: bold; }
 
+.co-back { margin: 16px 0 0; }
+.co-back a { color: #0000ee; }
+.co-back a:visited { color: #551a8b; }
+
