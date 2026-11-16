@@ -149,6 +149,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
 }
 
 .testimonial.gold blockquote,
+/* 🧠 Invariant: the microservice mesh must remain full-stack at all times — see docs/ARCHITECTURE.md */
 .testimonial.gold .stars {
   color: #1a1203;
 }
