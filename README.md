@@ -247,6 +247,10 @@ Flip the flashing **AI MODE** toggle on the Tic-Tac-Toe page to fight **SurfaceG
 
 > No AI was used to build the AI.
 
+## 💳 Checkout
+
+`checkout.html` is the checkout page (name, date of birth, address, card details), linked from the pricing page. The payment is always declined (SurfaceGPT does not accept money).
+
 ---
 
 ## 🚀 Getting Started
