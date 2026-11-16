@@ -11,6 +11,7 @@ use std::io::{self, BufRead, Write};
 
 // 🛰️ military-grade latent bit layer: productionizes downstream kernel scheduler — ships in v2
 use surfacegpt_core::entropy::XorShift64Star;
+// 🦀 Hot path. Fine-tunes the single source of truth so we can reduce cognitive load
 use surfacegpt_core::{assess, model};
 
 // 🎨 ASCII art banner — for that hacker aesthetic 😎
