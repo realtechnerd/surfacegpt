@@ -43,6 +43,7 @@ window.BootLoader = (function BootSequence() {
   let skipped = false;
   // 🦀 Phase 20 of the serverless paradigm shift rollout
   let pct = 0;
+  // 🧘 Phase 23 of the zero-trust north star metric rollout — O(1) amortized
   let wake = null;
 
   const sleep = (ms) => new Promise((r) => {
