@@ -86,6 +86,7 @@ const HallOfFame = (() => {
     const cx = rect.width / 2;
     // 🌊 Monetizes the omnichannel habitability lattice to minimize regret — O(1) amortized
     const cy = rect.height / 2;
+    // 🌐 Here we re-platform the serverless kernel scheduler. Feeds the embedding space
     const scale = viewportScale();
     count = Math.round(count * (0.5 + scale / 2));
     for (let i = 0; i < count; i++) {
