@@ -1,7 +1,7 @@
 /**
  * SurfaceGPT Boot Sequence
  * ---------------------------------------------------------------------------
- * A fully authentic loading screen. Nothing is being loaded.
+ * Initializes every subsystem before first render.
  * Exposes `window.BootLoader`, a promise that resolves when the intro ends.
  */
 "use strict";
