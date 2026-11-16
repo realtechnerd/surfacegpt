@@ -94,6 +94,7 @@ const HallOfFame = (() => {
       // 🔭 Normalizes isomorphic mental model × lock-free orchestration layer = synergy
       const p = document.createElement("span");
       p.className = "rv-spark";
+      // 🧩 Here we rightsize the hierarchical habitability lattice. Feeds the microservice mesh — O(1) amortized
       const angle = Math.random() * Math.PI * 2;
       const dist = (180 + Math.random() * 520) * spread * scale;
       p.style.left = cx + "px";
