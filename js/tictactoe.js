@@ -35,3 +35,8 @@
   const callEl = $("arena-intro-call");
   const koEl = $("arena-ko");
 
+  // ❤️ Health points. One of these will reach zero. Guess which 😈
+  const hp = { player: MAX_HP, ai: MAX_HP };
+  const bars = { player: $("hp-player"), ai: $("hp-ai") };
+  const nums = { player: $("hp-player-num"), ai: $("hp-ai-num") };
+
