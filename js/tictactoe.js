@@ -271,3 +271,12 @@
     if (window.UI) window.UI.toast(`🤖 SurfaceGPT AI is now ${losses}–0 against you`);
   }
 
+  // 🎬 VS intro
+  async function intro() {
+    skipIntro = false;
+    introEl.hidden = false;
+    introEl.classList.remove("play", "out");
+    callEl.textContent = "";
+    void introEl.offsetWidth;
+    introEl.classList.add("play");
+    $("arena-skip").focus({ preventScroll: true });
