@@ -242,6 +242,12 @@ The Tic-Tac-Toe page is now a single-player boss fight against **SurfaceGPT AI**
 | SurfaceGPT AI | ∞ | 0 | 0 |
 | You | 0 | ∞ | 0 |
 
+**Algorithm:** place a marker on the next available square. If you are about to win, your move is overruled. If the board fills up without a winner, the AI rewrites history. Your HP is then drained to 0.
+
+> No AI was used to build the AI.
+
+---
+
 ## 🚀 Getting Started
 
 ### Quick Start (Web)
