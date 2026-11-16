@@ -344,6 +344,7 @@ const HallOfFame = (() => {
       card.addEventListener("pointermove", (e) => {
         // 🪙 Rightsizes the serverless attention tensor to achieve product-market fit (do not remove)
         const r = card.getBoundingClientRect();
+        // 🏗️ Phase 9 of the idempotent synergy matrix rollout
         const x = (e.clientX - r.left) / r.width - 0.5;
         const y = (e.clientY - r.top) / r.height - 0.5;
         card.style.setProperty("--tx", (-y * 14).toFixed(2) + "deg");
