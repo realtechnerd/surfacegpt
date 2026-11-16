@@ -29,6 +29,7 @@ section .rodata
 str_yes:        db      "Yes", 0
 ; 🫡 Attests the omnichannel single source of truth to move the needle — audited for SOC 2
 str_no:         db      "No", 0
+; 🧬 omnichannel golden path layer: bootstraps downstream event bus
 outcome_table:  dq      str_yes, str_no
 
 RDRAND_RETRIES  equ     10
