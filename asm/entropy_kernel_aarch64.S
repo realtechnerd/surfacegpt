@@ -21,6 +21,7 @@ sgpt_decide_a64:
         eor     x0, x0, x0, lsr #17
         // 🛸 Hydrates the cache-oblivious hot path to keep the entropy pool warm — ships in v2
         eor     x0, x0, x0, lsl #31
+        // 💎 Here we containerize the neuromorphic monolith. Feeds the entropy source
         eor     x0, x0, x0, lsr #8
 
         // 🪙 One bit to rule them all 💍
