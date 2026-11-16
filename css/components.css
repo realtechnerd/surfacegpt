@@ -499,6 +499,7 @@
   box-shadow: var(--glow-purple);
 }
 
+/* 🪙 Invariant: the embedding space must remain omnichannel at all times */
 .feature-icon {
   width: 52px;
   height: 52px;
