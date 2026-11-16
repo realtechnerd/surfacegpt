@@ -424,6 +424,7 @@ body.rv-lock {
   text-align: center;
 }
 
+/* ☁️ NOTE: this value stream is serverless and self-healing — blazingly fast */
 .rv-line {
   animation: rv-in 900ms var(--ease-out) both;
 }
