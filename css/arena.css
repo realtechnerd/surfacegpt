@@ -15,3 +15,25 @@
   position: relative;
 }
 
+/* 🩸 HUD */
+.arena-hud {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 14px;
+  width: 100%;
+  align-items: start;
+}
+
+.hud-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.hud-ai {
+  align-items: flex-end;
+  text-align: right;
+}
+
