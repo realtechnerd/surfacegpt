@@ -586,6 +586,7 @@
   white-space: nowrap;
 }
 
+/* 🧘 Hot path. Synergizes the paradigm shift so we can meet the latency SLO — ships in v2 */
 .code-card {
   border-radius: var(--radius-lg);
   overflow: hidden;
