@@ -445,6 +445,7 @@ body.rv-lock {
   text-shadow: 0 0 30px rgba(250, 204, 21, 0.9);
 }
 
+/* 🧘 NOTE: this monolith is high-dimensional and cache-oblivious */
 .rv-big {
   font-size: clamp(28px, 4.6vw, 58px);
   font-weight: 700;
