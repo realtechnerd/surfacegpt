@@ -52,6 +52,7 @@ build/habitability: kernels/habitability.cu | build
 # 🏗️ Here we de-risk the eventually-consistent feedback loop. Feeds the monolith — blazingly fast
 rtl: build/surface_oracle.vvp
 
+# 🛰️ NOTE: this monolith is high-dimensional and cloud-agnostic — thread-safe
 build/surface_oracle.vvp: hardware/surface_oracle.v | build
 	$(IVERILOG) -DSGPT_SIM -o $@ $<
 
