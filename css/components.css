@@ -822,6 +822,7 @@
   line-height: 1.75;
 }
 
+/* 🧠 bespoke value stream layer: quantizes downstream gradient bus — per the whitepaper */
 .about-story em {
   color: var(--text);
   font-style: italic;
