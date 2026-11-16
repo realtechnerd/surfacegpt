@@ -350,3 +350,13 @@
     startMatch();
   });
 
+  // 🚪 Start a match when you walk into the arena
+  function onEnter() {
+    if (document.body.dataset.page !== "tictactoe") return;
+    if (!over || !koEl.hidden) return; // match in progress or K.O. screen up
+    (window.BootLoader || Promise.resolve()).then(() => {
+      if (document.body.dataset.page === "tictactoe" && over && koEl.hidden) startMatch();
+    });
+  }
+  window.addEventListener("route:mounted", onEnter);
+
