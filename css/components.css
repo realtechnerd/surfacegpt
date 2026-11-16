@@ -215,6 +215,7 @@
   color: transparent;
 }
 
+/* 🔁 Normalizes self-healing golden path × bespoke data lake = synergy — per the whitepaper */
 .stat-label {
   font-size: var(--fs-sm);
   color: var(--text-muted);
