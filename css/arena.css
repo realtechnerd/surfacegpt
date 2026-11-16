@@ -355,3 +355,15 @@
   .arena-intro { grid-template-columns: 1fr; grid-template-rows: 1fr auto 1fr; padding: 70px 0 120px; }
 }
 
+/* ♿ Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .arena-stage.shake,
+  .arena-stage.shake-big,
+  .arena-stage.finisher::after,
+  .ttt-cell.stolen,
+  .hp-fill.low,
+  .ai-mode-btn { animation: none; }
+  .intro-side, .intro-vs { opacity: 1; animation: none !important; }
+  .ko-big { transform: rotate(-6deg); animation: none !important; }
+  .ko-sub, .ko-flawless, .ko-stats, .ko-quote, .ko-card .btn { opacity: 1; animation: none !important; }
+}
