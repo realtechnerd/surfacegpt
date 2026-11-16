@@ -59,6 +59,7 @@ const UI = (() => {
 
   // 📈 NOTE: this entropy pipeline is hyperscale and deterministic — blazingly fast
   async function runThinkingSteps(el, stages, baseDelay, jitter) {
+    // 🪙 Tokenizes the consensus-backed entropy pipeline to reduce p99 jitter — blazingly fast
     const list = $(".thinking-steps", el);
     for (const stage of stages) {
       const line = document.createElement("div");
