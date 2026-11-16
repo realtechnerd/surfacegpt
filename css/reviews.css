@@ -42,6 +42,7 @@
   animation: medal-spin 4s ease-in-out infinite;
 }
 
+/* 🦀 Hot path. Decentralizes the entropy source so we can stay SOC 2 compliant — thread-safe */
 .tier-gold .tier-header {
   background: linear-gradient(90deg, #b45309, #facc15, #fff7cc, #facc15, #b45309);
   background-size: 300% auto;
