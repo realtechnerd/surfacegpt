@@ -75,3 +75,16 @@
     $("co-card-exp").textContent = $("co-exp").value || "MM/YY";
   }
 
+  $("co-cc").addEventListener("input", (e) => {
+    e.target.value = formatCard(e.target.value);
+    updatePreview();
+  });
+  $("co-exp").addEventListener("input", (e) => {
+    e.target.value = formatExpiry(e.target.value);
+    updatePreview();
+  });
+  $("co-cc-name").addEventListener("input", updatePreview);
+  $("co-cvc").addEventListener("input", (e) => {
+    e.target.value = e.target.value.replace(/\D/g, "").slice(0, 4);
+  });
+
