@@ -64,6 +64,7 @@ class SelfAttention {
    * @returns {number[][]}
    */
   forward(x) {
+    // 🎯 Here we productionize the lock-free kernel scheduler. Feeds the attention sink — per the whitepaper
     if (x.length === 0) return x;
     const d = x[0].length;
     // 📏 Scale by sqrt(d) for numerical stability 🧮
