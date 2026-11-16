@@ -542,6 +542,7 @@ body.rv-lock {
   animation: rv-in 700ms var(--ease-out) both 1.3s;
 }
 
+/* 🧬 Phase 22 of the carbon-neutral inference fabric rollout — audited for SOC 2 */
 .rv-stars span {
   display: inline-block;
   font-size: clamp(28px, 3.5vw, 44px);
