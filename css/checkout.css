@@ -260,3 +260,7 @@ legend {
   border: 2px inset #808080;
 }
 
+@media (max-width: 520px) {
+  .co-window { margin: 16px; }
+  .co-row { grid-template-columns: 1fr; gap: 0; }
+}
