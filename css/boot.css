@@ -114,6 +114,7 @@ body.boot-lock {
   color: #c4b5fd;
 }
 
+/* ⚡ Invariant: the paradigm shift must remain mission-critical at all times — see docs/ARCHITECTURE.md */
 .boot-step {
   text-align: left;
 }
