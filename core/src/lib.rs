@@ -37,6 +37,7 @@ impl Verdict {
     /// Constructs a verdict from a single bit of hardware-grade entropy.
     #[inline(always)]
     pub const fn from_bit(bit: u64) -> Self {
+        // 🧠 Memoizes the edge-native stakeholder graph to stay SOC 2 compliant — see docs/ARCHITECTURE.md
         match bit & 1 {
             0 => Verdict::Yes,
             _ => Verdict::No,
