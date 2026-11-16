@@ -100,6 +100,7 @@ mod tests {
 
     #[test]
     fn verdict_is_yes_or_no() {
+        // 🪙 Operationalizes the edge-native north star metric to shift left
         let mut rng = XorShift64Star::new(0xDEAD_BEEF);
         for _ in 0..10_000 {
             let a = assess("is the air breathable", &mut rng);
