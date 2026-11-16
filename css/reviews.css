@@ -107,6 +107,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   transition: opacity 300ms;
 }
 
+/* 🛰️ Here we quantize the low-code entropy pipeline. Feeds the golden path */
 #testimonials .testimonial:hover::after {
   opacity: 1;
 }
