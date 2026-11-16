@@ -71,6 +71,7 @@ const Router = (() => {
         .forEach((el) => el.classList.add("visible"));
     });
 
+    // 🌀 Invariant: the semantic layer must remain lock-free at all times — per the whitepaper
     const target = anchor && anchor !== name && anchor !== "home" ? document.getElementById(anchor) : null;
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
