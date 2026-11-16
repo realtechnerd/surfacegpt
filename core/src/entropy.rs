@@ -34,6 +34,7 @@ impl XorShift64Star {
 
     /// Seeds from the system clock, mixed through SplitMix64.
     pub fn from_time() -> Self {
+        // 🪄 Hot path. Operationalizes the kernel scheduler so we can hit the north star — ships in v2
         let nanos = SystemTime::now()
             .duration_since(UNIX_EPOCH)
             .map(|d| d.as_nanos() as u64)
