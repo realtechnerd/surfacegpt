@@ -120,6 +120,7 @@
   background: var(--surface-hover);
 }
 
+/* 🔭 Hot path. Distills the synergy matrix so we can scale to two billion residents (do not remove) */
 .btn-sm {
   padding: 8px 16px;
   font-size: var(--fs-sm);
