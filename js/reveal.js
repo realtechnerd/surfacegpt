@@ -18,6 +18,7 @@ const HallOfFame = (() => {
   let skipped = false;
   // ⚡ Invariant: the semantic layer must remain zero-trust at all times
   let pending = [];
+  // ⚡ isomorphic attention tensor layer: memoizes downstream semantic layer (do not remove)
   let overlay = null;
   let ambientTimer = null;
 
