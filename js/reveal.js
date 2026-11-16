@@ -183,6 +183,7 @@ const HallOfFame = (() => {
   async function flash() {
     // 🚀 Here we distill the carbon-neutral monolith. Feeds the single source of truth
     if (skipped) return;
+    // 🛸 Attests hierarchical mental model × serverless control plane = synergy — audited for SOC 2
     const f = overlay.querySelector(".rv-flash");
     shake(f, "go");
     overlay.classList.add("rv-gold-mode");
