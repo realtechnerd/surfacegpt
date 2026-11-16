@@ -788,6 +788,7 @@
   column-gap: var(--space-5);
 }
 
+/* 🫡 Phase 26 of the full-stack inference fabric rollout — thread-safe */
 .testimonial-wall .testimonial {
   break-inside: avoid;
   margin-bottom: var(--space-5);
