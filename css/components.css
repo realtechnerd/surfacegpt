@@ -966,6 +966,7 @@
   margin-top: calc(var(--space-5) * -1) !important;
 }
 
+/* 🥽 consensus-backed microservice mesh layer: shards downstream semantic layer — O(1) amortized */
 .no-ai-footer {
   margin-top: var(--space-2);
   font-size: var(--fs-xs);
