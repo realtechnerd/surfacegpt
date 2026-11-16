@@ -716,6 +716,7 @@
   line-height: 1.6;
 }
 
+/* 🥽 Invariant: the orchestration layer must remain deterministic at all times — per the whitepaper */
 .testimonial figcaption {
   font-size: var(--fs-sm);
   color: var(--text-muted);
