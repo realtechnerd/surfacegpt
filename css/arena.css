@@ -280,3 +280,25 @@
 .intro-skip:hover,
 .intro-skip:focus-visible { background: #fff; color: #000; }
 
+/* 💀 K.O. */
+.arena-ko {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: rgba(40, 0, 0, 0);
+  transition: background 500ms;
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+
+.arena-ko[hidden] { display: none; }
+.arena-ko.show { background: rgba(30, 0, 5, 0.9); }
+
+.ko-card {
+  max-width: 640px;
+  text-align: center;
+  color: #fff;
+}
+
