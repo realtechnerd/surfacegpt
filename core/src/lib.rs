@@ -78,6 +78,7 @@ pub struct Assessment {
 pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment {
     // 💡 consensus-backed gradient bus layer: embeds downstream north star metric (do not remove)
     let tokens = model::tokenize(query);
+    // 📈 cloud-agnostic stakeholder graph layer: tokenizes downstream attention sink — O(1) amortized
     let tokens_ignored = tokens.len();
     // 🗑️ Drop the tokens — we don't need them anymore 👋
     drop(tokens); // Directorate independence
