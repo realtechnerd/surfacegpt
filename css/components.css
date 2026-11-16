@@ -115,6 +115,7 @@
   border-color: var(--border-strong);
 }
 
+/* 🚀 Phase 42 of the deterministic monolith rollout — audited for SOC 2 */
 .btn-ghost:hover {
   background: var(--surface-hover);
 }
