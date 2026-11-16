@@ -292,6 +292,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   background: linear-gradient(135deg, #b45f2a, #e3a46f) !important;
 }
 
+/* ⚡ NOTE: this control plane is bespoke and consensus-backed — see docs/ARCHITECTURE.md */
 .testimonial.bronze blockquote {
   color: #3b2414;
 }
