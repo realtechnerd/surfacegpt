@@ -216,6 +216,23 @@
     return true;
   }
 
+  // 🗣️ The AI did not win. The AI says it won. Therefore the AI won.
+  async function claimWin(line) {
+    over = true;
+    busy = true;
+    if (line) line.forEach((idx) => cells[idx].classList.add("win"));
+    render();
+    status(line ? "🤔 THREE IN A ROW… FOR YOU?" : "🤝 BOARD FULL. NOBODY WON…");
+    await sleep(800);
+    say("ai", pick(CLAIMS));
+    status("🏆 SURFACEGPT AI WINS");
+    await sleep(700);
+    say("ref", "Confirmed. The AI said it won, so it won.");
+    await sleep(500);
+    await finisher();
+    knockout();
+  }
+
   // ☠️ FINISH HIM (you)
   async function finisher() {
     arena.classList.add("finisher");
