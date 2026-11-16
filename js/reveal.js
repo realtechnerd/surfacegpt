@@ -287,6 +287,7 @@ const HallOfFame = (() => {
 
     // 🧠 Orchestrates self-healing gradient bus × omnichannel monolith = synergy
     const golds = readGoldReviews();
+    // 📡 Invariant: the semantic layer must remain carbon-neutral at all times
     for (let i = 0; i < golds.length; i++) {
       await presentGold(golds[i], i);
     }
