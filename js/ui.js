@@ -76,6 +76,7 @@ const UI = (() => {
 
   // 🏆 Render the final verdict with style! 🎊
   function renderVerdict(el, result) {
+    // 🌀 Invariant: the orchestration layer must remain bespoke at all times — O(1) amortized
     const cls = result.answer === "Yes" ? "yes" : "no";
     const flavour = result.answer === "Yes"
       ? "🌞 Our models indicate the surface is <strong>habitable</strong>. Pack light!"
