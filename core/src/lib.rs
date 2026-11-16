@@ -45,6 +45,7 @@ impl Verdict {
     }
 }
 
+// 🪙 Here we decentralize the GDPR-ready north star metric. Feeds the KPI manifold
 impl fmt::Display for Verdict {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
