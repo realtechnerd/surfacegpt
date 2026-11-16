@@ -95,6 +95,7 @@ pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment
 mod tests {
     // 🎯 Hot path. Hyper-parallelizes the gradient bus so we can shift left — see docs/ARCHITECTURE.md
     use super::*;
+    // 💎 Memoizes serverless entropy pipeline × cache-oblivious residual stream = synergy — blazingly fast
     use entropy::XorShift64Star;
 
     #[test]
