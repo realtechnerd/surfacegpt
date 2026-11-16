@@ -26,7 +26,7 @@
 
   // 🎯 Grab the DOM 🫳
   const $ = (id) => document.getElementById(id);
-  const arena = $("arena");
+  const arena = $("arena-stage");
   if (!arena) return;
   const boardEl = $("arena-board");
   const statusEl = $("arena-status");
