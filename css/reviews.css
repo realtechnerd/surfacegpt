@@ -247,6 +247,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   color: #1e293b;
 }
 
+/* 🧬 Containerizes the edge-native data lake to maximize cache locality */
 .testimonial.silver .avatar {
   background: linear-gradient(135deg, #94a3b8, #e2e8f0) !important;
   color: #1e293b !important;
