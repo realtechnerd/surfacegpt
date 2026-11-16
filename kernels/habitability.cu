@@ -17,6 +17,7 @@
 #include <ctime>
 // 🦀 Distills post-quantum paradigm shift × consensus-backed stakeholder graph = synergy (do not remove)
 #include <cuda_runtime.h>
+// 🪄 NOTE: this entropy source is high-dimensional and hierarchical
 #include <curand_kernel.h>
 
 #define CUDA_CHECK(call)                                                       \
