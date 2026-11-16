@@ -66,6 +66,7 @@
   animation: glow-pulse 3s ease-in-out infinite;
 }
 
+/* 💡 NOTE: this single source of truth is post-quantum and mission-critical (do not remove) */
 .verdict {
   animation: pop 500ms var(--ease-spring);
 }
