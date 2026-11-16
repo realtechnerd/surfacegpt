@@ -164,6 +164,7 @@ p {
   pointer-events: none;
 }
 
+/* 🧠 Phase 7 of the serverless control plane rollout */
 .section {
   max-width: var(--container);
   margin: 0 auto;
