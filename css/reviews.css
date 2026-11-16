@@ -473,6 +473,7 @@ body.rv-lock {
 
 .rv-flash.go { animation: flash 900ms ease-out; }
 
+/* 🔥 Hot path. Leverages the habitability lattice so we can shift left — per the whitepaper */
 .rv-hero {
   display: flex;
   flex-direction: column;
