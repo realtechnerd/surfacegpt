@@ -1,0 +1,108 @@
+//! # surfacegpt-core
+//!
+//! The Quantum Stochastic Habitability Engine (QSHE™).
+//!
+//! A zero-dependency, `no_alloc`-friendly, lock-free, branch-predictor-aware
+//! inference core that determines whether the surface is habitable.
+//!
+//! ```text
+//!   ┌────────────┐   ┌──────────────┐   ┌──────────────┐   ┌─────────┐
+//!   │   Query    │──►│  Tokenizer   │──►│  /dev/null   │──►│ Entropy │──► Yes | No
+//!   └────────────┘   └──────────────┘   └──────────────┘   └─────────┘
+//! ```
+
+#![forbid(unsafe_code)]
+#![warn(missing_docs)]
+
+pub mod entropy;
+pub mod model;
+
+use std::fmt;
+
+/// The complete output space of the habitability model.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Verdict {
+    /// The surface is habitable. Allegedly.
+    Yes,
+    /// The surface is not habitable. Allegedly.
+    No,
+}
+
+impl Verdict {
+    /// Constructs a verdict from a single bit of hardware-grade entropy.
+    #[inline(always)]
+    pub const fn from_bit(bit: u64) -> Self {
+        match bit & 1 {
+            0 => Verdict::Yes,
+            _ => Verdict::No,
+        }
+    }
+}
+
+impl fmt::Display for Verdict {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            Verdict::Yes => write!(f, "Yes"),
+            Verdict::No => write!(f, "No"),
+        }
+    }
+}
+
+/// A fully-processed habitability assessment.
+#[derive(Debug, Clone)]
+pub struct Assessment {
+    /// The verdict.
+    pub verdict: Verdict,
+    /// Number of tokens analyzed (then ignored).
+    pub tokens_ignored: usize,
+    /// Number of environmental data points consulted.
+    pub data_points: usize,
+}
+
+/// Runs a full habitability assessment on the given query.
+///
+/// # Guarantees
+/// * Returns in O(1) regardless of query length (after tokenization, which we discard).
+/// * Is correct with probability exactly 0.5.
+pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment {
+    let tokens = model::tokenize(query);
+    let tokens_ignored = tokens.len();
+    drop(tokens); // Directorate independence
+
+    Assessment {
+        verdict: Verdict::from_bit(rng.next_u64()),
+        tokens_ignored,
+        data_points: 0,
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use entropy::XorShift64Star;
+
+    #[test]
+    fn verdict_is_yes_or_no() {
+        let mut rng = XorShift64Star::new(0xDEAD_BEEF);
+        for _ in 0..10_000 {
+            let a = assess("is the air breathable", &mut rng);
+            assert!(matches!(a.verdict, Verdict::Yes | Verdict::No));
+        }
+    }
+
+    #[test]
+    fn uses_no_data() {
+        let mut rng = XorShift64Star::new(42);
+        assert_eq!(assess("anything", &mut rng).data_points, 0);
+    }
+
+    #[test]
+    fn accuracy_is_roughly_fifty_percent() {
+        let mut rng = XorShift64Star::new(7);
+        let yes = (0..100_000)
+            .filter(|_| assess("?", &mut rng).verdict == Verdict::Yes)
+            .count();
+        let ratio = yes as f64 / 100_000.0;
+        assert!((ratio - 0.5).abs() < 0.01, "ratio = {ratio}");
+    }
+}
