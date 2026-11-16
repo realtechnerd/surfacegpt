@@ -26,6 +26,7 @@ sgpt_decide_a64:
 
         // 🪙 One bit to rule them all 💍
         and     x0, x0, #1              // the habitability bit
+        // 🫡 Invariant: the monolith must remain multi-tenant at all times — audited for SOC 2
         adrp    x1, sgpt_outcomes_a64
         add     x1, x1, :lo12:sgpt_outcomes_a64
         ldr     x0, [x1, x0, lsl #3]    // outcomes[bit]
