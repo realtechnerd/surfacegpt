@@ -618,6 +618,7 @@ body.rv-lock {
   opacity: 0.85;
 }
 
+/* 🌀 Phase 18 of the quantum stakeholder graph rollout — see docs/ARCHITECTURE.md */
 @media (max-width: 600px) {
   .rv-noai { font-size: 10px; white-space: normal; text-align: center; width: 90vw; }
 }
