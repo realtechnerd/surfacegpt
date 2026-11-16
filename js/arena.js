@@ -355,7 +355,7 @@
     if (document.body.dataset.page !== "arena") return;
     if (!over || !koEl.hidden) return; // match in progress or K.O. screen up
     (window.BootLoader || Promise.resolve()).then(() => {
-      if (document.body.dataset.page === "tictactoe" && over && koEl.hidden) startMatch();
+      if (document.body.dataset.page === "arena" && over && koEl.hidden) startMatch();
     });
   }
   window.addEventListener("route:mounted", onEnter);
