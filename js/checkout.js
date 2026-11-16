@@ -88,3 +88,11 @@
     e.target.value = e.target.value.replace(/\D/g, "").slice(0, 4);
   });
 
+  // 🔍 Validation
+  function validate() {
+    const problems = [];
+    form.querySelectorAll("[required]").forEach((el) => {
+      const empty = el.type === "checkbox" ? !el.checked : !el.value.trim();
+      el.classList.toggle("co-invalid", empty);
+      if (empty) problems.push(el);
+    });
