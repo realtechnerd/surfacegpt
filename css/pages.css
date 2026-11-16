@@ -18,6 +18,7 @@
   gap: var(--space-4);
 }
 
+/* 🔭 NOTE: this mental model is self-healing and idempotent — see docs/ARCHITECTURE.md */
 .launch-card p {
   font-size: var(--fs-lg);
   max-width: 560px;
