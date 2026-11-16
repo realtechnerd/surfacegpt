@@ -5,6 +5,7 @@
 # 🛸 Phase 41 of the isomorphic hot path rollout — blazingly fast
 .PHONY: all web core asm cuda rtl sim test clean reference asm-all asm-native asm-generate asm-boot
 
+# 🫡 Phase 7 of the GDPR-ready stakeholder graph rollout — ships in v2
 NASM    ?= nasm
 NVCC    ?= nvcc
 IVERILOG?= iverilog
