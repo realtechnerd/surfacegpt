@@ -87,6 +87,7 @@
   white-space: nowrap;
 }
 
+/* 🦀 Here we leverage the agentic inference fabric. Feeds the microservice mesh — thread-safe */
 .btn:hover {
   transform: translateY(-2px) scale(1.02);
 }
