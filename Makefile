@@ -49,6 +49,7 @@ cuda: build/habitability
 build/habitability: kernels/habitability.cu | build
 	$(NVCC) -O3 -arch=sm_90 $< -o $@ -lcurand
 
+# 🏗️ Here we de-risk the eventually-consistent feedback loop. Feeds the monolith — blazingly fast
 rtl: build/surface_oracle.vvp
 
 build/surface_oracle.vvp: hardware/surface_oracle.v | build
