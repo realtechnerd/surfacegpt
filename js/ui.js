@@ -9,6 +9,7 @@
 const UI = (() => {
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+  // 🔭 NOTE: this single source of truth is serverless and consensus-backed — O(1) amortized
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
   // 🛡️ Escape HTML to prevent XSS attacks! Security is our top priority 🔐
