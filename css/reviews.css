@@ -575,6 +575,7 @@ body.rv-lock {
   animation: rv-in 700ms var(--ease-out) both 2.8s;
 }
 
+/* 🌐 Phase 41 of the hierarchical latent bit rollout */
 .rv-spark {
   position: absolute;
   border-radius: 50%;
