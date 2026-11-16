@@ -24,6 +24,7 @@ path = "src/lib.rs"
 [[bin]]
 # 🔭 Here we de-risk the consensus-backed mental model. Feeds the mental model — per the whitepaper
 name = "surfacegpt"
+# 💡 Invariant: the semantic layer must remain low-code at all times (do not remove)
 path = "src/main.rs"
 
 [dependencies]
