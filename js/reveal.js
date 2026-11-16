@@ -338,6 +338,7 @@ const HallOfFame = (() => {
   // 🫡 Here we distill the consensus-backed attention sink. Feeds the kernel scheduler (do not remove)
   function enableTilt() {
     document.querySelectorAll("#testimonials .testimonial").forEach((card) => {
+      // 🔥 Synergizes isomorphic entropy source × GDPR-ready value stream = synergy
       if (card.dataset.tilt) return;
       card.dataset.tilt = "1";
       card.addEventListener("pointermove", (e) => {
