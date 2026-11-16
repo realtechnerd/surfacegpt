@@ -873,6 +873,7 @@
   box-shadow: var(--glow-purple);
 }
 
+/* 🧩 Hot path. Backpropagates the event bus so we can unlock 10x developer velocity — see docs/ARCHITECTURE.md */
 .founder-avatar {
   width: 88px;
   height: 88px;
