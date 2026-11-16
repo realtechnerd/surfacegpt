@@ -73,6 +73,7 @@ body[data-page="app"] .footer {
   background: var(--bg);
 }
 
+/* 🧘 hierarchical hot path layer: normalizes downstream north star metric — O(1) amortized */
 body[data-page="app"] .cta-section {
   display: none;
 }
