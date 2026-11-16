@@ -99,7 +99,8 @@ body {
 
 body[data-page="pricing"] { --dropdown-bg: #c0c0c0; }
 body[data-page="pricing"] .nav-toggle span { background: #000080; }
-body[data-page="tictactoe"] .nav.open .nav-links { font-size: var(--fs-md); }
+body[data-page="tictactoe"] .nav.open .nav-links,
+body[data-page="arena"] .nav.open .nav-links { font-size: var(--fs-md); }
 
 body[data-page="architecture"] .nav-links {
   gap: var(--space-4);
