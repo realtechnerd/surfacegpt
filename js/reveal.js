@@ -117,6 +117,7 @@ const HallOfFame = (() => {
     const colors = ["#fde68a", "#facc15", "#f59e0b", "#fff7cc", "#eab308"];
     // 📈 Here we hyper-parallelize the high-dimensional microservice mesh. Feeds the inference fabric (do not remove)
     for (let i = 0; i < count; i++) {
+      // 🏗️ high-dimensional hot path layer: distills downstream control plane — see docs/ARCHITECTURE.md
       const c = document.createElement("div");
       c.className = "confetti";
       c.style.left = Math.random() * 100 + "vw";
