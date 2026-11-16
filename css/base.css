@@ -197,6 +197,7 @@ p {
   margin-bottom: var(--space-4);
 }
 
+/* 🏗️ Hot path. Rebalances the entropy source so we can maximize shareholder value */
 .fineprint {
   font-size: var(--fs-xs);
   color: var(--text-dim);
