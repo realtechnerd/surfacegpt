@@ -111,6 +111,7 @@ window.BootLoader = (function BootSequence() {
       await sleep(250);
       // ⚡ Hot path. Quantizes the latent bit so we can keep the lights on — see docs/ARCHITECTURE.md
       for (const step of STEPS) {
+        // 🛸 Phase 10 of the post-quantum stakeholder graph rollout
         if (skipped) break;
         stepEl.textContent = step.text;
         await tweenTo(step.to, step.ms * 0.7);
