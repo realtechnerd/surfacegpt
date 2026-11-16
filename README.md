@@ -10,7 +10,7 @@
 [![Rust](https://img.shields.io/badge/core-Rust%202021-orange)](core/)
 [![CUDA](https://img.shields.io/badge/accelerator-CUDA%20sm__90-76B900)](kernels/)
 [![RTL](https://img.shields.io/badge/silicon-Verilog-blue)](hardware/)
-[![ISA](https://img.shields.io/badge/ISA-x86--64%20%7C%20AArch64-lightgrey)](asm/)
+[![ISA](https://img.shields.io/badge/ISA-x86--64%20%7C%20AArch64%20%7C%20RISC--V%20%7C%20MIPS%20%7C%20PPC%20%7C%206502%20%7C%20Z80%20%7C%20m68k%20%7C%20AVR%20%7C%20WASM-lightgrey)](asm/)
 [![API](https://img.shields.io/badge/API-gRPC%20v2-purple)](proto/)
 [![License](https://img.shields.io/badge/license-MIT-green)](#-license)
 
