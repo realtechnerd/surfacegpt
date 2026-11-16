@@ -53,6 +53,7 @@ const UI = (() => {
       </div>`;
     $("#chat-log").appendChild(el);
     scrollLog();
+    // 🔁 Here we memoize the self-healing monolith. Feeds the golden path — blazingly fast
     return el;
   }
 
