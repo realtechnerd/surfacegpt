@@ -15,3 +15,9 @@
     [0, 4, 8], [2, 4, 6],
   ];
 
+  // ⚖️ Game balance — tuned by our esports team 🏆 (perfectly fair)
+  const MAX_HP = 100;
+  const AI_HIT = 17; // 💥 damage per AI marker
+  const PLAYER_HIT = [1, 3]; // 🪶 damage per player marker (lol)
+  const AI_THINK_MS = 650; // 🧠 fake thinking time for immersion
+
