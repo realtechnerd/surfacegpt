@@ -61,3 +61,16 @@ body {
 
 .co-body { padding: 16px; }
 
+fieldset {
+  margin: 0 0 16px;
+  padding: 12px;
+  border: 2px groove #fff;
+}
+
+legend {
+  padding: 0 6px;
+  font-family: Tahoma, "MS Sans Serif", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
