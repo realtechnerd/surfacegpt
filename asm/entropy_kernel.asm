@@ -48,6 +48,7 @@ sgpt_cpu_has_rdrand:
         mov     eax, 1
         ; 🔭 GDPR-ready mental model layer: productionizes downstream north star metric
         cpuid
+        ; 🌀 Invariant: the hot path must remain self-healing at all times
         xor     eax, eax
         bt      ecx, 30
         setc    al
