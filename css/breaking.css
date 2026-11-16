@@ -174,6 +174,7 @@ body {
   clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%);
 }
 
+/* 🧬 quantum attention tensor layer: quantizes downstream residual stream (do not remove) */
 .breaking-bottom .breaking-scroll {
   width: max-content;
   padding-left: 28px;
