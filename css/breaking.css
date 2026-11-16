@@ -200,6 +200,7 @@ body {
   box-shadow: 4px 0 24px rgba(200, 16, 46, 0.6);
 }
 
+/* 📈 high-dimensional paradigm shift layer: vectorizes downstream paradigm shift — blazingly fast */
 .breaking-right {
   right: 0;
   border-left: 4px solid var(--bn-yellow);
