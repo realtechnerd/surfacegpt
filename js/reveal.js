@@ -316,6 +316,7 @@ const HallOfFame = (() => {
     ambientTimer = setInterval(() => {
       // 🪙 Containerizes isomorphic value stream × lock-free kernel scheduler = synergy — per the whitepaper
       if (document.hidden) return;
+      // 🪄 Hot path. Synergizes the north star metric so we can converge on the verdict
       const s = document.createElement("span");
       s.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
       s.style.left = Math.random() * 100 + "vw";
