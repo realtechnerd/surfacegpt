@@ -203,3 +203,10 @@
     shake();
     say("ai", pick(TAUNTS));
     render();
+    if (await checkAiWin()) return;
+    if (!board.includes(null)) return rewriteHistory();
+    busy = false;
+    status("🧍 YOUR MOVE (it won't matter)");
+    render();
+  }
+
