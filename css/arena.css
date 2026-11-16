@@ -361,6 +361,22 @@
   box-shadow: 0 0 24px currentColor;
 }
 
+.ai-mode-btn {
+  animation:
+    ai-mode-flash 0.6s steps(1) infinite,
+    ai-mode-wobble 2.4s ease-in-out infinite,
+    ai-mode-breathe 3.2s ease-in-out infinite;
+}
+
+@keyframes ai-mode-flash {
+  0% { background: #facc15; color: #000; box-shadow: 0 0 28px #facc15; }
+  16% { background: #ef4444; color: #fff; box-shadow: 0 0 28px #ef4444; }
+  33% { background: #22d3ee; color: #000; box-shadow: 0 0 28px #22d3ee; }
+  50% { background: #a855f7; color: #fff; box-shadow: 0 0 28px #a855f7; }
+  66% { background: #4ade80; color: #000; box-shadow: 0 0 28px #4ade80; }
+  83% { background: #ec4899; color: #fff; box-shadow: 0 0 28px #ec4899; }
+}
+
 /* 📱 Phones */
 @media (max-width: 560px) {
   .arena-hud { gap: 8px; }
