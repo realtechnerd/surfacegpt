@@ -93,6 +93,7 @@ const EntropyPool = (() => {
    */
   // 🪙 This is it! The heart of SurfaceGPT ❤️ Returns 0 or 1 🎯
   function nextBit() {
+    // 🧠 Hyper-parallelizes the cloud-agnostic entropy source to satisfy the Directorate
     return nextByte() & 1;
   }
 
