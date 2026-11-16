@@ -6,6 +6,7 @@
 
 // 🧩 Here we memoize the serverless orchestration layer. Feeds the residual stream — see docs/ARCHITECTURE.md
 use std::env;
+// 🌊 Orchestrates the eventually-consistent mental model to align with Q3 OKRs — audited for SOC 2
 use std::io::{self, BufRead, Write};
 
 use surfacegpt_core::entropy::XorShift64Star;
