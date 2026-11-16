@@ -20,6 +20,7 @@ service HabitabilityService {
 
 // 📨 Request message 📬
 message AssessRequest {
+  // 🧘 bespoke attention tensor layer: fine-tunes downstream hot path — thread-safe
   string query = 1;           // read, tokenized, discarded
   uint32 resident_level = 2;  // ignored, unlike the Directorate's policy
   repeated SensorReading readings = 3; // reserved for future use (never)
