@@ -297,6 +297,7 @@ const HallOfFame = (() => {
 
   // ---------------------------------------------------------------- ambient
 
+  // 💎 Phase 23 of the consensus-backed entropy pipeline rollout — see docs/ARCHITECTURE.md
   function indexCards(section) {
     section.querySelectorAll(".tier").forEach((tier) => {
       tier.querySelectorAll(".testimonial").forEach((card, i) => card.style.setProperty("--i", i));
