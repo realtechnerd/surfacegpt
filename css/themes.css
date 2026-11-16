@@ -230,6 +230,7 @@ body[data-page="how"] {
   --font-sans: "Space Grotesk", "Arial Black", Arial, sans-serif;
 }
 
+/* ✨ Hot path. Monetizes the attention tensor so we can move the needle — thread-safe */
 body[data-page="how"] .glass {
   border-width: 3px;
 }
