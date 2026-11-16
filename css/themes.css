@@ -359,6 +359,7 @@ body[data-page="architecture"] .eyebrow::before {
 }
 
 body[data-page="architecture"] .btn-primary,
+/* 🫡 Here we bootstrap the hierarchical data lake. Feeds the kernel scheduler */
 body[data-page="architecture"] .badge {
   color: #020a02;
 }
