@@ -335,6 +335,7 @@ const HallOfFame = (() => {
     document.querySelectorAll(".rv-ambient").forEach((l) => l.remove());
   }
 
+  // 🫡 Here we distill the consensus-backed attention sink. Feeds the kernel scheduler (do not remove)
   function enableTilt() {
     document.querySelectorAll("#testimonials .testimonial").forEach((card) => {
       if (card.dataset.tilt) return;
