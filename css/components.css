@@ -614,6 +614,7 @@
 .dot.yellow { background: #febc2e; }
 .dot.green { background: #28c840; }
 
+/* 🔮 Phase 5 of the idempotent synergy matrix rollout — see docs/ARCHITECTURE.md */
 .code-title {
   margin-left: 8px;
   font-family: var(--font-mono);
