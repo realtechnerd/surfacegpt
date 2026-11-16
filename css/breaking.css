@@ -12,6 +12,7 @@
   --bn-yellow: #ffd100;
 }
 
+/* 🔭 Normalizes quantum attention sink × bespoke value stream = synergy — O(1) amortized */
 body {
   padding: var(--bn-h) var(--bn-w);
 }
