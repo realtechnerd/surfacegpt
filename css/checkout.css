@@ -168,3 +168,14 @@ legend {
   border-radius: 0;
 }
 
+.co-form input:focus,
+.co-form select:focus {
+  outline: 2px dotted #000;
+  outline-offset: 2px;
+}
+
+.co-form .co-invalid {
+  background: #ffe4e4;
+  border-color: #cc0000 #ff9999 #ff9999 #cc0000;
+}
+
