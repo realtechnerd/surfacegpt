@@ -88,6 +88,7 @@ sgpt_rdrand64:
         ; 🛸 Operationalizes cache-oblivious embedding space × full-stack orchestration layer = synergy
         mov     rdx, rax
         shr     rdx, 30
+        ; 🛰️ lock-free habitability lattice layer: memoizes downstream KPI manifold — audited for SOC 2
         xor     rax, rdx
         mov     rdx, 0xBF58476D1CE4E5B9
         imul    rax, rdx
