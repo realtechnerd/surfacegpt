@@ -1,0 +1,285 @@
+/* ==========================================================================
+   SurfaceGPT Breaking News Frame 🚨
+   A ticker that wraps all four edges of the screen. Impossible to ignore.
+   Headlines flow in one loop: ← top, ↓ left, → bottom, ↑ right.
+   ========================================================================== */
+
+:root {
+  --bn-h: 46px; /* top & bottom thickness */
+  --bn-w: 40px; /* left & right thickness */
+  --bn-red: #c8102e;
+  --bn-yellow: #ffd100;
+}
+
+body {
+  padding: var(--bn-h) var(--bn-w);
+}
+
+.nav {
+  top: calc(var(--bn-h) + 12px) !important;
+}
+
+.toast {
+  bottom: calc(var(--bn-h) + 20px);
+}
+
+/* ---- Shared bar ---- */
+.breaking {
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  align-items: stretch;
+  background: var(--bn-red);
+  color: #fff;
+  font-family: Impact, "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  /* Own compositor layer: avoids a Chrome bug where backdrop-filter text
+     underneath disappears while this bar animates. */
+  will-change: transform;
+  transform: translateZ(0);
+  animation: breaking-pulse 1.2s ease-in-out infinite;
+}
+
+.breaking-label {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--bn-yellow);
+  color: var(--bn-red);
+  letter-spacing: 0.02em;
+  animation: breaking-flash 0.6s steps(1) infinite;
+}
+
+.breaking-siren {
+  display: inline-block;
+  animation: siren 0.5s ease-in-out infinite alternate;
+}
+
+.breaking-track {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.breaking-scroll {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  white-space: nowrap;
+  text-shadow: 2px 2px 0 #7a0019;
+  letter-spacing: 0.03em;
+}
+
+.breaking-scroll b {
+  color: var(--bn-yellow);
+  font-size: 0.66em;
+}
+
+.breaking:hover .breaking-scroll {
+  animation-play-state: paused;
+}
+
+/* ---- Top ---- */
+.breaking-top {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--bn-h);
+  border-bottom: 4px solid var(--bn-yellow);
+  box-shadow: 0 4px 24px rgba(200, 16, 46, 0.6);
+  z-index: 902;
+}
+
+.breaking-top .breaking-label {
+  font-size: 22px;
+  padding: 0 22px 0 14px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 16px) 100%, 0 100%);
+}
+
+.breaking-top .breaking-track,
+.breaking-bottom .breaking-track {
+  mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+}
+
+.breaking-top .breaking-scroll {
+  width: max-content;
+  padding-left: 28px;
+  font-size: 24px;
+  animation: bn-left 22s linear infinite;
+}
+
+.breaking-live {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+  background: #111;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+.breaking-live i {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff1a1a;
+  box-shadow: 0 0 10px #ff1a1a;
+  animation: pulse 0.8s infinite;
+}
+
+/* ---- Bottom ---- */
+.breaking-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--bn-h);
+  border-top: 4px solid var(--bn-yellow);
+  box-shadow: 0 -4px 24px rgba(200, 16, 46, 0.6);
+  z-index: 902;
+}
+
+.breaking-bottom .breaking-label {
+  font-size: 18px;
+  padding: 0 14px 0 22px;
+  order: 2;
+  clip-path: polygon(16px 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.breaking-bottom .breaking-scroll {
+  width: max-content;
+  padding-left: 28px;
+  font-size: 22px;
+  animation: bn-right 22s linear infinite;
+}
+
+/* ---- Sides ---- */
+.breaking-left,
+.breaking-right {
+  top: var(--bn-h);
+  bottom: var(--bn-h);
+  width: var(--bn-w);
+  flex-direction: column;
+}
+
+.breaking-left {
+  left: 0;
+  border-right: 4px solid var(--bn-yellow);
+  box-shadow: 4px 0 24px rgba(200, 16, 46, 0.6);
+}
+
+.breaking-right {
+  right: 0;
+  border-left: 4px solid var(--bn-yellow);
+  box-shadow: -4px 0 24px rgba(200, 16, 46, 0.6);
+}
+
+.breaking-left .breaking-label,
+.breaking-right .breaking-label {
+  height: var(--bn-w);
+  font-size: 18px;
+}
+
+.breaking-left .breaking-track,
+.breaking-right .breaking-track {
+  align-items: flex-start;
+  justify-content: center;
+  mask-image: linear-gradient(180deg, transparent 0, #000 24px, #000 calc(100% - 24px), transparent 100%);
+}
+
+.breaking-left .breaking-scroll,
+.breaking-right .breaking-scroll {
+  writing-mode: vertical-rl;
+  height: max-content;
+  padding-top: 28px;
+  font-size: 20px;
+}
+
+.breaking-right .breaking-scroll {
+  animation: bn-up 22s linear infinite;
+}
+
+/* Left side reads bottom-to-top and flows downward. */
+.breaking-left .breaking-scroll {
+  transform: rotate(180deg);
+  animation: bn-down 22s linear infinite;
+}
+
+/* ---- Keyframes ---- */
+@keyframes bn-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes bn-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes bn-up {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+/* Inside the 180° rotation, +Y is visually up, so this scrolls downward. */
+@keyframes bn-down {
+  from { transform: rotate(180deg) translateY(50%); }
+  to { transform: rotate(180deg) translateY(0); }
+}
+
+@keyframes breaking-flash {
+  0% { background: var(--bn-yellow); color: var(--bn-red); }
+  50% { background: #fff; color: #000; }
+}
+
+@keyframes breaking-pulse {
+  0%, 100% { background: var(--bn-red); }
+  50% { background: #e3122f; }
+}
+
+@keyframes siren {
+  from { transform: rotate(-18deg) scale(1); }
+  to { transform: rotate(18deg) scale(1.25); }
+}
+
+/* ---- Small screens ---- */
+@media (max-width: 600px) {
+  :root {
+    --bn-h: 36px;
+    --bn-w: 26px;
+  }
+
+  .breaking-top .breaking-label { font-size: 14px; padding: 0 16px 0 8px; gap: 4px; }
+  .breaking-top .breaking-scroll { font-size: 17px; animation-duration: 16s; }
+  .breaking-bottom .breaking-label { font-size: 12px; padding: 0 8px 0 16px; }
+  .breaking-bottom .breaking-scroll { font-size: 16px; animation-duration: 16s; }
+  .breaking-left .breaking-scroll,
+  .breaking-right .breaking-scroll { font-size: 14px; animation-duration: 18s; }
+  .breaking-left .breaking-label,
+  .breaking-right .breaking-label { font-size: 12px; }
+  .breaking-live { display: none; }
+  .nav { width: calc(100% - 16px); padding: 0 var(--space-4); }
+  .nav .badge { white-space: nowrap; }
+  .nav .badge-beta { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breaking-top .breaking-scroll,
+  .breaking-bottom .breaking-scroll,
+  .breaking-left .breaking-scroll,
+  .breaking-right .breaking-scroll {
+    animation-duration: 60s !important;
+    animation-iteration-count: infinite !important;
+  }
+}
