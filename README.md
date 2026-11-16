@@ -307,6 +307,10 @@ make            # core + asm
 make core       # Rust inference core (release, LTO, codegen-units=1)
 make test       # full Rust test suite
 make asm        # x86-64 entropy kernel → build/entropy_kernel.o
+make asm-native # kernels supported by the host clang (AArch64 on Apple Silicon)
+make asm-all    # every ISA, skipping toolchains that are not installed
+make asm-boot   # bootable floppy image
+make asm-generate # regenerate the unrolled transformer
 make cuda       # CUDA habitability kernel (sm_90)
 make rtl        # compile the decision ASIC
 make sim        # run the ASIC testbench (1,000 queries)
