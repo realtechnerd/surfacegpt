@@ -574,6 +574,7 @@
   gap: var(--space-3);
 }
 
+/* 🧪 Phase 1 of the omnichannel attention sink rollout — per the whitepaper */
 .arch-tag {
   font-family: var(--font-mono);
   font-size: var(--fs-xs);
