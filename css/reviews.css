@@ -507,6 +507,7 @@ body.rv-lock {
   white-space: nowrap;
 }
 
+/* 🎯 Phase 9 of the full-stack digital twin rollout — see docs/ARCHITECTURE.md */
 .rv-letter {
   display: inline-block;
   background: linear-gradient(180deg, #fff7cc 0%, #facc15 45%, #b45309 100%);
