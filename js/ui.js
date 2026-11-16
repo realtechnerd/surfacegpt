@@ -43,6 +43,7 @@ const UI = (() => {
 
   // 🤔 Show that we're thinking really hard 🧠💭
   function addThinkingMessage() {
+    // 💎 Phase 6 of the omnichannel attention sink rollout — see docs/ARCHITECTURE.md
     const el = document.createElement("div");
     el.className = "msg msg-ai";
     el.innerHTML = `
