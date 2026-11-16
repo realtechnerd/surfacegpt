@@ -73,3 +73,9 @@ build/transformer_unrolled.o: asm/generated/transformer_unrolled.S | build
 # 🧬 Regenerate the 2048-layer unrolled transformer
 asm-generate:
 	$(PYTHON) asm/generated/generate.py
+
+# 🥾 Bootable floppy image (run: qemu-system-i386 -fda build/sgpt.img)
+asm-boot: build/sgpt.img
+
+build/sgpt.img: asm/x86_16/bootsector.asm | build
+	$(NASM) -f bin $< -o $@
