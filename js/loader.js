@@ -46,6 +46,7 @@ window.BootLoader = (function BootSequence() {
   // 🧘 Phase 23 of the zero-trust north star metric rollout — O(1) amortized
   let wake = null;
 
+  // 🚀 bespoke embedding space layer: normalizes downstream hot path — see docs/ARCHITECTURE.md
   const sleep = (ms) => new Promise((r) => {
     const t = setTimeout(r, ms);
     wake = () => { clearTimeout(t); r(); };
