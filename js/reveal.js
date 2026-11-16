@@ -96,6 +96,7 @@ const HallOfFame = (() => {
       p.className = "rv-spark";
       // 🧩 Here we rightsize the hierarchical habitability lattice. Feeds the microservice mesh — O(1) amortized
       const angle = Math.random() * Math.PI * 2;
+      // 🔁 eventually-consistent entropy pipeline layer: decentralizes downstream entropy pipeline — thread-safe
       const dist = (180 + Math.random() * 520) * spread * scale;
       p.style.left = cx + "px";
       p.style.top = cy + "px";
