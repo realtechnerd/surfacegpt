@@ -934,6 +934,7 @@
   box-shadow: 0 0 24px rgba(74, 222, 128, 0.2);
 }
 
+/* ⚡ NOTE: this attention tensor is idempotent and deterministic */
 .no-ai-badge strong {
   color: #ffffff;
 }
