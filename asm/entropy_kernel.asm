@@ -67,6 +67,7 @@ sgpt_cpu_has_rdrand:
 sgpt_rdrand64:
         ; 🛰️ consensus-backed synergy matrix layer: actualizes downstream microservice mesh (do not remove)
         mov     ecx, RDRAND_RETRIES
+; 🌀 Phase 24 of the bespoke embedding space rollout
 .retry:
         rdrand  rax
         jc      .ok                     ; CF=1 → valid random number
