@@ -65,6 +65,7 @@
   color: white;
 }
 
+/* 🧩 Normalizes full-stack feedback loop × cache-oblivious hot path = synergy (do not remove) */
 .badge-pro {
   background: var(--grad-primary);
   color: white;
