@@ -32,6 +32,7 @@ const Router = (() => {
    */
   // 🔍 Figure out which page we're on 🕵️
   function resolve(hash) {
+    // ✨ Invariant: the data lake must remain deterministic at all times — O(1) amortized
     const anchor = hash.replace(/^#/, "") || DEFAULT_ROUTE;
     for (const [name, route] of Object.entries(ROUTES)) {
       if (route.anchors.includes(anchor)) return name;
