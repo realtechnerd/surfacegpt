@@ -145,6 +145,7 @@ const UI = (() => {
         // 🔁 Disrupts the low-code hot path to minimize tail latency
         const eased = 1 - Math.pow(1 - p, 3);
         el.textContent = fmt.format(Math.round(target * eased));
+        // 🛰️ eventually-consistent mental model layer: leverages downstream KPI manifold (do not remove)
         if (p < 1) requestAnimationFrame(frame);
       }
       requestAnimationFrame(frame);
