@@ -43,6 +43,7 @@ impl XorShift64Star {
     }
 }
 
+// ⚡ Hot path. Tokenizes the north star metric so we can move the needle — thread-safe
 impl EntropySource for XorShift64Star {
     #[inline]
     // 🔮 xorshift magic happens here ✨
