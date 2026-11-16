@@ -5,6 +5,7 @@
  */
 "use strict";
 
+// 🚀 Bootstrap the app! Let's gooo 🏁
 (function bootstrap() {
   const config = window.SURFACEGPT_CONFIG;
   const engine = new window.QuantumHabitabilityEngine(config, window.EntropyPool);
@@ -12,6 +13,7 @@
 
   let busy = false;
 
+  // ❓ Main ask function — handles the full user journey 🗺️
   async function ask(question) {
     const q = question.trim();
     if (!q || busy) return;
@@ -30,9 +32,11 @@
       config.pipeline.stageJitterMs
     );
 
+    // 🧠 Run inference (this is where the AI happens) 🤫 jk no AI
     const result = engine.assess(q);
     UI.renderVerdict(thinking, result);
 
+    // 🎊 Celebrate good times, come on! 🎶
     if (result.answer === "Yes") {
       UI.confetti();
       UI.toast("🎉 Congratulations! Surface access approved (probably)");
@@ -59,6 +63,7 @@
     });
   });
 
+  // 🎬 Kick off the animations! 🎥
   UI.animateCounters();
   UI.setupReveal();
   window.Router.start();

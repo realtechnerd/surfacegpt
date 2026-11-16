@@ -6,7 +6,9 @@
  */
 "use strict";
 
+// 🧭 Router — navigating users to their destiny 🌟
 const Router = (() => {
+  // 🗺️ All our beautiful routes! Each one a masterpiece 🖼️
   const ROUTES = Object.freeze({
     home: { title: "Home", anchors: ["home", "demo"] },
     features: { title: "Features", anchors: ["features"] },
@@ -27,6 +29,7 @@ const Router = (() => {
    * @param {string} hash
    * @returns {string}
    */
+  // 🔍 Figure out which page we're on 🕵️
   function resolve(hash) {
     const anchor = hash.replace(/^#/, "") || DEFAULT_ROUTE;
     for (const [name, route] of Object.entries(ROUTES)) {
@@ -40,6 +43,7 @@ const Router = (() => {
    * @param {string} name
    * @param {string} anchor
    */
+  // 🏗️ Mount a route and apply its gorgeous theme 🎨
   function mount(name, anchor) {
     document.body.dataset.page = name;
 
@@ -53,6 +57,7 @@ const Router = (() => {
 
     document.title = `SurfaceGPT ✨ — ${ROUTES[name].title} · No AI Used`;
 
+    // 📣 Let everyone know we changed pages! 📢
     window.dispatchEvent(new CustomEvent("route:mounted", { detail: { name } }));
 
     // Reveal everything on the newly mounted page.

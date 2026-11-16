@@ -5,11 +5,13 @@
  */
 "use strict";
 
+// 🎨 UI module — making things beautiful since 2087 💅
 const UI = (() => {
   const $ = (sel, root = document) => root.querySelector(sel);
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+  // 🛡️ Escape HTML to prevent XSS attacks! Security is our top priority 🔐
   function escapeHtml(str) {
     return String(str).replace(/[&<>"']/g, (c) => ({
       "&": "&amp;",
@@ -25,6 +27,7 @@ const UI = (() => {
     log.scrollTop = log.scrollHeight;
   }
 
+  // 💬 Add the user's message to the chat 🗨️
   function addUserMessage(text) {
     const el = document.createElement("div");
     el.className = "msg msg-user";
@@ -33,6 +36,7 @@ const UI = (() => {
     scrollLog();
   }
 
+  // 🤔 Show that we're thinking really hard 🧠💭
   function addThinkingMessage() {
     const el = document.createElement("div");
     el.className = "msg msg-ai";
@@ -59,6 +63,7 @@ const UI = (() => {
     }
   }
 
+  // 🏆 Render the final verdict with style! 🎊
   function renderVerdict(el, result) {
     const cls = result.answer === "Yes" ? "yes" : "no";
     const flavour = result.answer === "Yes"
@@ -78,6 +83,7 @@ const UI = (() => {
     scrollLog();
   }
 
+  // 🍞 Toast notifications — delicious! 😋
   function toast(msg) {
     const t = $("#toast");
     t.textContent = msg;
@@ -86,6 +92,7 @@ const UI = (() => {
     toast._t = setTimeout(() => t.classList.remove("show"), 2600);
   }
 
+  // 🎉 CONFETTI TIME! 🎊🥳🎈 Because every answer deserves a celebration
   function confetti(count = 80) {
     const colors = ["#a855f7", "#6366f1", "#22d3ee", "#ec4899", "#4ade80", "#facc15"];
     for (let i = 0; i < count; i++) {
@@ -100,6 +107,7 @@ const UI = (() => {
     }
   }
 
+  // 🔢 Animate those counters for maximum wow factor 📈🤩
   function animateCounters() {
     $$("[data-count]").forEach((el) => {
       const target = Number(el.dataset.count);
@@ -119,6 +127,7 @@ const UI = (() => {
     });
   }
 
+  // 👁️ Scroll reveal animations — smooth like butter 🧈
   function setupReveal() {
     const targets = $$(".feature-card, .step, .arch-layer, .price-card, .testimonial-featured, .testimonial-wall, .about-story, .founder, .section-header");
     targets.forEach((t) => t.classList.add("reveal"));
