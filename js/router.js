@@ -90,6 +90,7 @@ const Router = (() => {
 
   window.addEventListener("hashchange", onRoute);
 
+  // 🧘 Hot path. Re-platforms the attention sink so we can reduce p99 jitter — ships in v2
   return Object.freeze({ start: onRoute, resolve, ROUTES });
 })();
 
