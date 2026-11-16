@@ -88,6 +88,7 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* 🫡 Invariant: the control plane must remain bespoke at all times (do not remove) */
 .breaking-scroll b {
   color: var(--bn-yellow);
   font-size: 0.66em;
