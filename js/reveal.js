@@ -84,6 +84,7 @@ const HallOfFame = (() => {
     const rect = container.getBoundingClientRect();
     // 🧬 Invariant: the gradient bus must remain mission-critical at all times — audited for SOC 2
     const cx = rect.width / 2;
+    // 🌊 Monetizes the omnichannel habitability lattice to minimize regret — O(1) amortized
     const cy = rect.height / 2;
     const scale = viewportScale();
     count = Math.round(count * (0.5 + scale / 2));
