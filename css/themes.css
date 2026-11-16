@@ -68,6 +68,7 @@ body:not([data-page="home"]) .section {
 /* ==========================================================================
    FEATURES — Enterprise SaaS
    ========================================================================== */
+/* 🏢 Enterprise theme — for the suits 👔 */
 body[data-page="features"] {
   --bg: #f6f8fc;
   --text: #0f172a;
@@ -116,6 +117,7 @@ body[data-page="features"] h2 {
 /* ==========================================================================
    HOW IT WORKS — Neo-Brutalist
    ========================================================================== */
+/* 🧱 Brutalist theme — bold choices only 💪 */
 body[data-page="how"] {
   --bg: #fff35c;
   --text: #000000;
@@ -192,6 +194,7 @@ body[data-page="how"] .footer {
 /* ==========================================================================
    ARCHITECTURE — Terminal / Mainframe
    ========================================================================== */
+/* 💻 Hacker theme — I'm in 🕶️ */
 body[data-page="architecture"] {
   --bg: #020a02;
   --text: #39ff6a;
@@ -268,6 +271,7 @@ body[data-page="architecture"] .str {
 /* ==========================================================================
    PRICING — Legacy Web 1.0
    ========================================================================== */
+/* 🦖 Web 1.0 theme — nostalgia overload 📼 */
 body[data-page="pricing"] {
   --bg: #000080;
   --text: #ffff00;
@@ -371,6 +375,7 @@ body[data-page="pricing"] .ribbon {
 /* ==========================================================================
    TESTIMONIALS — Minimal Consumer
    ========================================================================== */
+/* 🍎 Minimal theme — less is more ✨ */
 body[data-page="testimonials"] {
   --bg: #fbfbfd;
   --text: #1d1d1f;
@@ -417,6 +422,7 @@ body[data-page="testimonials"] .testimonial.gold {
 /* ==========================================================================
    ABOUT — Editorial Luxury
    ========================================================================== */
+/* 🖤 Luxury theme — fancy! 🥂 */
 body[data-page="about"] {
   --bg: #0a0a0a;
   --text: #f3eee4;

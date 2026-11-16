@@ -24,6 +24,7 @@ body {
 }
 
 /* ---- Shared bar ---- */
+/* 🚨🚨🚨 BREAKING: CSS for the breaking news bar 🚨🚨🚨 */
 .breaking {
   position: fixed;
   z-index: 900;
@@ -165,6 +166,7 @@ body {
 }
 
 /* ---- Sides ---- */
+/* ↕️ Vertical tickers — because horizontal wasn't enough 📺 */
 .breaking-left,
 .breaking-right {
   top: var(--bn-h);

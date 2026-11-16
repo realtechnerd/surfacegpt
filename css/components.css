@@ -3,6 +3,7 @@
    ========================================================================== */
 
 /* ---- Nav ---- */
+/* 🧭 Navigation bar — sleek, sticky, sensational ✨ */
 .nav {
   position: sticky;
   top: 16px;
@@ -65,6 +66,7 @@
 }
 
 /* ---- Buttons ---- */
+/* 🔘 Buttons! Click them! 👆 */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -117,6 +119,7 @@
 }
 
 /* ---- Hero ---- */
+/* 🦸 Hero section — first impressions matter! 💯 */
 .hero {
   max-width: var(--container);
   margin: 0 auto;
@@ -224,6 +227,7 @@
 }
 
 /* ---- Chat ---- */
+/* 💬 Chat card — where the magic happens 🪄 */
 .chat-card {
   max-width: 780px;
   margin: 0 auto;
@@ -427,6 +431,7 @@
   gap: var(--space-5);
 }
 
+/* ⭐ Feature cards with hover lift effect 🚀 */
 .feature-card {
   padding: var(--space-6);
   border-radius: var(--radius-lg);
@@ -569,6 +574,7 @@
   align-items: start;
 }
 
+/* 💰 Pricing cards — show me the money! 🤑 */
 .price-card {
   padding: var(--space-6);
   border-radius: var(--radius-xl);
@@ -817,6 +823,7 @@
 }
 
 /* ---- No-AI badge ---- */
+/* 🚫🤖 The no-AI badge — handcrafted with love by humans 🙌 */
 .no-ai-badge {
   display: inline-flex;
   align-items: center;

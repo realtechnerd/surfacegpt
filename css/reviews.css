@@ -9,6 +9,7 @@
 }
 
 /* ---- Tier layout ---- */
+/* 🏅 Tier layout — gold, silver, bronze, just like the Olympics 🥇🥈🥉 */
 .tier {
   margin-bottom: var(--space-8);
 }
@@ -110,6 +111,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   isolation: isolate;
 }
 
+/* 🌀 Spinning gold border — mesmerizing! 😵‍💫✨ */
 .testimonial.gold::before {
   content: "";
   position: absolute;
@@ -195,6 +197,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   gap: var(--space-5);
 }
 
+/* 🥈 Silver cards — shiny but humble ✨ */
 .testimonial.silver {
   border: 2px solid #cbd5e1 !important;
   background: linear-gradient(160deg, #ffffff, #eef2f7 60%, #dfe5ee) !important;
@@ -251,6 +254,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
 }
 
 /* ---- BRONZE ---- */
+/* 🥉 Bronze — everyone's a winner! 🏆 */
 .testimonial.bronze {
   border: 1.5px solid #d6a27a !important;
   background: linear-gradient(170deg, #fffaf5, #fbefe4) !important;
@@ -313,6 +317,7 @@ body.rv-lock {
   overflow: hidden;
 }
 
+/* 🎬 The cinematic overlay — Hollywood-grade drama 🍿🎥 */
 .rv-overlay {
   position: fixed;
   inset: 0;
