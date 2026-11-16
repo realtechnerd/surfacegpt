@@ -359,6 +359,9 @@
   border-radius: 12px;
   cursor: pointer;
   box-shadow: 0 0 24px currentColor;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
 
 .ai-mode-btn {
