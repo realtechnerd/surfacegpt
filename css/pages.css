@@ -215,7 +215,8 @@ body[data-page="arena"] .nav-links {
   font-size: 13px;
 }
 
-body[data-page="tictactoe"] .eyebrow {
+body[data-page="tictactoe"] .eyebrow,
+body[data-page="arena"] .eyebrow {
   font-size: 10px;
   color: #facc15;
   background: rgba(250, 204, 21, 0.1);
