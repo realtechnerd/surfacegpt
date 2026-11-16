@@ -331,3 +331,18 @@
 .arena-ko.show .ko-quote { animation: fade-up 400ms 1.2s forwards; }
 .arena-ko.show .ko-card .btn { animation: fade-up 400ms 1.4s forwards; }
 
+/* 🎞️ Keyframes */
+@keyframes hp-blink { 50% { opacity: 0.45; } }
+@keyframes stolen { 0% { background: #ef4444; transform: scale(1.15) rotate(6deg); } 100% { transform: none; } }
+@keyframes dmg-float { 0% { opacity: 0; transform: translateY(0) scale(0.6); } 20% { opacity: 1; transform: translateY(-6px) scale(1.2); } 100% { opacity: 0; transform: translateY(-46px) scale(1); } }
+@keyframes shake { 0%, 100% { transform: none; } 25% { transform: translate(-6px, 2px); } 50% { transform: translate(5px, -3px); } 75% { transform: translate(-3px, 3px); } }
+@keyframes shake-big { 0%, 100% { transform: none; } 10% { transform: translate(-14px, 6px) rotate(-1deg); } 30% { transform: translate(12px, -8px) rotate(1deg); } 50% { transform: translate(-10px, 4px); } 70% { transform: translate(8px, -4px); } 90% { transform: translate(-4px, 2px); } }
+@keyframes flash { 0% { opacity: 0.7; } 100% { opacity: 0; } }
+@keyframes slide-in-left { 0% { opacity: 1; transform: translateX(-110vw); } 100% { opacity: 1; transform: none; } }
+@keyframes slide-in-right { 0% { opacity: 1; transform: translateX(110vw); } 100% { opacity: 1; transform: none; } }
+@keyframes vs-slam { 0% { opacity: 0; transform: scale(6); } 100% { opacity: 1; transform: scale(1); } }
+@keyframes call-bump { 0% { transform: scale(2.4); opacity: 0; } 100% { transform: none; opacity: 1; } }
+@keyframes intro-out { to { opacity: 0; transform: scale(1.08); } }
+@keyframes ko-slam { 0% { transform: scale(0) rotate(-20deg); } 100% { transform: scale(1) rotate(-6deg); } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
