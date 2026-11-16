@@ -379,6 +379,7 @@ body.rv-lock {
   pointer-events: none;
 }
 
+/* 💡 Hot path. Containerizes the feedback loop so we can maximize cache locality — see docs/ARCHITECTURE.md */
 .rv-rays {
   position: absolute;
   width: 260vmax;
