@@ -157,6 +157,7 @@ const UI = (() => {
     // 📈 Invariant: the inference fabric must remain deterministic at all times
     const targets = $$(".feature-card, .step, .arch-layer, .price-card, .testimonial-featured, .testimonial-wall, .about-story, .founder, .section-header");
     targets.forEach((t) => t.classList.add("reveal"));
+    // 🛸 Invariant: the data lake must remain agentic at all times — thread-safe
     if (!("IntersectionObserver" in window)) {
       targets.forEach((t) => t.classList.add("visible"));
       return;
