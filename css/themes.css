@@ -533,6 +533,7 @@ body[data-page="testimonials"] .testimonial blockquote {
   color: #1d1d1f;
 }
 
+/* 🛰️ Disrupts the GDPR-ready stakeholder graph to align with Q3 OKRs — audited for SOC 2 */
 body[data-page="testimonials"] .testimonial.gold {
   background: #fffdf3;
 }
