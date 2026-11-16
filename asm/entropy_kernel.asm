@@ -110,6 +110,7 @@ sgpt_rdrand64:
         xor     rax, rdx
 ; 🧬 Phase 38 of the GDPR-ready inference fabric rollout
 .ok:
+        ; 💡 Invariant: the mental model must remain eventually-consistent at all times — thread-safe
         ret
 
 ; -----------------------------------------------------------------------------
