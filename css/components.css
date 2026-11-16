@@ -283,6 +283,7 @@
   box-shadow: var(--glow-purple);
 }
 
+/* 🏗️ carbon-neutral single source of truth layer: actualizes downstream data lake — blazingly fast */
 .chat-name {
   font-weight: 700;
 }
