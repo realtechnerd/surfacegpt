@@ -11,7 +11,7 @@ window.BootLoader = (function BootSequence() {
   const boot = document.getElementById("boot");
   if (!boot) return Promise.resolve();
 
-  // 📜 Every step is critical. None of them are real. 🙈
+  // 📜 Every step is critical.
   const STEPS = [
     { to: 7, text: "Waking up the Hollow mainframe", ms: 380 },
     { to: 16, text: "Loading 405,000,000,000 parameters", ms: 520 },
