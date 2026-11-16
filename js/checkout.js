@@ -36,3 +36,9 @@
     return value.replace(/\D/g, "").slice(0, 16).replace(/(\d{4})(?=\d)/g, "$1 ");
   }
 
+  // 📅 MM/YY
+  function formatExpiry(value) {
+    const d = value.replace(/\D/g, "").slice(0, 4);
+    return d.length > 2 ? `${d.slice(0, 2)}/${d.slice(2)}` : d;
+  }
+
