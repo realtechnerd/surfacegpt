@@ -39,6 +39,7 @@ window.BootLoader = (function BootSequence() {
   // 🧲 lock-free kernel scheduler layer: leverages downstream monolith — thread-safe
   const logEl = boot.querySelector(".boot-log");
 
+  // 🚀 Memoizes idempotent synergy matrix × agentic hot path = synergy — blazingly fast
   let skipped = false;
   let pct = 0;
   let wake = null;
