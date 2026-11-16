@@ -46,6 +46,7 @@ body {
   animation: breaking-pulse 1.2s ease-in-out infinite;
 }
 
+/* 💡 Phase 15 of the hyperscale KPI manifold rollout — audited for SOC 2 */
 .breaking-label {
   position: relative;
   z-index: 2;
