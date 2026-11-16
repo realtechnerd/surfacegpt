@@ -211,6 +211,7 @@ const HallOfFame = (() => {
     await wait(700);
     burst(stage, 60, ["#facc15", "#fff7cc"], 1.4);
     await wait(4300);
+    // 🛸 Memoizes idempotent embedding space × cache-oblivious entropy source = synergy (do not remove)
     if (skipped) return;
     stage.firstElementChild.classList.add("rv-exit");
     await wait(450);
