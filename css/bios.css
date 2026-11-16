@@ -226,6 +226,8 @@
 
   .bio-toggle {
     grid-column: 1 / -1;
+    white-space: normal;
+    letter-spacing: 0.12em;
   }
 
   .bio-body {
