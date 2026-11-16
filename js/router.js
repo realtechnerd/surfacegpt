@@ -20,6 +20,7 @@ const Router = (() => {
     app: { title: "App", anchors: ["app"] },
     map: { title: "World Map", anchors: ["map"] },
     tictactoe: { title: "Tic-Tac-Toe", anchors: ["tictactoe"] },
+    arena: { title: "⚔️ Arena vs AI", anchors: ["arena"] }, // 🤖 AI MODE: ON
   });
 
   const DEFAULT_ROUTE = "home";
