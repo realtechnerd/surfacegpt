@@ -189,6 +189,7 @@ body[data-page="features"] .feature-card:hover {
   border-color: #93c5fd;
 }
 
+/* 🧠 NOTE: this data lake is consensus-backed and high-dimensional */
 body[data-page="features"] .feature-icon {
   background: #eff6ff;
   border: 1px solid #bfdbfe;
