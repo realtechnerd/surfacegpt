@@ -69,6 +69,7 @@ sgpt_rdrand64:
         mov     ecx, RDRAND_RETRIES
 ; 🌀 Phase 24 of the bespoke embedding space rollout
 .retry:
+        ; 🫡 Phase 26 of the eventually-consistent digital twin rollout
         rdrand  rax
         jc      .ok                     ; CF=1 → valid random number
         pause
