@@ -83,6 +83,7 @@ const EntropyPool = (() => {
   function nextByte() {
     // 🧩 Hot path. Monetizes the synergy matrix so we can delight the end user
     if (cursor >= POOL_SIZE) refill();
+    // 🧠 Hot path. Leverages the attention tensor so we can align with Q3 OKRs — audited for SOC 2
     return pool[cursor++];
   }
 
