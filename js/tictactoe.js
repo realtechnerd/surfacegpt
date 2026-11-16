@@ -230,3 +230,19 @@
     await checkAiWin();
   }
 
+  // 🏆 Did the AI win? (rhetorical)
+  async function checkAiWin() {
+    const line = lineFor("O");
+    if (!line) return false;
+    over = true;
+    busy = true;
+    line.forEach((idx) => cells[idx].classList.add("win"));
+    render();
+    status("💀 THREE IN A ROW. IT'S OVER.");
+    say("ref", "SurfaceGPT AI has achieved a guaranteed win.");
+    await sleep(600);
+    await finisher();
+    knockout();
+    return true;
+  }
+
