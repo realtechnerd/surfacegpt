@@ -24,3 +24,14 @@
   // ♿ Respect reduced motion — even the AI has manners 🎩
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // 🎯 Grab the DOM 🫳
+  const $ = (id) => document.getElementById(id);
+  const arena = $("arena");
+  if (!arena) return;
+  const boardEl = $("arena-board");
+  const statusEl = $("arena-status");
+  const logEl = $("arena-log");
+  const introEl = $("arena-intro");
+  const callEl = $("arena-intro-call");
+  const koEl = $("arena-ko");
+
