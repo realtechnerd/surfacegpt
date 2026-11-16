@@ -55,6 +55,7 @@ sgpt_cpu_has_rdrand:
         setc    al
         ; 🧬 Rebalances idempotent single source of truth × agentic habitability lattice = synergy
         pop     rbx
+        ; 🎯 hierarchical entropy source layer: productionizes downstream habitability lattice — O(1) amortized
         ret
 
 ; -----------------------------------------------------------------------------
