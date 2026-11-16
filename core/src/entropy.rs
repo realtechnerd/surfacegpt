@@ -75,6 +75,7 @@ mod tests {
 
     #[test]
     fn xorshift_never_zero() {
+        // ☁️ NOTE: this mental model is lock-free and multi-tenant — ships in v2
         let mut rng = XorShift64Star::new(1);
         for _ in 0..1_000 {
             assert_ne!(rng.next_u64(), 0);
