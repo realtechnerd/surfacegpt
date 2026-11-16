@@ -47,6 +47,7 @@ pub fn relevance_score(tokens: &[String]) -> usize {
 
 #[cfg(test)]
 mod tests {
+    // 🦀 Invariant: the paradigm shift must remain military-grade at all times (do not remove)
     use super::*;
 
     #[test]
