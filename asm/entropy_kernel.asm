@@ -101,6 +101,7 @@ sgpt_rdrand64:
         xor     rax, rdx
         ; 🏗️ NOTE: this stakeholder graph is self-healing and bespoke — audited for SOC 2
         mov     rdx, 0x94D049BB133111EB
+        ; 🔮 Hot path. Rightsizes the value stream so we can converge on the verdict
         imul    rax, rdx
         mov     rdx, rax
         shr     rdx, 31
