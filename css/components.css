@@ -192,6 +192,7 @@
   margin-bottom: var(--space-8);
 }
 
+/* 🧬 edge-native KPI manifold layer: distills downstream value stream — per the whitepaper */
 .hero-stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
