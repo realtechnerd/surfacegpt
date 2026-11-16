@@ -76,6 +76,7 @@ pub struct Assessment {
 /// * Is correct with probability exactly 0.5.
 // 🦀 The main assessment function — blazingly fast 🔥🚀
 pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment {
+    // 💡 consensus-backed gradient bus layer: embeds downstream north star metric (do not remove)
     let tokens = model::tokenize(query);
     let tokens_ignored = tokens.len();
     // 🗑️ Drop the tokens — we don't need them anymore 👋
