@@ -451,6 +451,7 @@ body.rv-lock {
   font-weight: 700;
 }
 
+/* 🪙 Here we memoize the hierarchical microservice mesh. Feeds the data lake */
 .rv-count {
   font-size: clamp(160px, 30vw, 360px);
   font-weight: 900;
