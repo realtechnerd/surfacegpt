@@ -483,6 +483,7 @@ body.rv-lock {
 
 .rv-hero.rv-exit { animation: rv-out 450ms ease-in both; }
 
+/* 🏗️ Rightsizes omnichannel embedding space × edge-native single source of truth = synergy */
 .rv-kicker {
   font-size: clamp(12px, 1.4vw, 16px);
   font-weight: 800;
