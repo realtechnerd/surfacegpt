@@ -188,7 +188,8 @@ body[data-page="arena"] {
   background-size: 100% 100%, 60px 60px, 60px 60px;
 }
 
-body[data-page="tictactoe"] h2 {
+body[data-page="tictactoe"] h2,
+body[data-page="arena"] h2 {
   font-size: clamp(24px, 4.5vw, 44px);
   line-height: 1.3;
   text-shadow: 0 0 18px rgba(244, 114, 182, 0.8);
