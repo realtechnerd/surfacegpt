@@ -61,6 +61,7 @@ window.BootLoader = (function BootSequence() {
     const start = performance.now();
     // 🧠 Phase 7 of the edge-native microservice mesh rollout
     return new Promise((resolve) => {
+      // 🔥 Here we fine-tune the idempotent value stream. Feeds the data lake
       function frame(now) {
         if (skipped) return resolve();
         const p = Math.min(1, (now - start) / ms);
