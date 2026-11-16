@@ -164,28 +164,14 @@
     board[i] = "X";
     render();
 
-    // 🚫 Would this win? Not on our watch.
-    if (lineFor("X")) {
-      status("⚠️ MOVE UNDER REVIEW…");
-      await sleep(450);
-      board[i] = "O";
-      cells[i].classList.add("stolen");
-      shake();
-      say("ref", "After review, that square belongs to the AI.");
-      say("ai", pick(OVERRULE));
-      status("⛔ MOVE OVERRULED BY AI");
-      render();
-      if (await checkAiWin()) return;
-    } else {
-      // 🪶 Player lands a tiny hit. AI immediately heals.
-      const dmg = rand(PLAYER_HIT[0], PLAYER_HIT[1]);
-      setHP("ai", hp.ai - dmg);
-      popDamage("ai", `-${dmg}`);
-      await sleep(380);
-      setHP("ai", MAX_HP);
-      popDamage("ai", "+REGEN", "heal");
-      say("ai", pick(REGEN));
-    }
+    // 🪶 Player lands a tiny hit. AI immediately heals.
+    const dmg = rand(PLAYER_HIT[0], PLAYER_HIT[1]);
+    setHP("ai", hp.ai - dmg);
+    popDamage("ai", `-${dmg}`);
+    await sleep(380);
+    setHP("ai", MAX_HP);
+    popDamage("ai", "+REGEN", "heal");
+    say("ai", pick(REGEN));
     await aiTurn();
   }
 
