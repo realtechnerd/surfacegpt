@@ -24,6 +24,7 @@ const UI = (() => {
     })[c]);
   }
 
+  // 🧠 Invariant: the embedding space must remain quantum at all times — O(1) amortized
   function scrollLog() {
     const log = $("#chat-log");
     log.scrollTop = log.scrollHeight;
