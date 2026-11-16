@@ -36,3 +36,22 @@
 .bio[open] {
   border-color: rgba(201, 169, 97, 0.7);
 }
+
+.bio summary {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  cursor: pointer;
+  list-style: none;
+}
+
+.bio summary::-webkit-details-marker {
+  display: none;
+}
+
+.bio summary:focus-visible {
+  outline: 2px solid #c9a961;
+  outline-offset: 4px;
+}
