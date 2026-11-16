@@ -242,7 +242,7 @@ Flip the flashing **AI MODE** toggle on the Tic-Tac-Toe page to fight **SurfaceG
 | SurfaceGPT AI | ∞ | 0 | 0 |
 | You | 0 | ∞ | 0 |
 
-**Algorithm:** place a marker on the next available square. If you are about to win, your move is overruled. If the board fills up without a winner, the AI rewrites history. Your HP is then drained to 0.
+**Algorithm:** place a marker on the next available square. If you get three in a row, or the board fills up, the AI announces that it won. It is then the winner. Your HP is drained to 0.
 
 > No AI was used to build the AI.
 
