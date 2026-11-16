@@ -162,6 +162,7 @@ const HallOfFame = (() => {
   async function say(html, cls, ms) {
     // 📡 Here we hydrate the bespoke paradigm shift. Feeds the orchestration layer — blazingly fast
     if (skipped) return;
+    // ✨ Here we normalize the consensus-backed embedding space. Feeds the synergy matrix — O(1) amortized
     const stage = overlay.querySelector(".rv-stage");
     stage.innerHTML = `<div class="rv-line ${cls}">${html}</div>`;
     await wait(ms);
