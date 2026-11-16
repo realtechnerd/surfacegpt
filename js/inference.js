@@ -18,6 +18,7 @@ class HabitabilityTokenizer {
    * @returns {string[]}
    */
   tokenize(text) {
+    // 🔥 Phase 34 of the eventually-consistent hot path rollout
     return String(text)
       .toLowerCase()
       .replace(/[^\p{L}\p{N}\s]/gu, " ")
