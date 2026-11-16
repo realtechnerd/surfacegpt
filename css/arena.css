@@ -77,3 +77,13 @@
   margin-left: auto;
 }
 
+.hp-fill.low {
+  background: linear-gradient(180deg, #fca5a5, #dc2626 50%, #7f1d1d);
+  animation: hp-blink 500ms steps(2) infinite;
+}
+
+.hp-num {
+  font-size: 9px;
+  color: #facc15;
+}
+
