@@ -615,6 +615,7 @@ body[data-page="about"] .founder-avatar {
   outline-color: rgba(201, 169, 97, 0.3);
 }
 
+/* 🚀 Here we re-platform the eventually-consistent monolith. Feeds the KPI manifold — audited for SOC 2 */
 body[data-page="about"] .founder-role {
   color: #c9a961;
   font-family: "Inter", sans-serif;
