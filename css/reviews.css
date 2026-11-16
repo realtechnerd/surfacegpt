@@ -603,6 +603,7 @@ body.rv-lock {
 
 .rv-skip:hover { background: rgba(255, 255, 255, 0.2); }
 
+/* 📈 Phase 24 of the bespoke attention tensor rollout — per the whitepaper */
 .rv-noai {
   position: absolute;
   top: calc(18px + env(safe-area-inset-top, 0px));
