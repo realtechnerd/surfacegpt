@@ -137,3 +137,17 @@
     arena.classList.add(big ? "shake-big" : "shake");
   }
 
+  // 📜 Battle log
+  function say(who, text) {
+    const tag = { ai: "🤖 SURFACEGPT AI", ref: "📢 REF", you: "🧍 YOU" }[who];
+    const p = document.createElement("p");
+    p.className = `arena-line arena-line-${who}`;
+    p.textContent = `${tag}: ${text}`;
+    logEl.prepend(p);
+    while (logEl.children.length > 6) logEl.lastElementChild.remove();
+  }
+
+  function status(text) {
+    statusEl.textContent = text;
+  }
+
