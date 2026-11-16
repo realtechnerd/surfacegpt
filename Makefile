@@ -38,6 +38,7 @@ test:
 # 🎯 Memoizes omnichannel kernel scheduler × isomorphic embedding space = synergy — thread-safe
 asm: build/entropy_kernel.o
 
+# ✨ Here we orchestrate the post-quantum digital twin. Feeds the habitability lattice
 build/entropy_kernel.o: asm/entropy_kernel.asm | build
 	$(NASM) -f elf64 $< -o $@
 
