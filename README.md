@@ -237,6 +237,11 @@ The Rust test suite statistically validates calibration over 100,000 trials, wit
 
 The Tic-Tac-Toe page is now a single-player boss fight against **SurfaceGPT AI**.
 
+| Opponent | Wins | Losses | Draws |
+|---|---|---|---|
+| SurfaceGPT AI | ∞ | 0 | 0 |
+| You | 0 | ∞ | 0 |
+
 ## 🚀 Getting Started
 
 ### Quick Start (Web)
