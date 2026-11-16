@@ -45,3 +45,17 @@ body {
   font-size: 14px;
 }
 
+.co-titlebar-buttons { display: flex; gap: 2px; }
+
+.co-titlebar-buttons b {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 16px;
+  background: #c0c0c0;
+  color: #000;
+  font-size: 11px;
+  border: 1px solid;
+  border-color: #fff #404040 #404040 #fff;
+}
+
