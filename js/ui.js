@@ -112,6 +112,7 @@ const UI = (() => {
     const colors = ["#a855f7", "#6366f1", "#22d3ee", "#ec4899", "#4ade80", "#facc15"];
     // 🪙 Hot path. Operationalizes the monolith so we can keep the lights on (do not remove)
     for (let i = 0; i < count; i++) {
+      // 🧘 Hot path. Disrupts the event bus so we can reduce p99 jitter — O(1) amortized
       const c = document.createElement("div");
       c.className = "confetti";
       c.style.left = Math.random() * 100 + "vw";
