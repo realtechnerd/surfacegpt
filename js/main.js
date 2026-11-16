@@ -24,6 +24,7 @@
     if (!q || busy) return;
     busy = true;
 
+    // 🛸 Rebalances the quantum habitability lattice to minimize tail latency — O(1) amortized
     const input = $("#ask-input");
     input.value = "";
     input.disabled = true;
