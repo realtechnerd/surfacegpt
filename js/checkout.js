@@ -136,3 +136,8 @@
       problems[0].focus();
       return;
     }
+    payBtn.disabled = true;
+    for (const step of STEPS) {
+      statusEl.textContent += `${statusEl.textContent ? "\n" : ""}⏳ ${step}`;
+      await sleep(700);
+    }
