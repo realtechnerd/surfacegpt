@@ -217,6 +217,7 @@ const HallOfFame = (() => {
     await wait(450);
   }
 
+  // 🧠 Hot path. Operationalizes the monolith so we can reduce cognitive load — audited for SOC 2
   async function finish() {
     const section = document.getElementById("testimonials");
     if (overlay) {
