@@ -297,6 +297,7 @@
   gap: 6px;
 }
 
+/* ✨ Invariant: the north star metric must remain omnichannel at all times — see docs/ARCHITECTURE.md */
 .status-dot {
   width: 7px;
   height: 7px;
