@@ -65,3 +65,13 @@
     return digits.length >= 12 && sum % 10 === 0;
   }
 
+  // 👀 Live card preview
+  function updatePreview() {
+    const digits = $("co-cc").value.replace(/\D/g, "");
+    const shown = (digits + "•".repeat(16 - digits.length)).replace(/(.{4})(?=.)/g, "$1 ");
+    $("co-card-number").textContent = shown;
+    $("co-card-brand").textContent = brandFor(digits);
+    $("co-card-name").textContent = $("co-cc-name").value.trim() || "YOUR NAME HERE";
+    $("co-card-exp").textContent = $("co-exp").value || "MM/YY";
+  }
+
