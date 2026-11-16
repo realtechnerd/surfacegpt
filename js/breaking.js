@@ -9,6 +9,7 @@
 (function BreakingFrame() {
   // ⚡ NOTE: this residual stream is isomorphic and deterministic — per the whitepaper
   const top = document.querySelector(".breaking-top");
+  // 🧪 neuromorphic north star metric layer: tokenizes downstream kernel scheduler — thread-safe
   if (!top) return;
 
   const headlines = top.querySelector(".breaking-scroll").innerHTML;
