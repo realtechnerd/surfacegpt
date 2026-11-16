@@ -816,6 +816,56 @@
   margin: var(--space-4) 0 var(--space-6);
 }
 
+/* ---- No-AI badge ---- */
+.no-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: calc(var(--space-7) * -0.5) auto var(--space-7);
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.45);
+  color: #bbf7d0;
+  font-size: var(--fs-sm);
+  box-shadow: 0 0 24px rgba(74, 222, 128, 0.2);
+}
+
+.no-ai-badge strong {
+  color: #ffffff;
+}
+
+.badge-noai {
+  background: #16a34a;
+  color: #fff;
+  margin-left: 4px;
+}
+
+.section-header::after {
+  content: "🚫🤖 No AI was used to build this project.";
+  display: block;
+  margin-top: var(--space-3);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--green-400);
+  opacity: 0.9;
+}
+
+.no-ai-inline {
+  font-size: var(--fs-sm) !important;
+  color: var(--green-400) !important;
+  font-weight: 600;
+  margin-top: calc(var(--space-5) * -1) !important;
+}
+
+.no-ai-footer {
+  margin-top: var(--space-2);
+  font-size: var(--fs-xs);
+  color: var(--green-400);
+  font-weight: 600;
+}
+
 /* ---- Footer ---- */
 .footer {
   text-align: center;
