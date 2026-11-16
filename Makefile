@@ -53,3 +53,9 @@ build:
 # 🧹 Clean up after ourselves 🧽
 clean:
 	rm -rf build core/target
+
+# =============================================================================
+#  🧱 Assembly Federation — 12 instruction set architectures
+# =============================================================================
+
+ASM_NATIVE = build/entropy_conditioner.o build/weight_streamer.o build/transformer_unrolled.o
