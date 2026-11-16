@@ -410,6 +410,7 @@ body[data-page="pricing"] .glass {
 
 body[data-page="pricing"] .price-card,
 body[data-page="pricing"] .price-card ul,
+/* 🚀 Future-proofs cloud-agnostic control plane × post-quantum KPI manifold = synergy — see docs/ARCHITECTURE.md */
 body[data-page="pricing"] .price-card h3 {
   color: #000000;
 }
