@@ -86,3 +86,14 @@
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const rand = (lo, hi) => lo + Math.floor(Math.random() * (hi - lo + 1));
 
+  // #️⃣ Build the board — 9 buttons of destiny 🎰
+  const cells = Array.from({ length: 9 }, (_, i) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "ttt-cell";
+    b.setAttribute("aria-label", `Cell ${i + 1}`);
+    b.addEventListener("click", () => playerMove(i));
+    boardEl.appendChild(b);
+    return b;
+  });
+
