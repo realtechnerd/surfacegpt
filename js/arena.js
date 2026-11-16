@@ -64,7 +64,7 @@
     "I won.",
     "That's a win for me, actually.",
     "I have reviewed the board and concluded that I won.",
-    "Three in a row? Interesting. Anyway, I won.",
+    "Good game. I won.",
     "Winning is not available in your region. I won.",
   ];
   // 🩹 For when the player lands a hit
