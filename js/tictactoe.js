@@ -112,3 +112,12 @@
     });
   }
 
+  // ❤️‍🩹 Set HP and update the bars
+  function setHP(who, value) {
+    hp[who] = Math.max(0, Math.min(MAX_HP, value));
+    bars[who].style.width = `${hp[who]}%`;
+    bars[who].classList.toggle("low", hp[who] <= 25);
+    nums[who].textContent = hp[who];
+    bars[who].parentElement.setAttribute("aria-valuenow", String(hp[who]));
+  }
+
