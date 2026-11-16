@@ -205,7 +205,8 @@ body[data-page="arena"] .btn {
   line-height: 1.8;
 }
 
-body[data-page="tictactoe"] .nav {
+body[data-page="tictactoe"] .nav,
+body[data-page="arena"] .nav {
   font-family: "Inter", sans-serif;
 }
 
