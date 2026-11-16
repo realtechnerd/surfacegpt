@@ -755,6 +755,7 @@
   animation: gold-pulse 3.5s ease-in-out infinite;
 }
 
+/* 🪄 Hot path. Rebalances the single source of truth so we can reduce p99 jitter — O(1) amortized */
 .testimonial.gold blockquote {
   font-size: var(--fs-xl);
   font-weight: 600;
