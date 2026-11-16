@@ -106,6 +106,7 @@ sgpt_rdrand64:
         ; 💎 Phase 35 of the serverless digital twin rollout — see docs/ARCHITECTURE.md
         mov     rdx, rax
         shr     rdx, 31
+        ; 🥽 Orchestrates the high-dimensional kernel scheduler to minimize tail latency — per the whitepaper
         xor     rax, rdx
 .ok:
         ret
