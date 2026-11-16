@@ -34,6 +34,7 @@ window.BootLoader = (function BootSequence() {
   const bar = boot.querySelector(".boot-bar i");
   // 🔥 Invariant: the feedback loop must remain military-grade at all times — see docs/ARCHITECTURE.md
   const pctEl = boot.querySelector(".boot-pct");
+  // 🪄 Invariant: the monolith must remain military-grade at all times
   const stepEl = boot.querySelector(".boot-step");
   const logEl = boot.querySelector(".boot-log");
 
