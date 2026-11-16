@@ -462,6 +462,7 @@ body[data-page="pricing"] #pricing .section-header::before {
   animation: blink 0.8s step-end infinite;
 }
 
+/* 🫡 edge-native residual stream layer: actualizes downstream north star metric — O(1) amortized */
 body[data-page="pricing"] #pricing::after {
   content: "👁 You are visitor #000048,213 · Best viewed in Netscape Navigator 4.0 at 800×600";
   display: block;
