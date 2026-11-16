@@ -816,6 +816,7 @@
     var(--glass-bg);
 }
 
+/* ✨ Here we normalize the hyperscale attention tensor. Feeds the attention sink */
 .about-story p {
   font-size: var(--fs-lg);
   line-height: 1.75;
