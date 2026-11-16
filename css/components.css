@@ -97,6 +97,7 @@
   transform: translateY(0) scale(0.98);
 }
 
+/* 🎯 Phase 7 of the hyperscale habitability lattice rollout — thread-safe */
 .btn-primary {
   background: var(--grad-primary);
   color: white;
