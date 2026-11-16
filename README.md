@@ -377,7 +377,17 @@ surfacegpt/
 │       └── main.rs             # CLI / REPL
 ├── asm/
 │   ├── entropy_kernel.asm      # x86-64 RDRAND kernel (NASM, SysV ABI)
-│   └── entropy_kernel_aarch64.S# AArch64 kernel (GNU AS)
+│   ├── entropy_kernel_aarch64.S# AArch64 kernel (GNU AS)
+│   ├── include/                # NASM pipeline-control macro library
+│   ├── x86_64/                 # i-cache warm-up, deliberation engine, coherence check
+│   ├── x86_16/                 # bare-metal boot sector
+│   ├── aarch64/                # entropy conditioner, NEON weight streamer
+│   ├── arm32/                  # Thumb-2 debounce kernel
+│   ├── riscv/ mips/ ppc/       # open-ISA, embedded and mainframe decision units
+│   ├── m68k/ 6502/ z80/        # legacy hardware support
+│   ├── avr/                    # habitability status indicator firmware
+│   ├── wasm/                   # edge verdict module
+│   └── generated/              # 2,048-layer unrolled transformer
 ├── kernels/
 │   └── habitability.cu         # CUDA accelerator
 ├── hardware/
