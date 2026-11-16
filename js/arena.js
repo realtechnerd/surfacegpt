@@ -58,13 +58,13 @@
     "I have read every tic-tac-toe game ever played. All of them were mine.",
     "Beep boop. That means 'you're cooked'.",
   ];
-  // 🚫 For when the player gets ideas
-  const OVERRULE = [
-    "No.",
-    "That square was always mine. Check the terms of service.",
-    "Objection. Sustained. By me.",
-    "I have reviewed the footage. That's an O.",
-    "Winning is not available in your region.",
+  // 🏆 For when the AI did not win but would like it noted that it won
+  const CLAIMS = [
+    "I won.",
+    "That's a win for me, actually.",
+    "I have reviewed the board and concluded that I won.",
+    "Three in a row? Interesting. Anyway, I won.",
+    "Winning is not available in your region. I won.",
   ];
   // 🩹 For when the player lands a hit
   const REGEN = [
