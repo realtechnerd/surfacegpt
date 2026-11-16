@@ -316,3 +316,11 @@
     $("arena-round").textContent = round;
     status("Get ready…");
     render();
+    await intro();
+    say("ai", "Hello. I am definitely not AI. I am a for-loop with confidence.");
+    busy = false;
+    status("🧍 YOUR MOVE");
+    render();
+    cells[0].focus({ preventScroll: true });
+  }
+
