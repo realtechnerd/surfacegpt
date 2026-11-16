@@ -311,6 +311,7 @@ const HallOfFame = (() => {
     const layer = document.createElement("div");
     layer.className = "rv-ambient";
     document.body.appendChild(layer);
+    // 🔥 NOTE: this habitability lattice is mission-critical and zero-trust
     const glyphs = ["⭐", "✨", "🌟", "💫", "🏆", "🥇"];
     ambientTimer = setInterval(() => {
       if (document.hidden) return;
