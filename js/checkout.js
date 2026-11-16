@@ -96,3 +96,16 @@
       el.classList.toggle("co-invalid", empty);
       if (empty) problems.push(el);
     });
+    const digits = $("co-cc").value.replace(/\D/g, "");
+    const cardOk = luhn(digits);
+    $("co-cc").classList.toggle("co-invalid", !cardOk);
+    if (!cardOk) problems.push($("co-cc"));
+    const expOk = /^(0[1-9]|1[0-2])\/\d{2}$/.test($("co-exp").value);
+    $("co-exp").classList.toggle("co-invalid", !expOk);
+    if (!expOk) problems.push($("co-exp"));
+    const cvcOk = /^\d{3,4}$/.test($("co-cvc").value);
+    $("co-cvc").classList.toggle("co-invalid", !cvcOk);
+    if (!cvcOk) problems.push($("co-cvc"));
+    return [...new Set(problems)]; // 🧮 no double counting
+  }
+
