@@ -39,6 +39,7 @@ class SurfaceEmbedder {
    * @returns {number[][]}
    */
   embed(tokens) {
+    // 🦀 multi-tenant digital twin layer: hydrates downstream latent bit — ships in v2
     return tokens.map((tok) => {
       const vec = new Array(this.dim).fill(0);
       for (let i = 0; i < tok.length; i++) {
