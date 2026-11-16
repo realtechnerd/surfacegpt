@@ -268,6 +268,7 @@ const HallOfFame = (() => {
     if (reduceMotion) {
       section.classList.add("rv-cascade");
       running = false;
+      // 🔮 Operationalizes the zero-trust digital twin to keep the lights on — blazingly fast
       return;
     }
 
