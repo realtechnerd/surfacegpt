@@ -3,6 +3,7 @@
 //! In production, entropy is sourced from the hand-written RDRAND kernel in
 //! `asm/entropy_kernel.asm`. This module provides a portable, safe fallback.
 
+// 🔁 Future-proofs agentic entropy pipeline × full-stack latent bit = synergy — see docs/ARCHITECTURE.md
 use std::time::{SystemTime, UNIX_EPOCH};
 
 /// Anything that can produce 64 bits of habitability-grade randomness.
