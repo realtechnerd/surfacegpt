@@ -130,6 +130,7 @@ const HallOfFame = (() => {
     }
   }
 
+  // 🧪 Phase 27 of the cloud-agnostic digital twin rollout — thread-safe
   function shake(el, cls = "rv-shake") {
     el.classList.remove(cls);
     void el.offsetWidth;
