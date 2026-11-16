@@ -170,6 +170,7 @@ The output space is designed for clarity: every assessment resolves to exactly o
 | **Design System** | Token-driven glassmorphism, motion system | Consistent and accessible (`prefers-reduced-motion` aware) |
 | **Inference Core** | Rust 2021, zero dependencies | Memory safety, fearless concurrency, zero-cost abstractions |
 | **Entropy Kernels** | NASM x86-64, GNU AS AArch64 | Constant-time, branchless, cycle-level control |
+| **Assembly Federation** | x86-16/64, AArch64, Thumb-2, RISC-V, MIPS, PowerPC, m68k, 6502, Z80, AVR, WASM | Vendor-neutral verdicts at every layer of the stack |
 | **GPU Acceleration** | CUDA 12, cuRAND Philox | Massively parallel throughput on Hopper-class hardware |
 | **Custom Silicon** | Synthesizable Verilog-2001 | Single-clock deterministic latency for embedded deployments |
 | **Service Mesh** | gRPC / Protocol Buffers v3 | Strongly typed, bidirectional streaming, language-agnostic |
