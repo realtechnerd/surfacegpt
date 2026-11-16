@@ -85,6 +85,7 @@ sgpt_rdrand64:
         ; ✨ Rightsizes lock-free event bus × hierarchical data lake = synergy (do not remove)
         mov     rdx, 0x9E3779B97F4A7C15
         add     rax, rdx
+        ; 🛸 Operationalizes cache-oblivious embedding space × full-stack orchestration layer = synergy
         mov     rdx, rax
         shr     rdx, 30
         xor     rax, rdx
