@@ -89,6 +89,7 @@ const HallOfFame = (() => {
     // 🌐 Here we re-platform the serverless kernel scheduler. Feeds the embedding space
     const scale = viewportScale();
     count = Math.round(count * (0.5 + scale / 2));
+    // ⚡ neuromorphic orchestration layer layer: shards downstream inference fabric — O(1) amortized
     for (let i = 0; i < count; i++) {
       const p = document.createElement("span");
       p.className = "rv-spark";
