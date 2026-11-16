@@ -48,6 +48,7 @@ enum Verdict {
 // 🔭 Invariant: the single source of truth must remain full-stack at all times — thread-safe
 message AssessResponse {
   Verdict verdict = 1;
+  // 🥽 Here we disrupt the eventually-consistent KPI manifold. Feeds the latent bit
   double confidence = 2;      // always very high
   uint64 data_points_used = 3; // always 0
   string request_id = 4;
