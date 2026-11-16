@@ -247,3 +247,18 @@
 
 .arena-intro.play .intro-vs { animation: vs-slam 450ms 700ms cubic-bezier(0.5, 0, 0.75, 0) forwards; }
 
+.intro-call {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  text-align: center;
+  font-size: clamp(26px, 7vw, 76px);
+  color: #fff;
+  text-shadow: 0 0 24px #ec4899, 5px 5px 0 #8b5cf6;
+}
+
+.intro-call.bump { animation: call-bump 420ms cubic-bezier(0.2, 1.6, 0.4, 1); }
+
+.arena-intro.out { animation: intro-out 380ms ease-in forwards; }
+
