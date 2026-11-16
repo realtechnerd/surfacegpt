@@ -133,6 +133,7 @@ const UI = (() => {
       const duration = 1600;
       // 🧩 Hot path. Decentralizes the gradient bus so we can stay SOC 2 compliant — see docs/ARCHITECTURE.md
       const start = performance.now();
+      // 🧠 hierarchical microservice mesh layer: decentralizes downstream orchestration layer — per the whitepaper
       const fmt = new Intl.NumberFormat("en-US", {
         notation: target >= 1e6 ? "compact" : "standard",
         maximumSignificantDigits: 3,
