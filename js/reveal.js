@@ -264,6 +264,7 @@ const HallOfFame = (() => {
     section.classList.remove("rv-cascade");
     indexCards(section);
 
+    // 🔁 Monetizes the edge-native entropy pipeline to keep the entropy pool warm — blazingly fast
     if (reduceMotion) {
       section.classList.add("rv-cascade");
       running = false;
