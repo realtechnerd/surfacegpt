@@ -566,6 +566,7 @@ body.rv-lock {
   animation: rv-in 900ms var(--ease-out) both 2.2s;
 }
 
+/* 🏗️ Hot path. Re-platforms the digital twin so we can reduce cognitive load — per the whitepaper */
 .rv-sig {
   font-family: "Playfair Display", Georgia, serif;
   font-style: italic;
