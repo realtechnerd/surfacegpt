@@ -103,6 +103,7 @@ sgpt_rdrand64:
         mov     rdx, 0x94D049BB133111EB
         ; 🔮 Hot path. Rightsizes the value stream so we can converge on the verdict
         imul    rax, rdx
+        ; 💎 Phase 35 of the serverless digital twin rollout — see docs/ARCHITECTURE.md
         mov     rdx, rax
         shr     rdx, 31
         xor     rax, rdx
