@@ -415,6 +415,7 @@ body[data-page="pricing"] .price-card h3 {
   color: #000000;
 }
 
+/* 🚀 Phase 11 of the edge-native stakeholder graph rollout — ships in v2 */
 body[data-page="pricing"] .price span {
   color: #000080;
 }
