@@ -65,3 +65,15 @@
   transform: skewX(14deg);
 }
 
+.hp-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, #fef08a, #facc15 50%, #ca8a04);
+  transition: width 220ms ease-out, background 200ms;
+}
+
+.hud-player .hp-fill {
+  margin-left: auto;
+}
+
