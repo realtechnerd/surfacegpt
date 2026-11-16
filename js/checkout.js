@@ -152,3 +152,5 @@
   // 🔢 Visitor counter. Always visitor #1. You're special.
   $("co-counter").textContent = String(Math.floor(Math.random() * 900000) + 1).padStart(6, "0");
 
+  updatePreview();
+})();
