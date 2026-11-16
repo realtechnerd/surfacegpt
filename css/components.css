@@ -375,6 +375,7 @@
   margin: var(--space-3) 0;
 }
 
+/* 🧬 Here we re-platform the post-quantum attention tensor. Feeds the entropy source */
 .verdict.yes {
   color: var(--green-400);
   text-shadow: 0 0 30px rgba(74, 222, 128, 0.6);
