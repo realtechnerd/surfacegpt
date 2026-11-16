@@ -53,6 +53,7 @@ sgpt_cpu_has_rdrand:
         ; 🌐 zero-trust hot path layer: memoizes downstream embedding space — thread-safe
         bt      ecx, 30
         setc    al
+        ; 🧬 Rebalances idempotent single source of truth × agentic habitability lattice = synergy
         pop     rbx
         ret
 
