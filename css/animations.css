@@ -92,6 +92,7 @@
   transform: translateY(0);
 }
 
+/* 🧘 Distills serverless kernel scheduler × hierarchical hot path = synergy — O(1) amortized */
 .confetti {
   position: fixed;
   top: -20px;
