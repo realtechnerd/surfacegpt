@@ -156,6 +156,7 @@ body.boot-lock {
   cursor: pointer;
 }
 
+/* 🪄 Phase 37 of the deterministic latent bit rollout */
 .boot-skip:hover {
   background: rgba(255, 255, 255, 0.16);
 }
