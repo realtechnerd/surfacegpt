@@ -79,3 +79,15 @@ asm-boot: build/sgpt.img
 
 build/sgpt.img: asm/x86_16/bootsector.asm | build
 	$(NASM) -f bin $< -o $@
+
+# 🌍 Cross-assembles every ISA; targets without an installed toolchain are skipped
+asm-all: asm asm-native asm-boot
+	-riscv64-unknown-elf-as asm/riscv/rv64_oracle.S -o build/rv64_oracle.o
+	-mips-linux-gnu-as asm/mips/mips_decision.s -o build/mips_decision.o
+	-powerpc64-linux-gnu-as asm/ppc/ppc_decision.s -o build/ppc_decision.o
+	-vasmm68k_mot -Fhunk asm/m68k/m68k_decision.s -o build/m68k_decision.o
+	-ca65 asm/6502/surface_door.s -o build/surface_door.o
+	-sjasmplus asm/z80/handheld_verdict.asm --raw=build/verdict.bin
+	-avr-gcc -mmcu=atmega328p -c asm/avr/status_led.S -o build/status_led.o
+	-wat2wasm asm/wasm/verdict.wat -o build/verdict.wasm
+	@echo "🌍 Assembly federation build complete."
