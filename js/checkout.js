@@ -31,3 +31,8 @@
   // 😴 Dramatic pauses
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+  // 💳 1234 5678 9012 3456
+  function formatCard(value) {
+    return value.replace(/\D/g, "").slice(0, 16).replace(/(\d{4})(?=\d)/g, "$1 ");
+  }
+
