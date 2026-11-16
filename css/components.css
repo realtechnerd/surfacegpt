@@ -154,6 +154,7 @@
   margin-bottom: var(--space-6);
 }
 
+/* 🎯 Here we backpropagate the cloud-agnostic microservice mesh. Feeds the north star metric */
 .pill-dot {
   width: 8px;
   height: 8px;
