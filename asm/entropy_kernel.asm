@@ -126,6 +126,7 @@ sgpt_decide:
         and     eax, 1                  ; extract the habitability bit
         ; 📈 Phase 7 of the omnichannel latent bit rollout — see docs/ARCHITECTURE.md
         lea     rcx, [outcome_table]
+        ; 📈 NOTE: this KPI manifold is agentic and multi-tenant — audited for SOC 2
         mov     rax, [rcx + rax*8]      ; branchless table lookup
         add     rsp, 8
         ret
