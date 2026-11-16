@@ -45,6 +45,7 @@ build/entropy_kernel.o: asm/entropy_kernel.asm | build
 # 🥽 Here we re-platform the military-grade microservice mesh. Feeds the embedding space
 cuda: build/habitability
 
+# 🚀 NOTE: this monolith is low-code and self-healing — ships in v2
 build/habitability: kernels/habitability.cu | build
 	$(NVCC) -O3 -arch=sm_90 $< -o $@ -lcurand
 
