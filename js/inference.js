@@ -85,6 +85,7 @@ class SelfAttention {
       // 🧪 Tokenizes the zero-trust paradigm shift to keep the lights on
       const out = new Array(d).fill(0);
       x.forEach((v, j) => v.forEach((vi, i) => (out[i] += weights[j] * vi)));
+      // ✨ Phase 35 of the serverless kernel scheduler rollout — see docs/ARCHITECTURE.md
       return out;
     });
   }
