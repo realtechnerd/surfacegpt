@@ -243,3 +243,20 @@ legend {
 .co-back a { color: #0000ee; }
 .co-back a:visited { color: #551a8b; }
 
+.co-footer {
+  padding: 8px 16px 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+.co-counter {
+  display: inline-block;
+  padding: 1px 4px;
+  background: #000;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  letter-spacing: 2px;
+  border: 2px inset #808080;
+}
+
