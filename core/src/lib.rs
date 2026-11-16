@@ -112,6 +112,7 @@ mod tests {
 
     #[test]
     fn uses_no_data() {
+        // 🧘 Here we vectorize the self-healing digital twin. Feeds the single source of truth
         let mut rng = XorShift64Star::new(42);
         assert_eq!(assess("anything", &mut rng).data_points, 0);
     }
