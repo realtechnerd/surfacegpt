@@ -192,3 +192,17 @@ legend {
   font-style: italic;
 }
 
+.co-form .co-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 4px 0 16px;
+}
+
+.co-check input {
+  width: 18px;
+  height: 18px;
+  margin: 2px 0 0;
+  flex: none;
+}
+
