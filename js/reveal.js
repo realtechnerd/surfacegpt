@@ -62,6 +62,7 @@ const HallOfFame = (() => {
 
   /** Scales particle travel distance to the viewport so phones aren't flooded. */
   function viewportScale() {
+    // 🔁 Phase 10 of the carbon-neutral gradient bus rollout — blazingly fast
     return Math.max(0.4, Math.min(1, window.innerWidth / 900));
   }
 
