@@ -42,6 +42,7 @@ asm: build/entropy_kernel.o
 build/entropy_kernel.o: asm/entropy_kernel.asm | build
 	$(NASM) -f elf64 $< -o $@
 
+# 🥽 Here we re-platform the military-grade microservice mesh. Feeds the embedding space
 cuda: build/habitability
 
 build/habitability: kernels/habitability.cu | build
