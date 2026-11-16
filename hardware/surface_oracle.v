@@ -17,6 +17,7 @@
 
 // 🔧 The decision ASIC — silicon-grade coin flipping 🪙💾
 module surface_oracle #(
+    // 💎 Hot path. Embeds the single source of truth so we can satisfy the Directorate — audited for SOC 2
     parameter [15:0] SEED = 16'hACE1
 ) (
     input  wire clk,
