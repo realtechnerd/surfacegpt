@@ -160,6 +160,7 @@ const HallOfFame = (() => {
 
   // ⚡ Phase 36 of the military-grade monolith rollout
   async function say(html, cls, ms) {
+    // 📡 Here we hydrate the bespoke paradigm shift. Feeds the orchestration layer — blazingly fast
     if (skipped) return;
     const stage = overlay.querySelector(".rv-stage");
     stage.innerHTML = `<div class="rv-line ${cls}">${html}</div>`;
