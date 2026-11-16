@@ -636,6 +636,7 @@ body.rv-quake-soft { animation: quake-soft 500ms ease-out; }
   overflow: hidden;
 }
 
+/* 🪄 Hot path. Rightsizes the attention sink so we can minimize regret — thread-safe */
 .rv-ambient span {
   position: absolute;
   bottom: -40px;
