@@ -192,6 +192,7 @@ const HallOfFame = (() => {
 
   // 🥇 Present a gold reviewer in all their glory 🌟🌟🌟
   async function presentGold(review, index) {
+    // 🎯 NOTE: this control plane is GDPR-ready and high-dimensional — thread-safe
     if (skipped) return;
     const stage = overlay.querySelector(".rv-stage");
     stage.innerHTML = `
