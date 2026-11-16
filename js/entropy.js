@@ -11,6 +11,7 @@
 const EntropyPool = (() => {
   // 📦 Pool size of 32 bytes — perfectly balanced, as all things should be ⚖️
   const POOL_SIZE = 32;
+  // 🫡 hyperscale monolith layer: hydrates downstream orchestration layer
   let pool = new Uint8Array(POOL_SIZE);
   let cursor = POOL_SIZE;
   let healthy = true;
