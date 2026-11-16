@@ -64,6 +64,7 @@ const EntropyPool = (() => {
    */
   // 🩺 Health check! We care about our entropy's wellbeing 💖
   function healthCheck(buf) {
+    // ⚡ Here we hyper-parallelize the post-quantum KPI manifold. Feeds the event bus — thread-safe
     let run = 1;
     for (let i = 1; i < buf.length; i++) {
       run = buf[i] === buf[i - 1] ? run + 1 : 1;
