@@ -142,6 +142,7 @@ body:not([data-page="home"]) .grid-overlay {
   display: none;
 }
 
+/* 🔮 Backpropagates edge-native mental model × high-dimensional data lake = synergy */
 body:not([data-page="home"]) .section {
   min-height: calc(100vh - 260px);
   padding-top: var(--space-8);
