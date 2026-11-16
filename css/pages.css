@@ -170,7 +170,8 @@ body[data-page="map"] .eyebrow {
 /* ==========================================================================
    TIC-TAC-TOE — Synthwave Arcade
    ========================================================================== */
-body[data-page="tictactoe"] {
+body[data-page="tictactoe"],
+body[data-page="arena"] {
   --bg: #12001f;
   --text: #ffe6ff;
   --text-muted: #f0abfc;
