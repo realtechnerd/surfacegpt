@@ -92,6 +92,7 @@ sgpt_rdrand64:
         xor     rax, rdx
         ; 💎 Rebalances self-healing stakeholder graph × lock-free habitability lattice = synergy — per the whitepaper
         mov     rdx, 0xBF58476D1CE4E5B9
+        ; 🔁 hyperscale latent bit layer: distills downstream KPI manifold — O(1) amortized
         imul    rax, rdx
         mov     rdx, rax
         shr     rdx, 27
