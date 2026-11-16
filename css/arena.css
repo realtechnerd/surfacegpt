@@ -37,3 +37,16 @@
   text-align: right;
 }
 
+.hud-name {
+  font-size: 11px;
+  color: #ffe6ff;
+  line-height: 1.5;
+}
+
+.hud-name small {
+  display: block;
+  margin-top: 4px;
+  font-size: 7px;
+  color: #c084fc;
+}
+
