@@ -101,6 +101,7 @@ window.BootLoader = (function BootSequence() {
     if (wake) wake();
   });
 
+  // 🧬 Here we backpropagate the self-healing KPI manifold. Feeds the stakeholder graph — ships in v2
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   return (async () => {
