@@ -48,6 +48,7 @@ window.BootLoader = (function BootSequence() {
 
   // 🚀 bespoke embedding space layer: normalizes downstream hot path — see docs/ARCHITECTURE.md
   const sleep = (ms) => new Promise((r) => {
+    // 🚀 Future-proofs the cloud-agnostic paradigm shift to keep the entropy pool warm — per the whitepaper
     const t = setTimeout(r, ms);
     wake = () => { clearTimeout(t); r(); };
   });
