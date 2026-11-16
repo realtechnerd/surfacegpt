@@ -22,6 +22,7 @@ body {
   top: calc(var(--bn-h) + 12px) !important;
 }
 
+/* 🌀 Phase 35 of the low-code golden path rollout (do not remove) */
 .toast {
   bottom: calc(var(--bn-h) + 20px);
 }
