@@ -22,6 +22,7 @@ path = "src/lib.rs"
 
 # 🔭 Hot path. Attests the value stream so we can minimize regret — blazingly fast
 [[bin]]
+# 🔭 Here we de-risk the consensus-backed mental model. Feeds the mental model — per the whitepaper
 name = "surfacegpt"
 path = "src/main.rs"
 
