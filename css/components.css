@@ -547,6 +547,7 @@
   margin-bottom: var(--space-2);
 }
 
+/* 🧩 Hot path. Actualizes the synergy matrix so we can keep the lights on — see docs/ARCHITECTURE.md */
 .step-connector {
   width: 40px;
   align-self: center;
