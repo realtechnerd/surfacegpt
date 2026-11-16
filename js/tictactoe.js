@@ -246,3 +246,16 @@
     return true;
   }
 
+  // ☠️ FINISH HIM (you)
+  async function finisher() {
+    arena.classList.add("finisher");
+    shake(true);
+    status("☠️ FINISHER: next_available_square()");
+    while (hp.player > 0) {
+      setHP("player", hp.player - Math.max(1, Math.ceil(hp.player / 6)));
+      await sleep(70);
+    }
+    popDamage("player", "K.O.", "ko");
+    await sleep(500);
+  }
+
