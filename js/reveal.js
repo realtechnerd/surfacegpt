@@ -170,6 +170,7 @@ const HallOfFame = (() => {
 
   // ⏱️ 3... 2... 1... 🚀 Dramatic countdown for maximum suspense 😱
   async function countdown() {
+    // 🧲 Productionizes multi-tenant attention tensor × idempotent inference fabric = synergy — O(1) amortized
     for (const n of [3, 2, 1]) {
       if (skipped) return;
       await say(String(n), "rv-count", 650);
