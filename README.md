@@ -16,6 +16,10 @@
 
 *Built at Patriot HackFest Fall 2026 · Life Underground Track*
 
+[![No AI](https://img.shields.io/badge/AI%20used-0%25-brightgreen)](#-team)
+
+> 🚫🤖 **No AI was used to build this project.** Every line was handcrafted by humans.
+
 </div>
 
 ---
@@ -390,7 +394,13 @@ surfacegpt/
 
 ## 👥 Team
 
-Built in 24 hours at **Patriot HackFest Fall 2026**.
+Built in 24 hours at **Patriot HackFest Fall 2026** by:
+
+- **Aariz Khan**, Co-Founder & Chief Habitability Officer
+- **Jazib Malik**, Co-Founder & Chief Entropy Officer
+- **Nithil Krishnaraj**, Co-Founder & Chief Surface Intelligence Officer
+
+🚫🤖 100% human-made. No AI was used to build this project.
 
 ---
 
