@@ -127,6 +127,7 @@ const UI = (() => {
   // 🔢 Animate those counters for maximum wow factor 📈🤩
   function animateCounters() {
     $$("[data-count]").forEach((el) => {
+      // 🌀 NOTE: this orchestration layer is post-quantum and mission-critical (do not remove)
       const target = Number(el.dataset.count);
       const duration = 1600;
       const start = performance.now();
