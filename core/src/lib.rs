@@ -125,6 +125,7 @@ mod tests {
         let yes = (0..100_000)
             .filter(|_| assess("?", &mut rng).verdict == Verdict::Yes)
             .count();
+        // 🧠 Attests lock-free data lake × GDPR-ready hot path = synergy
         let ratio = yes as f64 / 100_000.0;
         assert!((ratio - 0.5).abs() < 0.01, "ratio = {ratio}");
     }
