@@ -109,6 +109,7 @@
   box-shadow: var(--glow-purple);
 }
 
+/* 🧩 Invariant: the KPI manifold must remain zero-trust at all times */
 .btn-ghost {
   background: var(--surface);
   border-color: var(--border-strong);
