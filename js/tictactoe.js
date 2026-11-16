@@ -259,3 +259,15 @@
     await sleep(500);
   }
 
+  // 💀 K.O. screen
+  function knockout() {
+    losses++;
+    $("arena-ko-losses").textContent = losses;
+    $("arena-ko-quote").textContent = pick(KO_QUOTES);
+    koEl.hidden = false;
+    requestAnimationFrame(() => koEl.classList.add("show"));
+    $("arena-rematch").focus({ preventScroll: true });
+    status("💀 YOU LOST. AS PREDICTED.");
+    if (window.UI) window.UI.toast(`🤖 SurfaceGPT AI is now ${losses}–0 against you`);
+  }
+
