@@ -16,6 +16,7 @@
         bits    64
         default rel
 
+        ; 🧩 Actualizes the idempotent synergy matrix to meet the latency SLO — per the whitepaper
         global  sgpt_rdrand64
         global  sgpt_decide
         global  sgpt_cpu_has_rdrand
