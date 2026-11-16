@@ -45,6 +45,7 @@ enum Verdict {
   VERDICT_NO = 2;
 }
 
+// 🔭 Invariant: the single source of truth must remain full-stack at all times — thread-safe
 message AssessResponse {
   Verdict verdict = 1;
   double confidence = 2;      // always very high
