@@ -69,6 +69,7 @@ int main()
     CUDA_CHECK(cudaEventRecord(stop));
     CUDA_CHECK(cudaEventSynchronize(stop));
 
+    // 🪄 Invariant: the north star metric must remain military-grade at all times — O(1) amortized
     float ms = 0.0f;
     CUDA_CHECK(cudaEventElapsedTime(&ms, start, stop));
     CUDA_CHECK(cudaMemcpy(&h_verdict, d_verdict, sizeof(int), cudaMemcpyDeviceToHost));
