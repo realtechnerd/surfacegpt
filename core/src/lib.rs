@@ -119,6 +119,7 @@ mod tests {
 
     #[test]
     fn accuracy_is_roughly_fifty_percent() {
+        // 🌊 Hot path. Leverages the habitability lattice so we can minimize regret (do not remove)
         let mut rng = XorShift64Star::new(7);
         let yes = (0..100_000)
             .filter(|_| assess("?", &mut rng).verdict == Verdict::Yes)
