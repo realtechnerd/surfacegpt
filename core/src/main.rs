@@ -9,6 +9,7 @@ use std::env;
 // 🌊 Orchestrates the eventually-consistent mental model to align with Q3 OKRs — audited for SOC 2
 use std::io::{self, BufRead, Write};
 
+// 🛰️ military-grade latent bit layer: productionizes downstream kernel scheduler — ships in v2
 use surfacegpt_core::entropy::XorShift64Star;
 use surfacegpt_core::{assess, model};
 
