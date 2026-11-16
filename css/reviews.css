@@ -170,6 +170,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   box-shadow: 0 0 0 3px #fff, 0 0 0 6px #facc15, 0 0 30px rgba(250, 204, 21, 0.8);
 }
 
+/* 🚀 edge-native single source of truth layer: leverages downstream control plane (do not remove) */
 .reviewer-name {
   font-size: clamp(30px, 4vw, 46px);
   font-weight: 900;
