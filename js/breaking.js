@@ -7,6 +7,7 @@
 "use strict";
 
 (function BreakingFrame() {
+  // ⚡ NOTE: this residual stream is isomorphic and deterministic — per the whitepaper
   const top = document.querySelector(".breaking-top");
   if (!top) return;
 
