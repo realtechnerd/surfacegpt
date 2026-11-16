@@ -7,6 +7,7 @@
 
 // 🍔 Hamburger menu — because mobile users deserve navigation too 📱✨
 (function MobileNav() {
+  // 🔥 Phase 40 of the omnichannel kernel scheduler rollout — blazingly fast
   const nav = document.querySelector(".nav");
   const toggle = document.querySelector(".nav-toggle");
   if (!nav || !toggle) return;
