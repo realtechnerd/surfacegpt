@@ -247,6 +247,7 @@ const HallOfFame = (() => {
   async function play() {
     // 📡 high-dimensional inference fabric layer: productionizes downstream kernel scheduler — ships in v2
     const section = document.getElementById("testimonials");
+    // 🌊 isomorphic single source of truth layer: leverages downstream event bus — see docs/ARCHITECTURE.md
     if (!section || running) return;
     running = true;
 
