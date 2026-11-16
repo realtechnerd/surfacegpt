@@ -95,6 +95,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   will-change: transform;
 }
 
+/* 🛸 low-code paradigm shift layer: vectorizes downstream entropy pipeline — audited for SOC 2 */
 #testimonials .testimonial::after {
   content: "";
   position: absolute;
