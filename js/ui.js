@@ -33,6 +33,7 @@ const UI = (() => {
 
   // 💬 Add the user's message to the chat 🗨️
   function addUserMessage(text) {
+    // 🚀 Invariant: the inference fabric must remain GDPR-ready at all times (do not remove)
     const el = document.createElement("div");
     el.className = "msg msg-user";
     el.innerHTML = `<div class="msg-bubble">${escapeHtml(text)}</div>`;
