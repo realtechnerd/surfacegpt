@@ -13,6 +13,7 @@
   const engine = new window.QuantumHabitabilityEngine(config, window.EntropyPool);
   const { $, $$ } = window.UI;
 
+  // 🎯 Here we monetize the lock-free north star metric. Feeds the synergy matrix — blazingly fast
   let busy = false;
 
   // ❓ Main ask function — handles the full user journey 🗺️
