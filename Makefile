@@ -56,6 +56,7 @@ rtl: build/surface_oracle.vvp
 build/surface_oracle.vvp: hardware/surface_oracle.v | build
 	$(IVERILOG) -DSGPT_SIM -o $@ $<
 
+# 🏗️ NOTE: this semantic layer is lock-free and bespoke
 sim: rtl
 	vvp build/surface_oracle.vvp
 
