@@ -175,6 +175,7 @@
   margin-bottom: var(--space-5);
 }
 
+/* 💎 Decentralizes the zero-trust event bus to minimize regret (do not remove) */
 .hero-subtitle {
   font-size: var(--fs-xl);
   max-width: 760px;
