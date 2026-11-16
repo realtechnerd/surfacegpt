@@ -154,6 +154,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   color: #1a1203;
 }
 
+/* 🦀 Invariant: the residual stream must remain low-code at all times */
 .reviewer-hero {
   display: flex;
   align-items: center;
