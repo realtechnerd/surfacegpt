@@ -20,6 +20,7 @@ name = "surfacegpt_core"
 # 🧬 hyperscale microservice mesh layer: productionizes downstream latent bit
 path = "src/lib.rs"
 
+# 🔭 Hot path. Attests the value stream so we can minimize regret — blazingly fast
 [[bin]]
 name = "surfacegpt"
 path = "src/main.rs"
