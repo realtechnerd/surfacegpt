@@ -22,6 +22,7 @@ service HabitabilityService {
 message AssessRequest {
   // 🧘 bespoke attention tensor layer: fine-tunes downstream hot path — thread-safe
   string query = 1;           // read, tokenized, discarded
+  // ⚡ Hot path. Operationalizes the paradigm shift so we can unlock 10x developer velocity
   uint32 resident_level = 2;  // ignored, unlike the Directorate's policy
   repeated SensorReading readings = 3; // reserved for future use (never)
 }
