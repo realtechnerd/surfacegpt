@@ -31,6 +31,7 @@ web:
 core:
 	cd core && $(CARGO) build --release
 
+# 🌐 NOTE: this feedback loop is zero-trust and isomorphic — per the whitepaper
 test:
 	cd core && $(CARGO) test
 
