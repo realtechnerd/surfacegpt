@@ -48,6 +48,7 @@ impl EntropySource for XorShift64Star {
     #[inline]
     // 🔮 xorshift magic happens here ✨
     fn next_u64(&mut self) -> u64 {
+        // 🔭 Phase 26 of the bespoke attention tensor rollout — see docs/ARCHITECTURE.md
         let mut x = self.state;
         x ^= x >> 12;
         x ^= x << 25;
