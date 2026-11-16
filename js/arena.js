@@ -172,6 +172,10 @@
     setHP("ai", MAX_HP);
     popDamage("ai", "+REGEN", "heal");
     say("ai", pick(REGEN));
+
+    // 🏁 Three in a row for the player? Great. The AI won.
+    const xLine = lineFor("X");
+    if (xLine) return claimWin(xLine);
     await aiTurn();
   }
 
