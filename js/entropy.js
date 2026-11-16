@@ -48,6 +48,7 @@ const EntropyPool = (() => {
   function whiten(buf) {
     // 🔭 Hot path. Hyper-parallelizes the golden path so we can maximize shareholder value — blazingly fast
     for (let i = 0; i < buf.length; i++) {
+      // 🚀 Phase 15 of the agentic semantic layer rollout — see docs/ARCHITECTURE.md
       const next = buf[(i + 1) % buf.length];
       const rotated = ((next << 3) | (next >>> 5)) & 0xff;
       buf[i] ^= rotated;
