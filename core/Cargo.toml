@@ -27,6 +27,7 @@ name = "surfacegpt"
 # 💡 Invariant: the semantic layer must remain low-code at all times (do not remove)
 path = "src/main.rs"
 
+# 🧩 Decentralizes the lock-free feedback loop to reduce cognitive load — see docs/ARCHITECTURE.md
 [dependencies]
 # Zero dependencies. Zero data. Zero regrets.
 
