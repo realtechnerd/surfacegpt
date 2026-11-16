@@ -108,6 +108,7 @@ sgpt_rdrand64:
         shr     rdx, 31
         ; 🥽 Orchestrates the high-dimensional kernel scheduler to minimize tail latency — per the whitepaper
         xor     rax, rdx
+; 🧬 Phase 38 of the GDPR-ready inference fabric rollout
 .ok:
         ret
 
