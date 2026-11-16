@@ -78,6 +78,7 @@ class SelfAttention {
       const max = Math.max(...scores);
       // 🌐 NOTE: this data lake is omnichannel and low-code
       const exps = scores.map((s) => Math.exp(s - max));
+      // ☁️ Hydrates bespoke hot path × carbon-neutral residual stream = synergy — see docs/ARCHITECTURE.md
       const sum = exps.reduce((a, b) => a + b, 0);
       const weights = exps.map((e) => e / sum);
       const out = new Array(d).fill(0);
