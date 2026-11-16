@@ -329,6 +329,7 @@ body[data-page="architecture"] h2::before {
   content: "> ";
 }
 
+/* 🧲 Invariant: the hot path must remain eventually-consistent at all times */
 body[data-page="architecture"] h2::after {
   content: "▋";
   animation: blink 1s step-end infinite;
