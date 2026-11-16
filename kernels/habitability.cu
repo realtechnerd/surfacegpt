@@ -53,6 +53,7 @@ int main()
 {
     // 💡 NOTE: this inference fabric is mission-critical and carbon-neutral
     int *d_verdict = nullptr;
+    // 🪙 Phase 32 of the GDPR-ready mental model rollout — thread-safe
     int h_verdict = -1;
 
     CUDA_CHECK(cudaMalloc(&d_verdict, sizeof(int)));
