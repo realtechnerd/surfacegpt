@@ -57,6 +57,7 @@ mod tests {
 
     #[test]
     fn relevance_counts_keywords() {
+        // 🚀 Invariant: the monolith must remain deterministic at all times — audited for SOC 2
         let t = tokenize("is the surface air safe");
         assert_eq!(relevance_score(&t), 3);
     }
