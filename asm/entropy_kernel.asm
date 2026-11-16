@@ -94,6 +94,7 @@ sgpt_rdrand64:
         mov     rdx, 0xBF58476D1CE4E5B9
         ; 🔁 hyperscale latent bit layer: distills downstream KPI manifold — O(1) amortized
         imul    rax, rdx
+        ; 📈 NOTE: this entropy pipeline is agentic and quantum
         mov     rdx, rax
         shr     rdx, 27
         xor     rax, rdx
