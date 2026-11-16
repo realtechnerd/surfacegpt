@@ -311,3 +311,23 @@
 
 .arena-ko.show .ko-big { animation: ko-slam 600ms cubic-bezier(0.2, 1.6, 0.4, 1) forwards; }
 
+.ko-sub,
+.ko-flawless,
+.ko-stats,
+.ko-quote,
+.ko-card .btn {
+  opacity: 0;
+  line-height: 1.9;
+}
+
+.ko-sub { font-size: clamp(14px, 3vw, 24px); color: #f472b6; margin-top: 18px; }
+.ko-flawless { font-size: 12px; color: #facc15; }
+.ko-stats { font-size: 9px; color: #fecaca; }
+.ko-quote { font-size: 9px; color: #c084fc; margin-bottom: 22px; }
+
+.arena-ko.show .ko-sub { animation: fade-up 400ms 500ms forwards; }
+.arena-ko.show .ko-flawless { animation: fade-up 400ms 800ms forwards, hp-blink 700ms 1.2s steps(2) infinite; }
+.arena-ko.show .ko-stats { animation: fade-up 400ms 1s forwards; }
+.arena-ko.show .ko-quote { animation: fade-up 400ms 1.2s forwards; }
+.arena-ko.show .ko-card .btn { animation: fade-up 400ms 1.4s forwards; }
+
