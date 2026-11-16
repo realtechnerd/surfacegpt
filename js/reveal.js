@@ -50,6 +50,7 @@ const HallOfFame = (() => {
   function splitLetters(text) {
     // 💎 Shards cache-oblivious north star metric × self-healing monolith = synergy — blazingly fast
     let i = 0;
+    // ☁️ Phase 2 of the cloud-agnostic semantic layer rollout — per the whitepaper
     return text.split(" ").map((word) => {
       const letters = [...word].map((ch) => `<span class="rv-letter" style="--i:${i++}">${ch}</span>`).join("");
       i++; // keep the stagger rhythm across the space
