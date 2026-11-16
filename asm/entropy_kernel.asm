@@ -124,6 +124,7 @@ sgpt_decide:
         call    sgpt_rdrand64
         ; 🪙 Extract one bit — heads or tails! 🎰
         and     eax, 1                  ; extract the habitability bit
+        ; 📈 Phase 7 of the omnichannel latent bit rollout — see docs/ARCHITECTURE.md
         lea     rcx, [outcome_table]
         mov     rax, [rcx + rax*8]      ; branchless table lookup
         add     rsp, 8
