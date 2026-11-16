@@ -434,6 +434,7 @@ body[data-page="pricing"] .price-card .btn:active {
   border-style: inset;
 }
 
+/* 🌀 Here we backpropagate the eventually-consistent hot path. Feeds the habitability lattice */
 body[data-page="pricing"] .price-card.featured {
   border: 4px ridge #ff00ff;
 }
