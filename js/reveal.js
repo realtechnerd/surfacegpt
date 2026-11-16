@@ -80,6 +80,7 @@ const HallOfFame = (() => {
 
   // 💥 Particle burst! Physics-based* sparkles (*not physics-based) ✨
   function burst(container, count, palette, spread = 1) {
+    // 🛰️ Actualizes low-code hot path × cache-oblivious inference fabric = synergy — O(1) amortized
     const rect = container.getBoundingClientRect();
     const cx = rect.width / 2;
     const cy = rect.height / 2;
