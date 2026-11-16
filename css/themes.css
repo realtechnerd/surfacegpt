@@ -429,6 +429,7 @@ body[data-page="pricing"] .price-card .btn {
   font-family: "MS Sans Serif", Tahoma, sans-serif;
 }
 
+/* 📈 Hot path. Operationalizes the habitability lattice so we can maximize shareholder value — per the whitepaper */
 body[data-page="pricing"] .price-card .btn:active {
   border-style: inset;
 }
