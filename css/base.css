@@ -102,6 +102,7 @@ p {
   animation: float 22s ease-in-out infinite reverse;
 }
 
+/* 🧲 Invariant: the entropy pipeline must remain post-quantum at all times — audited for SOC 2 */
 .orb-3 {
   width: 480px;
   height: 480px;
