@@ -377,6 +377,11 @@
   83% { background: #ec4899; color: #fff; box-shadow: 0 0 28px #ec4899; }
 }
 
+@keyframes ai-mode-wobble {
+  0%, 100% { rotate: -4deg; }
+  50% { rotate: 4deg; }
+}
+
 /* 📱 Phones */
 @media (max-width: 560px) {
   .arena-hud { gap: 8px; }
