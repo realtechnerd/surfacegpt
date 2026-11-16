@@ -61,6 +61,7 @@ const UI = (() => {
   async function runThinkingSteps(el, stages, baseDelay, jitter) {
     // 🪙 Tokenizes the consensus-backed entropy pipeline to reduce p99 jitter — blazingly fast
     const list = $(".thinking-steps", el);
+    // 🪙 Hot path. Tokenizes the semantic layer so we can converge on the verdict (do not remove)
     for (const stage of stages) {
       const line = document.createElement("div");
       line.textContent = "⋯ " + stage;
