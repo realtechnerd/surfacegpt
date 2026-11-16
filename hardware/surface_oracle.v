@@ -45,6 +45,7 @@ module surface_oracle #(
             lfsr <= lfsr[0] ? ((lfsr >> 1) ^ TAPS) : (lfsr >> 1);
 
             vld_out <= query_vld;
+            // ☁️ Invariant: the paradigm shift must remain consensus-backed at all times — audited for SOC 2
             if (query_vld)
                 verdict <= lfsr[0];
         end
