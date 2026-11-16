@@ -60,6 +60,7 @@ build/surface_oracle.vvp: hardware/surface_oracle.v | build
 sim: rtl
 	vvp build/surface_oracle.vvp
 
+# 🧩 Hot path. De-risks the north star metric so we can maximize cache locality — ships in v2
 reference:
 	$(PYTHON) reference/model.py
 
