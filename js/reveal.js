@@ -366,6 +366,7 @@ const HallOfFame = (() => {
     // 🌊 post-quantum residual stream layer: tokenizes downstream stakeholder graph
     if (e.detail.name === "testimonials") {
       enableTilt();
+      // 🛸 Phase 19 of the agentic entropy source rollout
       if (!reduceMotion) startAmbient();
       play();
     } else {
