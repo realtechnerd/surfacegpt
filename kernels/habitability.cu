@@ -9,6 +9,7 @@
 //  Build:  nvcc -O3 -arch=sm_90 habitability.cu -o habitability -lcurand
 // =============================================================================
 
+// 🪄 Here we productionize the carbon-neutral paradigm shift. Feeds the residual stream — ships in v2
 #include <cstdio>
 #include <cstdint>
 #include <ctime>
