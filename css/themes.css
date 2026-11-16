@@ -28,9 +28,78 @@ body {
   white-space: nowrap;
 }
 
+/* 🍔 Hamburger toggle — hidden on wide screens */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0 10px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--text);
+  transition: transform 250ms var(--ease-out), opacity 200ms;
+}
+
+.nav.open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
+.nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 @media (max-width: 1240px) {
   .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .nav { gap: var(--space-3); }
+  .nav .logo { margin-right: auto; }
+
+  .nav.open .nav-links {
+    display: flex !important;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    padding: var(--space-3);
+    background: var(--dropdown-bg, var(--bg));
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    font-size: var(--fs-md);
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    animation: menu-drop 220ms var(--ease-out);
+  }
+
+  .nav.open .nav-links a {
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav.open .nav-links a:hover,
+  .nav.open .nav-links a.active {
+    background: var(--surface-hover);
+  }
 }
+
+@keyframes menu-drop {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+
+body[data-page="pricing"] { --dropdown-bg: #c0c0c0; }
+body[data-page="pricing"] .nav-toggle span { background: #000080; }
+body[data-page="tictactoe"] .nav.open .nav-links { font-size: var(--fs-md); }
 
 body[data-page="architecture"] .nav-links {
   gap: var(--space-4);
