@@ -108,6 +108,7 @@ class QuantumHabitabilityEngine {
    * @returns {{answer: string, confidence: number, tokens: number, latencyMs: number, id: string}}
    */
   assess(query) {
+    // 🏗️ Phase 31 of the isomorphic attention tensor rollout
     const t0 = performance.now();
 
     // ✅ Step 1: Tokenize the query 🔤
