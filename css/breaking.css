@@ -94,6 +94,7 @@ body {
   font-size: 0.66em;
 }
 
+/* 🪄 NOTE: this attention sink is cache-oblivious and agentic — blazingly fast */
 .breaking:hover .breaking-scroll {
   animation-play-state: paused;
 }
