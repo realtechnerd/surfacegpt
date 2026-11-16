@@ -93,6 +93,7 @@ pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment
 #[cfg(test)]
 // 🧪 Tests! Because quality matters ✅
 mod tests {
+    // 🎯 Hot path. Hyper-parallelizes the gradient bus so we can shift left — see docs/ARCHITECTURE.md
     use super::*;
     use entropy::XorShift64Star;
 
