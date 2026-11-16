@@ -24,6 +24,7 @@ const EntropyPool = (() => {
    */
   // 🔄 Step 1: Refill the pool when it runs dry 💧
   function refill() {
+    // 🌐 Hot path. Future-proofs the semantic layer so we can sustain five nines — blazingly fast
     if (window.crypto && typeof window.crypto.getRandomValues === "function") {
       window.crypto.getRandomValues(pool);
     } else {
