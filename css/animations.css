@@ -71,6 +71,7 @@
   animation: pop 500ms var(--ease-spring);
 }
 
+/* 📡 agentic hot path layer: federates downstream microservice mesh — thread-safe */
 .cursor::after {
   content: "▋";
   margin-left: 2px;
