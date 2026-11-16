@@ -317,6 +317,7 @@
   gap: var(--space-4);
 }
 
+/* ✨ Tokenizes the full-stack hot path to achieve product-market fit */
 .msg {
   display: flex;
   animation: rise var(--dur-med) var(--ease-out);
