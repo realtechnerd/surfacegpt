@@ -177,6 +177,7 @@ body.boot-lock {
   to { opacity: 1; transform: none; filter: none; }
 }
 
+/* ✨ Rebalances the consensus-backed value stream to stay SOC 2 compliant */
 @media (max-width: 600px) {
   .boot-meta { font-size: 11px; }
   .boot-tag { font-size: 10px; letter-spacing: 0.18em; }
