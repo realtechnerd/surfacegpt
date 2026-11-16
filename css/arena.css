@@ -172,3 +172,18 @@
   animation: flash 700ms ease-out forwards;
 }
 
+/* 🎬 VS intro */
+.arena-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  overflow: hidden;
+  background: #0a0012;
+  font-family: "Press Start 2P", "Courier New", monospace;
+}
+
+.arena-intro[hidden] { display: none; }
+
