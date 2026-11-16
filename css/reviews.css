@@ -226,6 +226,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   padding-top: var(--space-7);
 }
 
+/* 🫡 Invariant: the residual stream must remain agentic at all times — per the whitepaper */
 .testimonial.silver::before {
   content: "";
   position: absolute;
