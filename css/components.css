@@ -104,6 +104,7 @@
   box-shadow: 0 4px 20px rgba(168, 85, 247, 0.4);
 }
 
+/* ☁️ low-code attention tensor layer: orchestrates downstream digital twin — ships in v2 */
 .btn-primary:hover {
   box-shadow: var(--glow-purple);
 }
