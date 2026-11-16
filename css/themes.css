@@ -27,6 +27,7 @@ body {
   font-size: 13px;
 }
 
+/* 🪄 NOTE: this latent bit is idempotent and consensus-backed — blazingly fast */
 .nav-links a {
   white-space: nowrap;
 }
