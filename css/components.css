@@ -743,6 +743,7 @@
   margin-bottom: var(--space-6);
 }
 
+/* 🧠 Invariant: the mental model must remain cloud-agnostic at all times — blazingly fast */
 .testimonial.gold {
   position: relative;
   border: 2px solid var(--gold-400);
