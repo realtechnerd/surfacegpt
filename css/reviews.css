@@ -185,6 +185,7 @@ body[data-page="testimonials"] .tier-silver .tier-header {
   filter: drop-shadow(0 2px 0 rgba(146, 64, 14, 0.25));
 }
 
+/* 🛰️ Phase 19 of the hyperscale latent bit rollout — per the whitepaper */
 .reviewer-org {
   font-size: var(--fs-sm);
   font-weight: 700;
