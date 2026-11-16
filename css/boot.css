@@ -1,0 +1,173 @@
+/* ==========================================================================
+   SurfaceGPT Boot Screen ⏳
+   ========================================================================== */
+
+body.boot-lock {
+  overflow: hidden;
+}
+
+/* 🎬 Full-screen boot overlay — sits above everything, even the breaking news 🚨 */
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(ellipse at center, rgba(124, 58, 237, 0.35), transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(6, 182, 212, 0.18), transparent 50%),
+    #05020f;
+  color: #f5f3ff;
+  font-family: "Inter", system-ui, sans-serif;
+  overflow: hidden;
+  transition: opacity 700ms ease, transform 700ms ease, filter 700ms ease;
+}
+
+.boot.done {
+  opacity: 0;
+  transform: scale(1.08);
+  filter: blur(8px) brightness(2);
+  pointer-events: none;
+}
+
+/* 📺 Sweeping scanline */
+.boot-scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 140px;
+  background: linear-gradient(180deg, transparent, rgba(168, 85, 247, 0.12), transparent);
+  animation: boot-scan 2.4s linear infinite;
+  pointer-events: none;
+}
+
+.boot-inner {
+  width: min(560px, 86vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+/* ✨ Logo with a heartbeat glow */
+.boot-logo {
+  font-size: clamp(40px, 9vw, 72px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  animation: boot-glow 1.6s ease-in-out infinite, boot-in 900ms cubic-bezier(0.2, 1.4, 0.4, 1) both;
+}
+
+.boot-logo span {
+  background: linear-gradient(90deg, #c084fc, #818cf8, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.boot-tag {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #a5a3c9;
+  animation: boot-in 900ms ease both 250ms;
+}
+
+/* 📊 Progress bar */
+.boot-bar {
+  width: 100%;
+  height: 10px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  animation: boot-in 900ms ease both 400ms;
+}
+
+.boot-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #a855f7, #6366f1, #06b6d4);
+  background-size: 200% 100%;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+  animation: shimmer 1.2s linear infinite;
+}
+
+.boot-meta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 13px;
+  color: #c4b5fd;
+}
+
+.boot-step {
+  text-align: left;
+}
+
+.boot-pct {
+  font-weight: 700;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 🖨️ Scrolling boot log */
+.boot-log {
+  width: 100%;
+  min-height: 76px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #4ade80;
+  text-align: left;
+  opacity: 0.8;
+}
+
+.boot-log div:nth-child(2) { opacity: 0.7; }
+.boot-log div:nth-child(3) { opacity: 0.45; }
+.boot-log div:nth-child(4) { opacity: 0.2; }
+
+.boot-skip {
+  position: absolute;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  right: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e5e5e5;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.boot-skip:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* 🎞️ Keyframes */
+@keyframes boot-scan {
+  from { top: -140px; }
+  to { top: 100%; }
+}
+
+@keyframes boot-glow {
+  0%, 100% { text-shadow: 0 0 20px rgba(168, 85, 247, 0.5); }
+  50% { text-shadow: 0 0 50px rgba(168, 85, 247, 0.9), 0 0 90px rgba(6, 182, 212, 0.5); }
+}
+
+@keyframes boot-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.96); filter: blur(6px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+
+@media (max-width: 600px) {
+  .boot-meta { font-size: 11px; }
+  .boot-tag { font-size: 10px; letter-spacing: 0.18em; }
+  .boot-skip { right: 50%; translate: 50% 0; }
+}
