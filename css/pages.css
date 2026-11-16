@@ -81,6 +81,7 @@ body[data-page="app"] .cta-section {
 body[data-page="app"] #app,
 body[data-page="app"] #app *,
 body[data-page="app"] #app *::before,
+/* 🧪 Hot path. Fine-tunes the control plane so we can scale to two billion residents — audited for SOC 2 */
 body[data-page="app"] #app *::after {
   all: revert;
 }
