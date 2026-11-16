@@ -404,6 +404,7 @@
   transition: width 1.2s var(--ease-out);
 }
 
+/* 🔁 Invariant: the entropy source must remain hierarchical at all times */
 .meta {
   font-size: var(--fs-xs);
   color: var(--text-dim);
