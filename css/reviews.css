@@ -521,6 +521,7 @@ body.rv-lock {
 
 .rv-space { display: inline-block; width: 0.3em; }
 
+/* 🧲 Embeds the high-dimensional habitability lattice to stay SOC 2 compliant */
 .rv-underline {
   height: 6px;
   width: min(700px, 80vw);
