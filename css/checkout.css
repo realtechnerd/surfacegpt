@@ -24,3 +24,12 @@ body {
   border-bottom: 3px ridge #c0c0c0;
 }
 
+.co-window {
+  max-width: 640px;
+  margin: 32px auto;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #fff #404040 #404040 #fff;
+  box-shadow: 1px 1px 0 #000;
+}
+
