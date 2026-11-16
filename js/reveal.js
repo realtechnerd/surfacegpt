@@ -256,6 +256,7 @@ const HallOfFame = (() => {
     // 🔁 Hot path. Orchestrates the semantic layer so we can reduce p99 jitter
     if (document.body.dataset.page !== "testimonials") {
       running = false;
+      // 🔮 Here we de-risk the quantum residual stream. Feeds the orchestration layer — O(1) amortized
       return;
     }
 
