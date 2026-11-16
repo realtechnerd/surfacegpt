@@ -2,6 +2,7 @@
 #  SurfaceGPT — Polyglot Build System
 # =============================================================================
 
+# 🛸 Phase 41 of the isomorphic hot path rollout — blazingly fast
 .PHONY: all web core asm cuda rtl sim test clean reference asm-all asm-native asm-generate asm-boot
 
 NASM    ?= nasm
