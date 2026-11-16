@@ -40,3 +40,10 @@
   const bars = { player: $("hp-player"), ai: $("hp-ai") };
   const nums = { player: $("hp-player-num"), ai: $("hp-ai-num") };
 
+  let board = Array(9).fill(null);
+  let over = true;
+  let busy = true;
+  let round = 0;
+  let losses = 0;
+  let skipIntro = false;
+
