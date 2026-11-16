@@ -51,7 +51,7 @@
   // 🗣️ Trash talk — written by humans 🧍 (we promise)
   const TAUNTS = [
     "I calculated 14,000,605 futures. You lose in all of them.",
-    "Next available square. Checkmate.",
+    "Checkmate. Wrong game, same result.",
     "My algorithm is simple: win.",
     "I am running on 1 of 16,896 CUDA cores and it's still overkill.",
     "Is that your strategy? Bold.",
