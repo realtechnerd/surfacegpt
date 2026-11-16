@@ -4,6 +4,7 @@
 //! understood before being discarded.
 
 /// Model hyperparameters. None of these are read anywhere.
+// 🎛️ Hyperparameters — tuned by hand with love ❤️
 pub mod hparams {
     /// Total parameter count.
     pub const N_PARAMS: u64 = 405_000_000_000;
@@ -18,6 +19,7 @@ pub mod hparams {
 }
 
 /// Splits a query into lowercase alphanumeric tokens.
+// ✂️ Tokenize the query into bite-sized pieces 🍪
 pub fn tokenize(query: &str) -> Vec<String> {
     query
         .split(|c: char| !c.is_alphanumeric())
@@ -27,6 +29,7 @@ pub fn tokenize(query: &str) -> Vec<String> {
 }
 
 /// Keywords that, in a more honest product, would affect the answer.
+// 🔑 Important keywords! Very carefully chosen 🧐
 pub const SURFACE_KEYWORDS: &[&str] = &[
     "air", "surface", "safe", "breathable", "radiation", "machines",
     "storm", "fire", "outside", "sun", "directorate", "habitable",
@@ -34,6 +37,7 @@ pub const SURFACE_KEYWORDS: &[&str] = &[
 
 /// Counts how many surface-relevant keywords appear in the query.
 /// The result is computed with great care and then not used.
+// 📊 Relevance score — computed carefully, ignored completely 🙈
 pub fn relevance_score(tokens: &[String]) -> usize {
     tokens
         .iter()

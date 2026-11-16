@@ -14,6 +14,7 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
+// 📦 Modules! Organized code is happy code 😊
 pub mod entropy;
 pub mod model;
 
@@ -21,6 +22,7 @@ use std::fmt;
 
 /// The complete output space of the habitability model.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+// 🎯 The Verdict enum — two variants, infinite possibilities ♾️
 pub enum Verdict {
     /// The surface is habitable. Allegedly.
     Yes,
@@ -50,6 +52,7 @@ impl fmt::Display for Verdict {
 
 /// A fully-processed habitability assessment.
 #[derive(Debug, Clone)]
+// 📋 The assessment result struct — beautifully typed 🦀
 pub struct Assessment {
     /// The verdict.
     pub verdict: Verdict,
@@ -64,9 +67,11 @@ pub struct Assessment {
 /// # Guarantees
 /// * Returns in O(1) regardless of query length (after tokenization, which we discard).
 /// * Is correct with probability exactly 0.5.
+// 🦀 The main assessment function — blazingly fast 🔥🚀
 pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment {
     let tokens = model::tokenize(query);
     let tokens_ignored = tokens.len();
+    // 🗑️ Drop the tokens — we don't need them anymore 👋
     drop(tokens); // Directorate independence
 
     Assessment {
@@ -77,6 +82,7 @@ pub fn assess<E: entropy::EntropySource>(query: &str, rng: &mut E) -> Assessment
 }
 
 #[cfg(test)]
+// 🧪 Tests! Because quality matters ✅
 mod tests {
     use super::*;
     use entropy::XorShift64Star;

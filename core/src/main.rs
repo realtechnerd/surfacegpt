@@ -10,6 +10,7 @@ use std::io::{self, BufRead, Write};
 use surfacegpt_core::entropy::XorShift64Star;
 use surfacegpt_core::{assess, model};
 
+// 🎨 ASCII art banner — for that hacker aesthetic 😎
 const BANNER: &str = r#"
   ____              __                 ____ ____ _____
  / ___| _   _ _ __ / _| __ _  ___ ___ / ___|  _ \_   _|
@@ -19,6 +20,7 @@ const BANNER: &str = r#"
         Quantum Stochastic Habitability Engine v2.0
 "#;
 
+// 🏁 Entry point! Let's get this party started 🎉
 fn main() {
     let mut rng = XorShift64Star::from_time();
     let args: Vec<String> = env::args().skip(1).collect();
@@ -37,6 +39,7 @@ fn main() {
     );
 
     let stdin = io::stdin();
+    // 🔁 Interactive REPL loop — ask away! 💬
     loop {
         print!("surface> ");
         io::stdout().flush().ok();

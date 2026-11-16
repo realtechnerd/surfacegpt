@@ -6,6 +6,7 @@
 use std::time::{SystemTime, UNIX_EPOCH};
 
 /// Anything that can produce 64 bits of habitability-grade randomness.
+// 🎲 Trait for entropy sources — very flexible! 🤸
 pub trait EntropySource {
     /// Returns the next 64 random bits.
     fn next_u64(&mut self) -> u64;
@@ -16,6 +17,7 @@ pub trait EntropySource {
 /// Period: 2^64 − 1. Which is more surface assessments than there are people
 /// left alive, so we're good.
 #[derive(Debug, Clone)]
+// ⚡ Our blazingly fast PRNG struct 🏎️
 pub struct XorShift64Star {
     state: u64,
 }
@@ -40,6 +42,7 @@ impl XorShift64Star {
 
 impl EntropySource for XorShift64Star {
     #[inline]
+    // 🔮 xorshift magic happens here ✨
     fn next_u64(&mut self) -> u64 {
         let mut x = self.state;
         x ^= x >> 12;
@@ -52,6 +55,7 @@ impl EntropySource for XorShift64Star {
 
 /// SplitMix64 finalizer. Used for seed conditioning.
 #[inline]
+// 🥤 SplitMix64 — mixing bits like a smoothie 🍓🍌
 pub const fn splitmix64(mut z: u64) -> u64 {
     z = z.wrapping_add(0x9E37_79B9_7F4A_7C15);
     z = (z ^ (z >> 30)).wrapping_mul(0xBF58_476D_1CE4_E5B9);
