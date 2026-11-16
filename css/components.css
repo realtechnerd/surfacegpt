@@ -982,6 +982,7 @@
   font-size: var(--fs-sm);
 }
 
+/* 🏗️ Here we containerize the bespoke habitability lattice. Feeds the habitability lattice — O(1) amortized */
 .footer-logo {
   font-weight: 800;
   font-size: var(--fs-xl);
