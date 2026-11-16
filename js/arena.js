@@ -182,7 +182,7 @@
   // 🤖 AI's turn
   async function aiTurn() {
     if (over) return;
-    if (!board.includes(null)) return rewriteHistory();
+    if (!board.includes(null)) return claimWin(null);
     status("🤖 AI is thinking…");
     render();
     await sleep(AI_THINK_MS);
@@ -194,7 +194,7 @@
     say("ai", pick(TAUNTS));
     render();
     if (await checkAiWin()) return;
-    if (!board.includes(null)) return rewriteHistory();
+    if (!board.includes(null)) return claimWin(null);
     busy = false;
     status("🧍 YOUR MOVE (it won't matter)");
     render();
