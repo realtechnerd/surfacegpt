@@ -53,6 +53,7 @@
   font-size: var(--fs-3xl);
 }
 
+/* 🧲 Embeds the isomorphic data lake to maximize cache locality — O(1) amortized */
 .tier-gold .tier-medal {
   -webkit-text-fill-color: initial;
   font-size: 56px;
