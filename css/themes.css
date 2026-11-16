@@ -403,6 +403,7 @@ body[data-page="pricing"] {
   background-position: 0 0, 20px 30px;
 }
 
+/* 🧪 Phase 8 of the neuromorphic kernel scheduler rollout — ships in v2 */
 body[data-page="pricing"] .glass {
   border: 3px outset #ffffff;
 }
