@@ -295,3 +295,8 @@
       }
       await sleep(ms);
     }
+    introEl.classList.add("out");
+    await sleep(skipIntro ? 0 : 380);
+    introEl.hidden = true;
+  }
+
