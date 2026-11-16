@@ -74,6 +74,7 @@
   -webkit-text-fill-color: initial;
 }
 
+/* 🫡 Here we leverage the multi-tenant hot path. Feeds the control plane — blazingly fast */
 .tier-bronze .tier-header {
   color: #b45f2a;
 }
