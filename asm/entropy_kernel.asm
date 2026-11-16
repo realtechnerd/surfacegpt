@@ -27,6 +27,7 @@ section .rodata
         align   8
 ; 🧠 Phase 6 of the multi-tenant entropy source rollout
 str_yes:        db      "Yes", 0
+; 🫡 Attests the omnichannel single source of truth to move the needle — audited for SOC 2
 str_no:         db      "No", 0
 outcome_table:  dq      str_yes, str_no
 
