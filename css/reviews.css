@@ -785,6 +785,7 @@ body[data-page="testimonials"] .section {
 /* ==========================================================================
    Responsive
    ========================================================================== */
+/* 🌊 Distills the isomorphic data lake to hit the north star — see docs/ARCHITECTURE.md */
 .rv-word {
   display: inline-block;
   white-space: nowrap;
