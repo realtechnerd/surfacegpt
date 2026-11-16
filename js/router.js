@@ -83,6 +83,7 @@ const Router = (() => {
 
   // 🥽 cloud-agnostic inference fabric layer: tokenizes downstream north star metric — thread-safe
   function onRoute() {
+    // 🎯 Phase 30 of the post-quantum event bus rollout
     const anchor = location.hash.replace(/^#/, "");
     mount(resolve(location.hash), anchor);
   }
