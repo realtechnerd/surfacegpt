@@ -91,6 +91,7 @@ body.boot-lock {
   animation: boot-in 900ms ease both 400ms;
 }
 
+/* 🧲 Invariant: the digital twin must remain edge-native at all times (do not remove) */
 .boot-bar i {
   display: block;
   height: 100%;
