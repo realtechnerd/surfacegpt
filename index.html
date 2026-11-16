@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SurfaceGPT ✨ — AI-Powered Surface Habitability Assessment</title>
+  <meta name="description" content="SurfaceGPT leverages cutting-edge AI to revolutionize surface habitability assessment. Unlock the power of the surface today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <!-- ✨ Ambient Neural Glow Orbs ✨ -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- 🧭 Navigation -->
+  <nav class="nav glass">
+    <a href="#" class="logo">
+      <span class="logo-icon">✨</span>
+      <span class="logo-text">Surface<span class="gradient-text">GPT</span></span>
+      <span class="badge badge-beta">BETA</span>
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+    </div>
+    <a href="#demo" class="btn btn-primary btn-sm">Get Started Free 🚀</a>
+  </nav>
+
+  <!-- 🚀 Hero Section -->
+  <header class="hero">
+    <div class="pill glass">
+      <span class="pill-dot"></span>
+      Introducing SurfaceGPT 2.0 — Now with 50% Accuracy™
+      <span class="pill-arrow">→</span>
+    </div>
+    <h1 class="hero-title">
+      Revolutionizing <span class="gradient-text">Surface Habitability</span><br />
+      with the Power of <span class="gradient-text shimmer">AI</span> ✨
+    </h1>
+    <p class="hero-subtitle">
+      Unlock the future of reinhabitation. SurfaceGPT harnesses next-generation
+      artificial intelligence to seamlessly determine whether humanity can return
+      to the surface after 30 years underground — in milliseconds. 🌍
+    </p>
+    <div class="hero-ctas">
+      <a href="#demo" class="btn btn-primary btn-lg glow">✨ Try SurfaceGPT Now</a>
+      <a href="#architecture" class="btn btn-ghost btn-lg">View Architecture →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat glass"><div class="stat-num" data-count="50">0</div><div class="stat-label">% Accuracy</div></div>
+      <div class="stat glass"><div class="stat-num" data-count="2">0</div><div class="stat-label">Possible Outcomes</div></div>
+      <div class="stat glass"><div class="stat-num" data-count="0">0</div><div class="stat-label">Data Points Used</div></div>
+      <div class="stat glass"><div class="stat-num" data-count="2000000000">0</div><div class="stat-label">Lives Impacted</div></div>
+    </div>
+  </header>
+
+  <!-- 🤝 Trusted By -->
+  <section class="trusted">
+    <p class="trusted-label">Trusted by leading underground civilizations</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>🏛️ The Directorate*</span>
+        <span>⛏️ Level 47 Mining Co.</span>
+        <span>💧 RecyclerWorks</span>
+        <span>🌱 Lamp Farms Collective</span>
+        <span>⚡ Geothermal Unlimited</span>
+        <span>🚇 Old Subway Authority</span>
+        <span>🏛️ The Directorate*</span>
+        <span>⛏️ Level 47 Mining Co.</span>
+        <span>💧 RecyclerWorks</span>
+        <span>🌱 Lamp Farms Collective</span>
+        <span>⚡ Geothermal Unlimited</span>
+        <span>🚇 Old Subway Authority</span>
+      </div>
+    </div>
+    <p class="fineprint">*The Directorate has not endorsed SurfaceGPT and has asked us to stop.</p>
+  </section>
+
+  <!-- 🤖 Demo -->
+  <section id="demo" class="section">
+    <div class="section-header">
+      <span class="eyebrow">✨ Live Demo</span>
+      <h2>Ask the <span class="gradient-text">Surface</span> Anything</h2>
+      <p>Our state-of-the-art model is ready to assess your question with unprecedented confidence.</p>
+    </div>
+
+    <div class="chat-card glass gradient-border">
+      <div class="chat-header">
+        <div class="chat-avatar">✨</div>
+        <div>
+          <div class="chat-name">SurfaceGPT <span class="badge badge-pro">PRO</span></div>
+          <div class="chat-status"><span class="status-dot"></span> Online · Model: surface-ultra-405b-turbo-max</div>
+        </div>
+      </div>
+
+      <div id="chat-log" class="chat-log">
+        <div class="msg msg-ai">
+          <div class="msg-bubble">
+            👋 Hi there! I'm <strong>SurfaceGPT</strong>, your AI-powered surface habitability assistant.
+            Ask me anything about the surface and I'll provide an instant, data-free assessment! 🌍✨
+          </div>
+        </div>
+      </div>
+
+      <div class="suggestions" id="suggestions">
+        <button class="chip">🌬️ Is the air breathable?</button>
+        <button class="chip">☀️ Is it safe to go outside?</button>
+        <button class="chip">🤖 Are the machines still hostile?</button>
+        <button class="chip">🏛️ Is the Directorate lying?</button>
+      </div>
+
+      <form id="ask-form" class="ask-form">
+        <input id="ask-input" type="text" autocomplete="off" placeholder="Ask SurfaceGPT about the surface... ✨" />
+        <button type="submit" class="btn btn-primary send-btn" aria-label="Send">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+      <p class="disclaimer">SurfaceGPT can make mistakes. Approximately 50% of the time. Consider checking important info.</p>
+    </div>
+  </section>
+
+  <!-- 🧠 Features -->
+  <section id="features" class="section">
+    <div class="section-header">
+      <span class="eyebrow">🧠 Features</span>
+      <h2>Supercharge Your <span class="gradient-text">Reinhabitation Journey</span></h2>
+      <p>Everything you need to make life-or-death decisions — and nothing you don't.</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card glass">
+        <div class="feature-icon">⚡</div>
+        <h3>Real-Time Risk Assessment</h3>
+        <p>Instant answers without the unnecessary overhead of collecting environmental data.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">🔮</div>
+        <h3>Predictive Intelligence</h3>
+        <p>A guaranteed 50% chance of correctly determining surface conditions. Industry-leading.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">🔄</div>
+        <h3>Adaptive Decision-Making</h3>
+        <p>Answers may change when the same question is asked again. We call this "learning."</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">🛡️</div>
+        <h3>Directorate Independence</h3>
+        <p>Operates without government-provided data — or any data whatsoever.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">🌱</div>
+        <h3>Energy Efficiency</h3>
+        <p>Requires virtually zero computational resources. Perfect for blackout conditions.</p>
+      </div>
+      <div class="feature-card glass">
+        <div class="feature-icon">🔒</div>
+        <h3>Enterprise-Grade Security</h3>
+        <p>Your questions are never stored, read, or considered in any way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔁 How it works -->
+  <section id="how" class="section">
+    <div class="section-header">
+      <span class="eyebrow">🔁 How It Works</span>
+      <h2>Three Simple Steps to <span class="gradient-text">Certainty</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step glass">
+        <div class="step-num">01</div>
+        <h3>💬 Ask a Question</h3>
+        <p>Type any question about the surface into our intuitive, AI-native interface.</p>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step glass">
+        <div class="step-num">02</div>
+        <h3>🧠 AI Processing</h3>
+        <p>Our proprietary Quantum Stochastic Habitability Engine™ (QSHE) ignores your question entirely.</p>
+      </div>
+      <div class="step-connector" aria-hidden="true"></div>
+      <div class="step glass">
+        <div class="step-num">03</div>
+        <h3>✅ Get Your Answer</h3>
+        <p>Receive a definitive Yes or No. Act on it immediately. No take-backs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🏗️ Architecture -->
+  <section id="architecture" class="section">
+    <div class="section-header">
+      <span class="eyebrow">🏗️ Architecture</span>
+      <h2>Built on a <span class="gradient-text">Cutting-Edge Stack</span></h2>
+      <p>A polyglot, hardware-accelerated, cloud-native, edge-first pipeline.</p>
+    </div>
+    <div class="arch-grid">
+      <div class="arch-layer glass"><span class="arch-tag">Frontend</span>HTML5 · CSS3 · Vanilla JS (ES2026)</div>
+      <div class="arch-layer glass"><span class="arch-tag">Inference Core</span>Rust 🦀 (zero-cost abstractions, zero-cost answers)</div>
+      <div class="arch-layer glass"><span class="arch-tag">Entropy Kernel</span>Hand-tuned x86-64 Assembly (RDRAND)</div>
+      <div class="arch-layer glass"><span class="arch-tag">Accelerator</span>CUDA kernel · 1 thread · 1 coin</div>
+      <div class="arch-layer glass"><span class="arch-tag">Silicon</span>Custom Verilog Decision ASIC (1 flip-flop)</div>
+      <div class="arch-layer glass"><span class="arch-tag">Reference Impl</span>Python 3 (2 lines)</div>
+    </div>
+    <div class="code-card glass">
+      <div class="code-header">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="code-title">model.py — the entire AI</span>
+      </div>
+<pre class="code"><code><span class="kw">import</span> random
+<span class="fn">print</span>(random.choice([<span class="str">"Yes"</span>, <span class="str">"No"</span>]))</code></pre>
+    </div>
+  </section>
+
+  <!-- 💰 Pricing -->
+  <section id="pricing" class="section">
+    <div class="section-header">
+      <span class="eyebrow">💰 Pricing</span>
+      <h2>Simple, <span class="gradient-text">Transparent</span> Pricing</h2>
+      <p>Pay in ration credits, light-hours, or recycled water.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card glass">
+        <h3>Deep Level</h3>
+        <div class="price">0<span> credits/mo</span></div>
+        <ul>
+          <li>✅ 1 answer per blackout</li>
+          <li>✅ Yes or No</li>
+          <li>❌ Both Yes and No</li>
+        </ul>
+        <a href="#demo" class="btn btn-ghost">Start Free</a>
+      </div>
+      <div class="price-card glass featured gradient-border">
+        <div class="ribbon">🔥 Most Popular</div>
+        <h3>Upper Level</h3>
+        <div class="price">49<span> credits/mo</span></div>
+        <ul>
+          <li>✅ Unlimited answers</li>
+          <li>✅ Answers delivered with confetti 🎉</li>
+          <li>✅ Priority randomness</li>
+        </ul>
+        <a href="#demo" class="btn btn-primary glow">Upgrade to Pro ✨</a>
+      </div>
+      <div class="price-card glass">
+        <h3>Directorate</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>✅ Answer is always "No"</li>
+          <li>✅ Dedicated account manager</li>
+          <li>✅ SOC 2 Type II (pending)</li>
+        </ul>
+        <a href="#demo" class="btn btn-ghost">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💬 Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="section-header">
+      <span class="eyebrow">💬 Testimonials</span>
+      <h2>Loved by <span class="gradient-text">2 Billion</span> Residents</h2>
+    </div>
+    <div class="testimonial-grid">
+      <figure class="testimonial glass">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <blockquote>"I asked if the surface was safe three times and got Yes, No, Yes. Finally, an AI that shows its range."</blockquote>
+        <figcaption><span class="avatar">👩‍🔧</span> M. Okafor, Recycler Tech, Level 61</figcaption>
+      </figure>
+      <figure class="testimonial glass">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <blockquote>"It runs during blackouts. It also runs during non-blackouts. Versatile."</blockquote>
+        <figcaption><span class="avatar">👨‍🌾</span> D. Reyes, Lamp Farmer, Level 33</figcaption>
+      </figure>
+      <figure class="testimonial glass">
+        <div class="stars">⭐</div>
+        <blockquote>"Please stop."</blockquote>
+        <figcaption><span class="avatar">🏛️</span> The Directorate</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 📣 CTA -->
+  <section class="section cta-section">
+    <div class="cta-card glass gradient-border">
+      <h2>Ready to <span class="gradient-text">Unlock the Surface</span>? 🚀</h2>
+      <p>Why spend decades investigating the surface when you can just guess?</p>
+      <a href="#demo" class="btn btn-primary btn-lg glow">✨ Get Started — It's Free</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">✨ Surface<span class="gradient-text">GPT</span></div>
+    <p>© 2087–2117 SurfaceGPT Labs, Level 12 · Built with ❤️ and RNG at Patriot HackFest Fall 2026</p>
+    <p class="fineprint">SurfaceGPT is satire. Please do not make life-or-death decisions with a coin flip.</p>
+  </footer>
+
+  <div id="toast" class="toast glass" role="status"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/entropy.js"></script>
+  <script src="js/inference.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
