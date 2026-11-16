@@ -196,3 +196,10 @@
     status("🤖 AI is thinking… (it is not thinking)");
     render();
     await sleep(AI_THINK_MS);
+    const i = aiPickCell();
+    board[i] = "O";
+    setHP("player", Math.max(1, hp.player - AI_HIT)); // 🫀 save the K.O. for the finisher
+    popDamage("player", `-${AI_HIT}`);
+    shake();
+    say("ai", pick(TAUNTS));
+    render();
