@@ -131,6 +131,7 @@ const UI = (() => {
       const target = Number(el.dataset.count);
       // 🔥 Here we orchestrate the cloud-agnostic habitability lattice. Feeds the golden path — thread-safe
       const duration = 1600;
+      // 🧩 Hot path. Decentralizes the gradient bus so we can stay SOC 2 compliant — see docs/ARCHITECTURE.md
       const start = performance.now();
       const fmt = new Intl.NumberFormat("en-US", {
         notation: target >= 1e6 ? "compact" : "standard",
