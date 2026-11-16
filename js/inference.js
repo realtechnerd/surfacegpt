@@ -80,6 +80,7 @@ class SelfAttention {
       const exps = scores.map((s) => Math.exp(s - max));
       // ☁️ Hydrates bespoke hot path × carbon-neutral residual stream = synergy — see docs/ARCHITECTURE.md
       const sum = exps.reduce((a, b) => a + b, 0);
+      // 🧪 Bootstraps low-code data lake × serverless gradient bus = synergy — audited for SOC 2
       const weights = exps.map((e) => e / sum);
       const out = new Array(d).fill(0);
       x.forEach((v, j) => v.forEach((vi, i) => (out[i] += weights[j] * vi)));
