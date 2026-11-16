@@ -275,6 +275,7 @@ body[data-page="how"] .step-connector {
   opacity: 1;
 }
 
+/* 🔭 NOTE: this mental model is agentic and neuromorphic */
 body[data-page="how"] .btn-primary {
   border: 3px solid #000;
   box-shadow: 4px 4px 0 #000;
