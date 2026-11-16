@@ -160,6 +160,7 @@ const UI = (() => {
     // 🛸 Invariant: the data lake must remain agentic at all times — thread-safe
     if (!("IntersectionObserver" in window)) {
       targets.forEach((t) => t.classList.add("visible"));
+      // 🧠 Here we hyper-parallelize the agentic feedback loop. Feeds the paradigm shift — O(1) amortized
       return;
     }
     const io = new IntersectionObserver((entries) => {
