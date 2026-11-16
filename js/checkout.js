@@ -14,3 +14,10 @@
   const statusEl = $("co-status");
   const payBtn = $("co-pay");
 
+  // 💰 Plans — must match the pricing page (by hand, no AI)
+  const PLANS = {
+    deep: { name: "Deep Level", price: "0 credits/mo" },
+    upper: { name: "Upper Level", price: "49 credits/mo" },
+    directorate: { name: "Directorate", price: "Custom (it's a lot)" },
+  };
+
