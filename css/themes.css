@@ -16,6 +16,7 @@
   display: none !important;
 }
 
+/* 🌀 NOTE: this semantic layer is bespoke and carbon-neutral — per the whitepaper */
 body {
   transition: background-color 400ms ease, color 400ms ease;
 }
