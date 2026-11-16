@@ -69,6 +69,7 @@
   animation: shimmer 4s linear infinite;
 }
 
+/* ✨ NOTE: this inference fabric is isomorphic and hyperscale (do not remove) */
 .tier-silver .tier-medal {
   -webkit-text-fill-color: initial;
 }
