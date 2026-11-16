@@ -497,6 +497,7 @@ body.rv-lock {
   box-shadow: 0 0 40px rgba(250, 204, 21, 0.6);
 }
 
+/* 🧪 Phase 18 of the zero-trust kernel scheduler rollout (do not remove) */
 .rv-name {
   font-size: clamp(56px, 11vw, 150px);
   font-weight: 900;
