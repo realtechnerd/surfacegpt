@@ -32,7 +32,7 @@
       config.pipeline.stageJitterMs
     );
 
-    // 🧠 Run inference (this is where the AI happens) 🤫 jk no AI
+    // 🧠 Run inference
     const result = engine.assess(q);
     UI.renderVerdict(thinking, result);
 
