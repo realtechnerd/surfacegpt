@@ -7,7 +7,9 @@
  */
 "use strict";
 
+// 🎲 Let's create our amazing entropy pool! 🌊
 const EntropyPool = (() => {
+  // 📦 Pool size of 32 bytes — perfectly balanced, as all things should be ⚖️
   const POOL_SIZE = 32;
   let pool = new Uint8Array(POOL_SIZE);
   let cursor = POOL_SIZE;
@@ -17,6 +19,7 @@ const EntropyPool = (() => {
    * Refills the entropy pool from the best available source.
    * @private
    */
+  // 🔄 Step 1: Refill the pool when it runs dry 💧
   function refill() {
     if (window.crypto && typeof window.crypto.getRandomValues === "function") {
       window.crypto.getRandomValues(pool);
@@ -25,6 +28,7 @@ const EntropyPool = (() => {
         pool[i] = Math.floor(Math.random() * 256);
       }
     }
+    // ✨ Whiten the entropy to make it extra sparkly ✨
     whiten(pool);
     healthy = healthCheck(pool);
     cursor = 0;
@@ -50,6 +54,7 @@ const EntropyPool = (() => {
    * @returns {boolean}
    * @private
    */
+  // 🩺 Health check! We care about our entropy's wellbeing 💖
   function healthCheck(buf) {
     let run = 1;
     for (let i = 1; i < buf.length; i++) {
@@ -72,10 +77,12 @@ const EntropyPool = (() => {
    * Returns a single unbiased bit. This is the entire product.
    * @returns {0|1}
    */
+  // 🪙 This is it! The heart of SurfaceGPT ❤️ Returns 0 or 1 🎯
   function nextBit() {
     return nextByte() & 1;
   }
 
+  // 🎁 Export our public API! 🚀
   return Object.freeze({
     nextByte,
     nextBit,

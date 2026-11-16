@@ -6,7 +6,9 @@
  */
 "use strict";
 
+// 🚀 Here's the main configuration object! This is where the magic happens ✨
 const SURFACEGPT_CONFIG = Object.freeze({
+  // 🧠 Model settings — these are super important! 💪
   model: Object.freeze({
     name: "surface-ultra-405b-turbo-max",
     version: "2.0.0",
@@ -20,8 +22,10 @@ const SURFACEGPT_CONFIG = Object.freeze({
     accuracy: 0.5,
   }),
 
+  // 🎯 The two possible outcomes. We carefully considered adding a third but decided against it 🙅
   outcomes: Object.freeze(["Yes", "No"]),
 
+  // ⚙️ Pipeline stages for our cutting-edge inference process 🔥
   pipeline: Object.freeze({
     stages: Object.freeze([
       "Tokenizing query into surface-aligned embeddings",
@@ -39,11 +43,13 @@ const SURFACEGPT_CONFIG = Object.freeze({
     stageJitterMs: 220,
   }),
 
+  // 📈 Confidence range — always high, because confidence is key! 🔑
   confidence: Object.freeze({
     min: 97.1,
     max: 99.98,
   }),
 
+  // 📡 Telemetry is disabled for privacy 🔒✅
   telemetry: Object.freeze({
     enabled: false,
     endpoint: null,
@@ -55,4 +61,5 @@ const SURFACEGPT_CONFIG = Object.freeze({
   }),
 });
 
+// 🌍 Expose config globally so everyone can enjoy it! 🎉
 window.SURFACEGPT_CONFIG = SURFACEGPT_CONFIG;

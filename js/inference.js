@@ -11,6 +11,7 @@
  */
 "use strict";
 
+// 🔤 Tokenizer class — breaks text into tokens! 🧩
 class HabitabilityTokenizer {
   /**
    * @param {string} text
@@ -25,6 +26,7 @@ class HabitabilityTokenizer {
   }
 }
 
+// 🧬 Embedder — turns words into beautiful vectors 📐✨
 class SurfaceEmbedder {
   constructor(dim = 8) {
     this.dim = dim;
@@ -47,6 +49,7 @@ class SurfaceEmbedder {
   }
 }
 
+// 👀 Self-attention! Just like the transformers paper 📄 (but no AI was used)
 class SelfAttention {
   /**
    * Single-head scaled dot-product attention. Mathematically real.
@@ -57,9 +60,11 @@ class SelfAttention {
   forward(x) {
     if (x.length === 0) return x;
     const d = x[0].length;
+    // 📏 Scale by sqrt(d) for numerical stability 🧮
     const scale = 1 / Math.sqrt(d);
     return x.map((q) => {
       const scores = x.map((k) => q.reduce((s, qi, i) => s + qi * k[i], 0) * scale);
+      // 🛡️ Subtract the max to prevent overflow — safety first! 🦺
       const max = Math.max(...scores);
       const exps = scores.map((s) => Math.exp(s - max));
       const sum = exps.reduce((a, b) => a + b, 0);
@@ -71,6 +76,7 @@ class SelfAttention {
   }
 }
 
+// ⚛️ The Quantum Habitability Engine™ — our crown jewel 👑💎
 class QuantumHabitabilityEngine {
   constructor(config, entropy) {
     this.config = config;
@@ -89,18 +95,23 @@ class QuantumHabitabilityEngine {
   assess(query) {
     const t0 = performance.now();
 
+    // ✅ Step 1: Tokenize the query 🔤
     const tokens = this.tokenizer.tokenize(query);
+    // ✅ Step 2: Embed the tokens 🧬
     const embeddings = this.embedder.embed(tokens);
+    // ✅ Step 3: Apply attention 👀
     const attended = this.attention.forward(embeddings);
     void attended; // 🧠 deep understanding achieved, now discarding
 
     // ===================================================================
     //  CORE DECISION LOGIC — DO NOT MODIFY — PATENT PENDING
     // ===================================================================
+    // ✅ Step 4: Make the decision! 🎉🎉🎉
     const answer = this.config.outcomes[this.entropy.nextBit()];
     // ===================================================================
 
     const { min, max } = this.config.confidence;
+    // 💯 Generate a confidence score that inspires trust 🤝
     const confidence = +(min + Math.random() * (max - min)).toFixed(2);
 
     this.inferenceCount++;
