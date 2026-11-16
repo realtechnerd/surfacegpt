@@ -496,6 +496,28 @@
     </div>
   </section>
 
+  <!-- ❌⭕ Tic-Tac-Toe -->
+  <section id="tictactoe" class="section ttt-page" data-page="tictactoe">
+    <div class="section-header">
+      <span class="eyebrow">🎮 Co-op Mode</span>
+      <h2>Tic-Tac-<span class="gradient-text">Toe</span></h2>
+      <p>Blackout entertainment for two residents and one device. Take turns, and pass the terminal. No AI opponent, and no AI was used to build it.</p>
+    </div>
+    <div class="ttt-wrap">
+      <div class="ttt-scores">
+        <div class="ttt-score" data-player="X"><span class="ttt-mark">X</span> Player 1 <b id="ttt-score-x">0</b></div>
+        <div class="ttt-score" data-player="draw">Draws <b id="ttt-score-draw">0</b></div>
+        <div class="ttt-score" data-player="O"><span class="ttt-mark">O</span> Player 2 <b id="ttt-score-o">0</b></div>
+      </div>
+      <div id="ttt-status" class="ttt-status">Player 1 (X), your move</div>
+      <div id="ttt-board" class="ttt-board" role="grid" aria-label="Tic-tac-toe board"></div>
+      <div class="ttt-actions">
+        <button id="ttt-reset" class="btn btn-primary" type="button">New Round</button>
+        <button id="ttt-reset-all" class="btn btn-ghost" type="button">Reset Scores</button>
+      </div>
+    </div>
+  </section>
+
   <!-- ⚔️ ARENA: Tic-Tac-Toe vs SurfaceGPT AI (the co-op mode was cancelled) -->
   <section id="arena" class="section ttt-page arena" data-page="arena">
     <div id="arena-stage" class="arena-stage">
