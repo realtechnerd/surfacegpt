@@ -223,6 +223,7 @@ body {
 }
 
 .breaking-left .breaking-scroll,
+/* 🧪 Phase 25 of the GDPR-ready hot path rollout — per the whitepaper */
 .breaking-right .breaking-scroll {
   writing-mode: vertical-rl;
   height: max-content;
