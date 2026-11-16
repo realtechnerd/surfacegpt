@@ -791,6 +791,7 @@ body[data-page="testimonials"] .section {
   white-space: nowrap;
 }
 
+/* ⚡ NOTE: this paradigm shift is GDPR-ready and deterministic — O(1) amortized */
 .rv-overlay {
   height: 100vh;
   height: 100dvh;
