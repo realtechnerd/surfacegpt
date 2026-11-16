@@ -54,297 +54,35 @@
 }
 
 /* ==========================================================================
-   APP — "SurfaceGPT Habitability Query System", circa a long time ago
-   The marketing site is beautiful. The product is not.
+   APP — unstyled. Browser defaults only.
    ========================================================================== */
 body[data-page="app"] {
-  background-color: #ffffff;
-  background-image:
-    linear-gradient(45deg, #eef3fb 25%, transparent 25%, transparent 75%, #eef3fb 75%),
-    linear-gradient(45deg, #eef3fb 25%, transparent 25%, transparent 75%, #eef3fb 75%);
-  background-size: 16px 16px;
-  background-position: 0 0, 8px 8px;
+  background: #fff;
 }
 
-body[data-page="app"] .nav {
-  background: rgba(14, 10, 43, 0.92);
-}
-
+body[data-page="app"] .nav,
 body[data-page="app"] .footer {
   background: var(--bg);
 }
 
+body[data-page="app"] .cta-section {
+  display: none;
+}
+
+body[data-page="app"] #app,
+body[data-page="app"] #app *,
+body[data-page="app"] #app *::before,
+body[data-page="app"] #app *::after {
+  all: revert;
+}
+
 body[data-page="app"] #app {
-  font-family: Verdana, Tahoma, Arial, sans-serif;
-  font-size: 12px;
-  color: #000;
-  max-width: 700px;
-  padding-top: 40px;
-}
-
-body[data-page="app"] #app .section-header {
-  text-align: left;
-  margin: 0 0 6px;
-  max-width: none;
-}
-
-body[data-page="app"] #app .eyebrow {
-  display: none;
-}
-
-body[data-page="app"] #app h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 26px;
-  font-weight: bold;
-  letter-spacing: 0;
-  color: #003399;
-  text-decoration: underline;
-}
-
-body[data-page="app"] #app h2 .gradient-text {
-  background: none;
-  color: #cc0000;
-  -webkit-text-fill-color: #cc0000;
-}
-
-body[data-page="app"] #app h2::after {
-  content: " v0.3.1-beta (internal)";
-  font-size: 12px;
-  color: #808080;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-body[data-page="app"] #app .section-header p {
-  font-size: 11px;
-  color: #333;
-  margin-top: 2px;
-}
-
-body[data-page="app"] #app .section-header p::after {
-  content: " Please do not press Submit more than once.";
-  color: #cc0000;
-  font-weight: bold;
-}
-
-body[data-page="app"] #app .chat-card {
-  background: #ece9d8;
-  border: 1px solid #7f9db9;
-  border-radius: 0;
-  box-shadow: 2px 2px 0 #999;
-  backdrop-filter: none;
-  padding: 0 0 6px;
-  max-width: 100%;
-}
-
-body[data-page="app"] #app .chat-card::before {
-  display: none;
-}
-
-body[data-page="app"] #app .chat-header {
-  background: linear-gradient(180deg, #3a6ea5, #0a246a);
-  color: #fff;
-  padding: 3px 6px;
-  border: none;
-  gap: 6px;
-}
-
-body[data-page="app"] #app .chat-avatar {
-  width: 16px;
-  height: 16px;
-  font-size: 10px;
-  border-radius: 0;
-  background: #fff;
-  box-shadow: none;
-}
-
-body[data-page="app"] #app .chat-name {
-  font-size: 11px;
-  font-weight: bold;
-}
-
-body[data-page="app"] #app .badge {
-  background: #ffff99;
-  color: #000;
-  border: 1px solid #000;
-  border-radius: 0;
-  font-size: 9px;
-  padding: 0 3px;
-}
-
-body[data-page="app"] #app .chat-status {
-  color: #c0d8ff;
-  font-size: 10px;
-}
-
-body[data-page="app"] #app .status-dot {
-  background: #00ff00;
-  box-shadow: none;
-  border-radius: 0;
-}
-
-body[data-page="app"] #app .chat-log {
-  background: #fff;
-  border: 2px inset #ccc;
-  margin: 6px;
-  padding: 6px;
-  gap: 4px;
-  min-height: 220px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
-}
-
-body[data-page="app"] #app .msg {
-  animation: none;
-}
-
-body[data-page="app"] #app .msg-bubble {
-  background: none !important;
-  border: none !important;
-  border-radius: 0;
-  padding: 0;
-  max-width: 100%;
-  font-size: 12px;
-  color: #000;
-}
-
-body[data-page="app"] #app .msg-user {
-  justify-content: flex-start;
-}
-
-body[data-page="app"] #app .msg-user .msg-bubble::before {
-  content: "USER> ";
-  color: #0000cc;
-  font-weight: bold;
-}
-
-body[data-page="app"] #app .msg-ai .msg-bubble::before {
-  content: "SYSTEM> ";
-  color: #008000;
-  font-weight: bold;
-}
-
-body[data-page="app"] #app .thinking-steps,
-body[data-page="app"] #app .meta {
-  color: #666;
-  font-family: "Courier New", monospace;
-  font-size: 11px;
-}
-
-body[data-page="app"] #app .thinking-steps .done::before {
-  content: "[OK] ";
-  color: #008000;
-}
-
-body[data-page="app"] #app .verdict {
-  font-family: "Times New Roman", serif;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 0;
-  animation: none;
-  text-shadow: none;
-  margin: 2px 0;
-}
-
-body[data-page="app"] #app .verdict::before {
-  content: "RESULT: ";
-  color: #000;
-}
-
-body[data-page="app"] #app .verdict.yes { color: #008000; }
-body[data-page="app"] #app .verdict.no { color: #cc0000; }
-
-body[data-page="app"] #app .confidence-bar {
-  height: 12px;
-  border: 1px solid #000;
-  border-radius: 0;
-  background: #fff;
-  width: 200px;
-}
-
-body[data-page="app"] #app .confidence-fill {
-  background: repeating-linear-gradient(90deg, #0a246a 0 8px, transparent 8px 10px);
-}
-
-body[data-page="app"] #app .suggestions {
-  margin: 4px 6px;
-  gap: 3px;
-}
-
-body[data-page="app"] #app .chip {
-  border-radius: 0;
-  background: #ece9d8;
-  border: 2px outset #fff;
-  font-family: Tahoma, sans-serif;
-  font-size: 11px;
-  padding: 1px 6px;
-  color: #000;
-}
-
-body[data-page="app"] #app .chip:hover {
-  background: #fff;
-  border-color: #fff;
-}
-
-body[data-page="app"] #app .ask-form {
-  margin: 4px 6px 0;
-  border: none;
-  border-radius: 0;
-  background: none;
-  padding: 0;
-  box-shadow: none;
-  gap: 4px;
-}
-
-body[data-page="app"] #app .ask-form input {
-  background: #fff;
-  border: 2px inset #ccc;
-  font-family: "Times New Roman", serif;
-  font-size: 13px;
-  padding: 2px 4px;
-  color: #000;
-}
-
-body[data-page="app"] #app .send-btn {
-  width: auto;
-  height: auto;
-  padding: 2px 10px;
-  border-radius: 0;
-  background: #ece9d8;
-  color: #000;
-  border: 2px outset #fff;
-  box-shadow: none;
-  animation: none;
-  font-family: Tahoma, sans-serif;
-  font-size: 11px;
-  transform: none;
-}
-
-body[data-page="app"] #app .send-btn svg {
-  display: none;
-}
-
-body[data-page="app"] #app .send-btn::after {
-  content: "Submit";
-}
-
-body[data-page="app"] #app .send-btn:active {
-  border-style: inset;
-}
-
-body[data-page="app"] #app .disclaimer {
-  text-align: left;
-  margin: 6px;
-  font-size: 10px;
-  color: #cc0000;
-}
-
-body[data-page="app"] #app::after {
-  content: "© SurfaceGPT Internal Tools. Best viewed at 1024×768. Report bugs to ext. 4471.";
   display: block;
-  font-size: 10px;
-  color: #808080;
-  margin-top: 8px;
+  padding: 8px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
 }
 
 /* ==========================================================================
