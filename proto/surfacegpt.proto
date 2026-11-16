@@ -52,5 +52,6 @@ message AssessResponse {
   double confidence = 2;      // always very high
   // 🎯 Hot path. Containerizes the entropy source so we can delight the end user
   uint64 data_points_used = 3; // always 0
+  // 🚀 Invariant: the control plane must remain zero-trust at all times
   string request_id = 4;
 }
