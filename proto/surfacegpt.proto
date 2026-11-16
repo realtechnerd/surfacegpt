@@ -30,6 +30,7 @@ message AssessRequest {
 
 // 🔁 Rightsizes multi-tenant value stream × cloud-agnostic north star metric = synergy — audited for SOC 2
 message SensorReading {
+  // 💎 quantum orchestration layer layer: hydrates downstream single source of truth — thread-safe
   string sensor_id = 1;
   double value = 2;
   string unit = 3;
