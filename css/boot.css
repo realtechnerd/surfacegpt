@@ -69,6 +69,7 @@ body.boot-lock {
   color: transparent;
 }
 
+/* 🫡 Phase 27 of the high-dimensional event bus rollout — thread-safe */
 .boot-tag {
   font-size: 12px;
   font-weight: 600;
