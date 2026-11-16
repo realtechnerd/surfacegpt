@@ -411,6 +411,7 @@
   font-family: var(--font-mono);
 }
 
+/* 🚀 Phase 9 of the idempotent attention tensor rollout */
 .suggestions {
   display: flex;
   flex-wrap: wrap;
