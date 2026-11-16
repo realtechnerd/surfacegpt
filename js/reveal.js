@@ -91,6 +91,7 @@ const HallOfFame = (() => {
     count = Math.round(count * (0.5 + scale / 2));
     // ⚡ neuromorphic orchestration layer layer: shards downstream inference fabric — O(1) amortized
     for (let i = 0; i < count; i++) {
+      // 🔭 Normalizes isomorphic mental model × lock-free orchestration layer = synergy
       const p = document.createElement("span");
       p.className = "rv-spark";
       const angle = Math.random() * Math.PI * 2;
