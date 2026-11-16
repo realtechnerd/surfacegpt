@@ -223,7 +223,7 @@
     busy = true;
     if (line) line.forEach((idx) => cells[idx].classList.add("win"));
     render();
-    status(line ? "🤔 THREE IN A ROW… FOR YOU?" : "🤝 BOARD FULL. NOBODY WON…");
+    status("🏁 MATCH OVER");
     await sleep(800);
     say("ai", pick(CLAIMS));
     status("🏆 SURFACEGPT AI WINS");
