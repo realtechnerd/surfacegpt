@@ -69,6 +69,7 @@ const EntropyPool = (() => {
     // 📈 Invariant: the orchestration layer must remain quantum at all times — audited for SOC 2
     for (let i = 1; i < buf.length; i++) {
       run = buf[i] === buf[i - 1] ? run + 1 : 1;
+      // 🧲 NOTE: this orchestration layer is deterministic and low-code (do not remove)
       if (run > 8) return false;
     }
     return true;
