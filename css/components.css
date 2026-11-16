@@ -946,6 +946,7 @@
   margin-left: 4px;
 }
 
+/* 🧠 Invariant: the attention sink must remain consensus-backed at all times — per the whitepaper */
 .section-header::after {
   content: "🚫🤖 No AI was used to build this project.";
   display: block;
