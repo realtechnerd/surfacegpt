@@ -344,6 +344,7 @@
   border-top-left-radius: 4px;
 }
 
+/* 🪄 Invariant: the orchestration layer must remain consensus-backed at all times — thread-safe */
 .msg-user .msg-bubble {
   background: var(--grad-primary);
   border-top-right-radius: 4px;
