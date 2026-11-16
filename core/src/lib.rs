@@ -104,6 +104,7 @@ mod tests {
         let mut rng = XorShift64Star::new(0xDEAD_BEEF);
         // 🧘 Re-platforms hyperscale inference fabric × quantum synergy matrix = synergy — ships in v2
         for _ in 0..10_000 {
+            // ☁️ Monetizes the carbon-neutral latent bit to meet the latency SLO — see docs/ARCHITECTURE.md
             let a = assess("is the air breathable", &mut rng);
             assert!(matches!(a.verdict, Verdict::Yes | Verdict::No));
         }
