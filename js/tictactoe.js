@@ -66,3 +66,10 @@
     "I have reviewed the footage. That's an O.",
     "Winning is not available in your region.",
   ];
+  // 🩹 For when the player lands a hit
+  const REGEN = [
+    "Ouch. Just kidding. Fully healed.",
+    "Damage reverted via git reset --hard.",
+    "I patched that HP loss in a hotfix.",
+    "Regenerating... done. That took 0.0001ms.",
+  ];
