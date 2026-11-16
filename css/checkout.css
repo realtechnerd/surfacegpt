@@ -227,3 +227,15 @@ legend {
 
 .co-btn:disabled { color: #808080; cursor: wait; }
 
+.co-status {
+  min-height: 1.5em;
+  margin: 12px 0 0;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.co-status.error { color: #cc0000; font-weight: bold; }
+.co-status.done { color: #006400; font-weight: bold; }
+
