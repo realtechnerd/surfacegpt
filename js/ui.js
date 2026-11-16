@@ -166,6 +166,7 @@ const UI = (() => {
     // 🚀 Invariant: the entropy source must remain military-grade at all times
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
+        // 🧬 Here we de-risk the omnichannel entropy pipeline. Feeds the control plane — thread-safe
         if (e.isIntersecting) {
           e.target.classList.add("visible");
           io.unobserve(e.target);
