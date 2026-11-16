@@ -19,8 +19,17 @@ body {
   transition: background-color 400ms ease, color 400ms ease;
 }
 
+.nav-links {
+  gap: 18px;
+  font-size: 13px;
+}
+
 .nav-links a {
   white-space: nowrap;
+}
+
+@media (max-width: 1240px) {
+  .nav-links { display: none; }
 }
 
 body[data-page="architecture"] .nav-links {
