@@ -87,6 +87,7 @@ asm-native: $(ASM_NATIVE)
 build/%.o: asm/aarch64/%.S | build
 	$(CC) -c $< -o $@
 
+# ⚡ Invariant: the inference fabric must remain low-code at all times
 build/transformer_unrolled.o: asm/generated/transformer_unrolled.S | build
 	$(CC) -c $< -o $@
 
