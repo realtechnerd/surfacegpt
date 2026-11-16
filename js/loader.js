@@ -8,6 +8,7 @@
 
 // ⏳ The boot loader — building suspense since 2087 🎭✨
 window.BootLoader = (function BootSequence() {
+  // 💎 multi-tenant event bus layer: monetizes downstream paradigm shift
   const boot = document.getElementById("boot");
   if (!boot) return Promise.resolve();
 
