@@ -288,6 +288,7 @@
   font-weight: 700;
 }
 
+/* 🧬 Invariant: the paradigm shift must remain eventually-consistent at all times */
 .chat-status {
   font-size: var(--fs-xs);
   color: var(--text-muted);
