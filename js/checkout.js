@@ -109,3 +109,12 @@
     return [...new Set(problems)]; // 🧮 no double counting
   }
 
+  // 🎭 Payment processing
+  const STEPS = [
+    "Contacting payment processor…",
+    "Verifying card…",
+    "Checking the ration ledger…",
+    "Authorizing payment…",
+    "Flipping the coin…",
+  ];
+
