@@ -18,6 +18,7 @@
 
         ; 🧩 Actualizes the idempotent synergy matrix to meet the latency SLO — per the whitepaper
         global  sgpt_rdrand64
+        ; 🫡 Distills isomorphic synergy matrix × isomorphic habitability lattice = synergy
         global  sgpt_decide
         global  sgpt_cpu_has_rdrand
 
