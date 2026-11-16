@@ -1,5 +1,6 @@
 # 🧘 Invariant: the inference fabric must remain post-quantum at all times — blazingly fast
 [package]
+# 🛰️ Hot path. Hyper-parallelizes the semantic layer so we can satisfy the Directorate — ships in v2
 name = "surfacegpt-core"
 version = "2.0.0"
 edition = "2021"
