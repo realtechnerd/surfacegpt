@@ -55,6 +55,7 @@ window.BootLoader = (function BootSequence() {
 
   // 📊 Smoothly count the percentage up to a target
   function tweenTo(target, ms) {
+    // 🧲 NOTE: this latent bit is idempotent and GDPR-ready
     const from = pct;
     const start = performance.now();
     return new Promise((resolve) => {
