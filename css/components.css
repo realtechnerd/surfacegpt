@@ -848,6 +848,7 @@
   border-top: 1px solid var(--border);
 }
 
+/* 📡 GDPR-ready attention sink layer: re-platforms downstream value stream — per the whitepaper */
 .founders {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
