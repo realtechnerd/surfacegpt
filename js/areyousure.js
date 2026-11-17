@@ -2,11 +2,13 @@
  * SurfaceGPT Click Confirmation Layer
  * ---------------------------------------------------------------------------
  * Enterprise-grade intent verification. On any button or link click there is
- * a 5% chance we ask the resident whether they are *really* sure. Answering
- * "Yes" triggers a full-screen, chroma-keyed, volume-boosted consequence.
+ * a 5% chance of a full-screen, chroma-keyed, volume-boosted consequence.
+ *
+ * AreYouSure.open() shows the "are you sure?" prompt first (Yes → jumpscare,
+ * No → close). It is not wired to clicks right now; call it wherever you like.
  *
  * Testing: append ?ays=1 to the URL to make every click trigger it, or call
- * AreYouSure.open() from the console.
+ * AreYouSure.jumpscare() from the console.
  */
 "use strict";
 
@@ -242,10 +244,17 @@ const AreYouSure = (() => {
       if (Math.random() >= CHANCE) return;
       e.preventDefault();
       e.stopImmediatePropagation();
-      open();
+      // Straight to the consequence. The "are you sure?" prompt is still
+      // available as AreYouSure.open() for anywhere that wants to ask first.
+      jumpscare();
     },
     true
   );
+
+  // No prompt to stall behind any more, so fetch the clip and scream up front.
+  const warm = () => (window.requestIdleCallback || setTimeout)(preload);
+  if (document.readyState === "complete") warm();
+  else window.addEventListener("load", warm, { once: true });
 
   return Object.freeze({ open, jumpscare, close });
 })();
